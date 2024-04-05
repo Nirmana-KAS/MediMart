@@ -12,6 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <!--shop page-->
+        <!--shop page--> 
+        <h1>shop</h1>
+        <h3>welcome to shop</h3>
     </body>
 </html>
