@@ -12,5 +12,12 @@ and open the template in the editor.
     </head>
     <body>
         <!--add hero section-->
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Our Website</h1>
+                <p>This is a sample hero section.</p>
+                <a href="#learn-more">Learn More</a>
+            </div>
+        </section>
     </body>
 </html>
