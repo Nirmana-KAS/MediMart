@@ -7,11 +7,11 @@
       /* CSS styles for the hero section */
       .hero-section {
         position: relative;
-        height: 500px; /* Adjust the height as needed */
-        background-image: url('a.jpg'); 
+        height: 800px;
+        background-image: url('b1.jpg'); 
         background-size: cover;
         background-position: center;
-        color: #fff;
+        color:black;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -40,4 +40,4 @@
       </div>
     </section>    
     </body>
-      </html>
+</html>
