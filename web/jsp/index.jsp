@@ -2,46 +2,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero Section Example</title>
-    <style>
-      /* CSS styles for the hero section */
-      .hero-section {
-        position: relative;
-        height: 800px;
-        background-image: url('b1.jpg'); 
-        background-size: cover;
-        background-position: center;
-        color:black;
-        text-align:Center;
-        display: flex;
-        justify-content:right;
-        align-items:center;
-      }
-    
-      .hero-section h1 {
-        font-size: 3em;
-        margin-bottom: 20px;
-        color:blue;
-      }
-    
-      .hero-section p {
-        font-size: 1.5em;
-        margin-bottom: 30px;
-      }
-      .custom-button {
-        background-color:blue;
-        border: none;
-        color:aliceblue;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor:pointer;
-        border-radius: 8px;
-      }
-    </style>
+    <title>Hero Section</title>
+    <link rel="stylesheet" type="text/css" href="hero.css">
     </head>
     <body>
     
