@@ -14,17 +14,7 @@ and open the template in the editor.
         
         
             <header class="header">
-                <nav class="navbar">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Contact</a>
-                </nav>
-                
-                <form action="#" class="search-bar">
-                    <input type="text" placeholder="Search...">
-                    <button type="submit"><i class='bx bx-search'></i></button>
-                </form>
+               
             </header>
             
             <div class="background"></div>
