@@ -117,19 +117,19 @@
   </div>
     
   
-    <div class = "info-content2">
-      <img src="time saving.jpg" alt="Image 9">
-      <div class="info-box">  
-      <h2>Saving Time</h2>
-    </div>
-  </div>
-    
   <div class = "info-content2">
-      <img src="save money.jpg" alt="Image 10">
-      <div class="info-box">  
-      <h2>Saving Money</h2>
-    </div>
+    <img src="save money.jpg" alt="Image 9">
+    <div class="info-box">  
+    <h2>Saving Money</h2>
   </div>
+</div>
+  
+<div class = "info-content2">
+    <img src="time saving.jpg" alt="Image 10">
+    <div class="info-box">  
+    <h2>Saving Time</h2>
+  </div>
+</div>
 </div>
 
 
