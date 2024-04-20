@@ -1,1 +1,112 @@
+.description {
+    display:flex;
+    background-color: #d6ebf2;
+    width: auto;
+    text-align: center;
+    margin-top: 4%;
+    padding-bottom: 30px;
+ }
+ .content {
+    width: auto;
+    height: 20%;
+    padding-top: 30px;
+    padding-left:400px;
+    padding-right: 70px;
+ }
+ .content h2 {
+     font-size: 2.8em;
+     color:#0747a1;
+     font-family:'Times New Roman', Times, serif;
+     text-align: center;
+ }  
+ .content p {
+     font-size: 1.5em;
+     color: #03002e;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     text-align: justify;
+ }
+ .slide {
+    flex: 0 0 auto;
+    width: 20%;
+    scroll-snap-align: start;
+    position: relative;
+    margin-top: 3%;
+ }
+ .slide img {
+    width: 180%;
+    height:95%;
+    border-radius:10% ;
+    padding-left: 40px;
+    padding-top: 20px;
+    
+ }
+
+.description2{
+    margin-top: 10%;
+ }
+
+.content2{
+    width: auto;
+    height: 20%;
+    text-align: center;
+ }
+
+.content2 h2 {
+     font-size: 2.8em;
+     color:#0747a1;
+     font-family:'Times New Roman', Times, serif;
+     text-align: center;
+ }  
+
+.slide2 {
+    display: flex;
+    width: auto;
+    height: 30%;
+    padding-bottom: 80px;
+    margin-top: 5%;
+    padding-left: 10%;
+ 
+}
+.info-box{
+    flex: 0 0 auto;
+    width: 30%;
+    scroll-snap-align: start;
+    position: relative;
+    padding-left: 60px;
+    padding-right: 10px;
+    border-radius: 10%;
+}
+
+.info-box img {
+ width: 200px;
+ height: auto;
+ margin-right: 20px;
+ border-radius: 100%;
+}
+
+.info-content {
+  position: absolute;
+  top: 145%;
+  left:40%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  text-align:center;
+}
+
+.info-content h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color:#0747a1;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.info-content p {
+  margin-bottom: 0;
+  font-size: 1.1em;
+  color: #03002e;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+}
 /*about us css*/
