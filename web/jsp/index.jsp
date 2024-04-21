@@ -132,7 +132,6 @@
 </div>
 </div>
 
-
 <div class="description6">
   <div class="content6">
     <h2><b>High Quality Medicines & Products</b></h2>
