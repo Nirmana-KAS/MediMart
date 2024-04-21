@@ -21,5 +21,10 @@ and open the template in the editor.
                 <button type="submit" name="submit">Send</button>
             </form>
         </div>
+        <footer>
+            <div class="copyright">
+              &copy; 2024 Medimart. All rights reserved.
+            </div>
+        </footer>
     </body>
 </html>
