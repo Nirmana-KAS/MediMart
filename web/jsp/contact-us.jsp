@@ -9,6 +9,7 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/contact-us.css">
     </head>
     <body>
         <div class="container">
@@ -19,6 +20,7 @@ and open the template in the editor.
                 <input type="text" name="phone" placeholder="Phone No." required>
                 <textarea name="message" rows="4" placeholder="How can we help you ?"></textarea>
                 <button type="submit" name="submit">Send</button>
+                
             </form>
         </div>
         <footer>

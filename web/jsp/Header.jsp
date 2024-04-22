@@ -21,7 +21,7 @@ and open the template in the editor.
                     <!-- Topbar start -->
                         <div class="topbar">
                             <div class="left-side">
-                                <a href="http://"><img class="logo24-7" src="img/24_7.png" alt="logo24-7"> Online Service</a>
+                                <a href="http://"><img class="logo24-7" src="images/24_7.png" alt="logo24-7"> Online Service</a>
                                 <a href="http://"><img class="openhours-logo" src="img/openhours.png" alt="openhours-logo"> Open Hours: Mon to Sat 8.00 A.M. - 9.00 P.M. </a>
                                 <a href="http://"><img class="location-logo" src="img/location.png" alt="location-logo"> NO:121/2, High level Road, Homagama </a>
                             </div>
@@ -36,9 +36,10 @@ and open the template in the editor.
                                 </div>
                             </div>
                         </div>
-                    <!-- Topbar end -->
+                    <!-- Top bar end -->
                 </div>
             <!-- Header section end -->
         </div>
     </body>
 </html>
+ 
