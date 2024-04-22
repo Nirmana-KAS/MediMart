@@ -27,10 +27,16 @@ and open the template in the editor.
             <div class="copyright">
               &copy; 2024 Medimart. All rights reserved.
             </div>
+
             <div class="social-icons">
             <a href="https://facebook.com/yourpage"><img src="facebook-icon.png" alt="Facebook"></a>
             <a href="https://twitter.com/yourpage"><img src="twitter-icon.png" alt="Twitter"></a>
             <a href="https://instagram.com/yourpage"><img src="instagram-icon.png" alt="Instagram"></a>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: info@medimart.com</p>
+                <p>Phone: +1234567890</p>
+              <p>Address: Pitipana North, Homagama, Sri Lanka</p>
             </div>
         </footer>
     </body>
