@@ -27,6 +27,9 @@ and open the template in the editor.
             <div class="copyright">
               &copy; 2024 Medimart. All rights reserved.
             </div>
+            <div class="social-icons">
+
+            </div>
         </footer>
     </body>
 </html>
