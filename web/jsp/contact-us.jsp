@@ -27,6 +27,13 @@ and open the template in the editor.
             <div class="copyright">
               &copy; 2024 Medimart. All rights reserved.
             </div>
+
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: info@medimart.com</p>
+                <p>Phone: +1234567890</p>
+                <p>Address: Pitipana North, Homagama, Sri Lanka</p>
+            </div>
         </footer>
     </body>
 </html>
