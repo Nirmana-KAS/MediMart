@@ -55,7 +55,11 @@ footer {
   
   .copyright {
     font-size: 14px;
-  }
+  } 
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
 .social-icons img {
     width: 40px;
     height: 40px;
@@ -69,3 +73,4 @@ footer {
         .contact-info p {
             margin-bottom: 5px;
         }
+
