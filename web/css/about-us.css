@@ -5,7 +5,6 @@
   text-align: center;
   padding-bottom: 30px;
 }
-
 .content {
   width: auto;
   height: 20%;
@@ -13,21 +12,18 @@
   padding-left: 400px;
   padding-right: 70px;
 }
-
 .content h2 {
   font-size: 2.8em;
   color: #0747a1;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
 }
-
 .content p {
   font-size: 1.5em;
   color: #03002e;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: justify;
 }
-
 .slide {
   flex: 0 0 auto;
   width: 20%;
@@ -35,33 +31,27 @@
   position: relative;
   margin-top: 3%;
 }
-
 .slide img {
   width: 180%;
   height: 95%;
   border-radius: 10%;
   padding-left: 40px;
   padding-top: 20px;
-
 }
-
 .description2 {
   margin-top: 8%;
 }
-
 .content2 {
   width: auto;
   height: 20%;
   text-align: center;
 }
-
 .content2 h2 {
   font-size: 2.8em;
   color: #0747a1;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
 }
-
 .slide2 {
   display: flex;
   width: auto;
@@ -69,9 +59,7 @@
   padding-bottom: 80px;
   margin-top: 5%;
   padding-left: 10%;
-
 }
-
 .info-box {
   flex: 0 0 auto;
   width: 30%;
@@ -81,14 +69,12 @@
   padding-right: 10px;
   border-radius: 10%;
 }
-
 .info-box img {
   width: 200px;
   height: auto;
   margin-right: 10px;
   border-radius: 100%;
 }
-
 .info-content {
   position: absolute;
   top: 145%;
@@ -99,14 +85,12 @@
   text-align: center;
   padding-bottom: 5%;
 }
-
 .info-content h2 {
   margin-top: 0;
   font-size: 1.8em;
   color: #0747a1;
   font-family: 'Times New Roman', Times, serif;
 }
-
 .info-content p {
   margin-bottom: 0;
   font-size: 1.3em;
@@ -114,24 +98,20 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: justify;
 }
-
 .description3 {
   margin-top: 16%;
 }
-
 .content3 {
   width: auto;
   height: 20%;
   text-align: center;
 }
-
 .content3 h2 {
   font-size: 2.8em;
   color: #0747a1;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
 }
-
 .carousel-container {
   width: 80%;
   margin: 50px auto;
@@ -139,12 +119,10 @@
   overflow: hidden;
   margin-top: 4%;
 }
-
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-
 .carousel-item {
   flex: 0 0 100%;
   max-width: 100%;
@@ -152,14 +130,12 @@
   padding: 20px;
   box-sizing: border-box;
 }
-
 .customer-name {
   margin-bottom: 10px;
   font-size: 1.8em;
   color: #0747a1;
   font-family: 'Times New Roman', Times, serif;
 }
-
 .customer-review {
   margin-bottom: 20px;
   font-size: 1.3em;
@@ -167,11 +143,9 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
 }
-
 .stars {
   display: inline-block;
 }
-
 .star {
   color: gold;
   font-size: 20px;
