@@ -28,7 +28,7 @@ and open the template in the editor.
                 
                 <div class="logreg-box">
                     <div class="form-box login">
-                        <form action="#">
+                        <form action="loginServlet" method="POST" >
                             <h2>Sign In</h2>
                             
                             <div class="input-box">
