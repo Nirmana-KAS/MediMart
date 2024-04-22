@@ -3,10 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero Section</title>
-    <link rel="stylesheet" type="text/css" href="hero.css">
+    <link rel="stylesheet" type="text/css" href="css/hero.css">
     </head>
-    <body>
-    
+    <body> 
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-content">
@@ -26,9 +25,7 @@
     </section> 
     <br>
     <br>
-  
     <div class="section2">
-
       <div class="slide">
         <img src="Natrual_Foods.jpg" alt="Image 1">
         <div class="info-box">
@@ -36,7 +33,6 @@
           <p><b>Up To 25% OFF</b><br><br><button class="custom-button">Shop Now</button></p>
         </div>
       </div>
-
       <div class="slide">
         <img src="daily essentials.jpg" alt="Image 2">
         <div class="info-box">
@@ -44,7 +40,6 @@
           <p><b>Up To 15% OFF</b><br><br><button class="custom-button">Shop Now</button></p>
         </div>
       </div>
-
       <div class="slide">
         <img src="medicine.jpg" alt="Image 3">
         <div class="info-box">
@@ -52,7 +47,6 @@
           <p><b>Up To 5% OFF</b><br><br><button class="custom-button">Shop Now</button></p>
         </div>
       </div>
-
       <div class="slide">
         <img src="healthcare.jpg" alt="Image 4">
         <div class="info-box">
@@ -60,16 +54,11 @@
           <p><b>Up To 30% OFF</b><br><br><button class="custom-button">Shop Now</button></p>
         </div>
       </div>
-
-    </div>
-    
-    
+    </div>   
     <div class ="description">
-
       <div class="content">
         <h2><b>Our Services</b></h2>
       </div>
-
     <div class ="description1">
     <div class = "info-content">
      <img src="a.jpg" alt="Image 5">  
@@ -77,17 +66,14 @@
        <h2>Best In Pharma Service</h2>
        <p>Best In Pharma Service offers top-tier pharmaceutical solutions, delivering excellence in quality, reliability, and innovation to meet diverse healthcare needs.</p>
     </div>
-  </div>
-    
-  
+  </div>  
     <div class = "info-content">
       <img src="c.jpg" alt="Image 6">
       <div class="info-box">  
         <h2>Consult A Doctor Now</h2>
         <p>Instant access to professional medical advice anytime, anywhere. Consult a Doctor Now for quick, personalized assistance.</p>
     </div>
-  </div>
-    
+  </div>    
   <div class = "info-content">
     <img src="b.jpg" alt="Image 7">
     <div class="info-box">  
@@ -96,9 +82,7 @@
     </div>
   </div>
   </div>
-
 </div>
-
   <div class="content">
     <h2><b>Online pharmaceuticals available 24/7</b></h2>
     <p>Conveniently access prescription medications and healthcare essentials from the comfort of your home with our online pharmacy.
@@ -106,24 +90,19 @@
       Enjoy secure transactions,<br> discreet packaging,and personalized support, ensuring your health needs are met with convenience
       and peace of mind.</p>
   </div>
-
   <div class ="description2">
-
     <div class = "info-content2">
       <img src="delivery.jpg" alt="Image 8">  
       <div class="info-box" >     
       <h2>Free & Fast Delivery</h2>
     </div>
-  </div>
-    
-  
+  </div>  
   <div class = "info-content2">
     <img src="save money.jpg" alt="Image 9">
     <div class="info-box">  
     <h2>Saving Money</h2>
   </div>
-</div>
-  
+</div>  
 <div class = "info-content2">
     <img src="time saving.jpg" alt="Image 10">
     <div class="info-box">  
@@ -131,7 +110,6 @@
   </div>
 </div>
 </div>
-
 <div class="description6">
   <div class="content6">
     <h2><b>High Quality Medicines & Products</b></h2>
@@ -140,36 +118,27 @@
         our online pharmacy site curates a selection that elevates your health journey. Embrace confidence in every purchase, knowing that we prioritize your health
         above all else, delivering nothing short of excellence straight to your doorstep.</p>
   </div>
-
   <div class="slide6">
     <img src="c1.jpg" alt="Image 11">
   </div>
 </div>
-
-
-
 <div class="description5">
   <div class="content5">
     <h2><b>Our Shipping Products</b></h2> 
   </div>
-
   <div class="section5">
   <div class="slide">
     <img src="img1.jpg" alt="Image 12">
   </div>
-
   <div class="slide">
     <img src="img 2.jpg" alt="Image 13">
   </div>
-
   <div class="slide">
     <img src="img3.jpg" alt="Image 14">
   </div>
-
   <div class="slide">
     <img src="img4.jpg" alt="Image 15">
   </div>
-
   <div class="slide">
     <img src="img5.jpg" alt="Image 15">
   </div>
@@ -178,16 +147,12 @@
     <button class="custom-button">See More Products</button>
   </div>
   </div>
-
-
 <div class="description3">
   <div class="content3">
     <h2><b>Latest News</b></h2>
     <p>Keep up to date with latest pharmacy news, learning and insights. Read the latest pharmacy news written by experts in the field, updated regularly.</p>
   </div>
-
   <div class="description4">
-
     <div class="info-content3">
       <img src="covid-19.jpg" alt="Image 16">  
       <div class="info-box" >     
@@ -201,7 +166,6 @@
         <a href="https://www.medscape.com/viewarticle/years-sobering-look-long-covid-progress-2024a10007a8?form=fpf">Read More</a></p>
      </div>
     </div>
-
     <div class="info-content3">
       <img src="future.jpg" alt="Image 17">  
       <div class="info-box" >     
@@ -214,7 +178,6 @@
         <a href="https://www.pharmacytimes.com/view/the-future-of-pharmacy-how-advancements-in-technology-are-transforming-the-field">Read More</a></p>
      </div>
     </div>
-
     <div class="info-content3">
       <img src="migraine.jpeg" alt="Image 18">  
       <div class="info-box" >     
@@ -227,10 +190,7 @@
       <a href="https://www.pharmacytimes.com/view/extension-trial-analysis-shows-long-term-safety-efficacy-of-atogepant-in-patients-with-migraines">Read More</a></p>
      </div>
     </div>
-
-
-
   </div>
 </div>
-    </body>
+</body>
 </html>
