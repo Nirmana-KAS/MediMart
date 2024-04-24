@@ -13,6 +13,22 @@
         <link rel="stylesheet" href="css/shop.css">
     </head>
     <body>
+        <div id="filterBox">
+            <h2>Category</h2>
+            <div id="catetorylist">
+            <div>
+                <label for="">
+                    <input type="checkbox"> AYURVEDIC
+                </label> 
+                  <label for="">
+                    <input type="checkbox"> BABY CARE
+                </label> 
+                  <label for="">
+                    <input type="checkbox"> HELTHCARE
+                </label> 
+            </div>
+            </div>
+        </div>
         <table border="0">
            
             <tbody>
