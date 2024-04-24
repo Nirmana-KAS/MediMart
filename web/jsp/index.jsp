@@ -7,6 +7,7 @@
     </head>
     <body> 
     <!-- Hero Section -->
+    <jsp:include page="header.jsp" /> 
     <section class="hero-section">
       <div class="hero-content">
         <h1>WELCOME TO MEDIMART</h1>

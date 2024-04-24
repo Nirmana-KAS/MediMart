@@ -96,12 +96,12 @@
        font-family: Georgia, 'Times New Roman', Times, serif;
     }
      .description{
-       background-color:  #d6ebf2;
+       background-color:#bcf3f4;
        margin-top: 12%;
     }
     .description1{
        display: flex;
-       background-color:  #d6ebf2;
+       background-color:#bcf3f4;
        width: auto;
        height: 30%;
        padding-bottom: 80px;
@@ -119,7 +119,7 @@
        height:140%;
     }
      .content{
-       background-color: #d6ebf2;
+       background-color:#bcf3f4;
        width: auto;
        height: 20%;
        padding-top: 90px;
@@ -138,7 +138,7 @@
     }
       .description2 {
        display:flex;
-       background-color: #d6ebf2;
+       background-color:#bcf3f4;
        width: auto;
        height: 25%;
        padding-bottom: 60px;
