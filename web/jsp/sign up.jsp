@@ -6,10 +6,10 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Register Page</title>
-        <link rel="stylesheet" type="text/css" href="sign up.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/sign-up.css">
     </head>
     
         
@@ -29,7 +29,7 @@ and open the template in the editor.
                 
                 <div class="logreg-box">
                     <div class="form-box login">
-                        <form action="#">
+                        <form action="loginServlet" method="POST" >
                             <h2>Sign In</h2>
                             
                             <div class="input-box">
