@@ -1,27 +1,33 @@
 body{
-    background-color:#e0f8f9;
+    background-color:  #e6ffff;
+    align-content: center;
+    margin: 30px 30px 30px 150px;
 }
 div#card{
-    height: 400px;
+    height: 300px;
     width: 250px;
     box-shadow: 2px 2px 4px 4px #e0e0e0;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 10px;
+    background-color: #b3ffff;
+    margin-bottom: 20px;
 }
- div#card:hover {background-color:captiontext}
+ div#card:hover {
+     background-color:#b3ffd9;
+ }
 
 div#card:active {
-    background-color: #3e8e41;
+    background-color: #00e6e6;
     box-shadow: 0 3px #666;
-    transform: translateY(4px);
+    transform: translateY(1px);
 }
 img#img{
-     height: 210px;
-    width: 180px;
+     height: 150px;
+    width: 150px;
     margin-left: 40px;
-    margin-right: 5px;
+    margin-right:40px;
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 div#medname{
     font-family:timesnewroman;
@@ -42,17 +48,17 @@ div#medprice{
 }
 
 #addcart{
-    background-color: #17d2c4;
+    background-color: #00cccc;
     color: #91fffa;
     border:none; 
     margin-left: 80px;
     font-size: 15px;
 }
 
-#addcart:hover {background-color: #3e8e41}
+#addcart:hover {background-color: #006666}
 
 #addcart:active {
-    background-color: #3e8e41;
+    background-color: #003333;
     box-shadow: 0 3px #666;
     transform: translateY(4px);
 }
@@ -68,4 +74,30 @@ div#medprice{
                   margin-left: 100px;
                   margin-right: 100px;
     }
-
+    div#main{
+        box-sizing:inherit;
+        background-color: #e6fff2;
+        
+    }
+    div#filterBox{
+        flex-basis: 100%;
+    }
+    
+    #product{
+        flex-basis: 20%;
+        display:flex;
+        justify-content: space-between;
+        margin-left: 50px
+    }
+    #catetorylist label{
+        display: block;
+        padding: 10px;
+    }
+    #leftbox{
+        background-color: #e6fff2;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 200px;
+        padding-top: 50px;
+        
+    }

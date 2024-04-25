@@ -32,10 +32,10 @@ and open the template in the editor.
                             </li>
                             <li>
                                 <div class="footer-social-links">
-                                    <a href="http://"><img class="foot-facebook-logo" src="img/facebook.png" alt="facebook-logo"> </a>
-                                    <a href="http://"><img class="foot-messenger-logo" src="img/messenger.png" alt="messenger-logo"> </a>
-                                    <a href="http://"><img class="foot-whatsapp-logo" src="img/whatsapp.png" alt="whatsapp-logo"> </a>
-                                    <a href="http://"><img class="foot-email-logo" src="img/email.png" alt="email-logo"> </a>
+                                    <a href="http://"><img class="foot-facebook-logo" src="imgages/facebook.png" alt="facebook-logo"> </a>
+                                    <a href="http://"><img class="foot-messenger-logo" src="imgages/messenger.png" alt="messenger-logo"> </a>
+                                    <a href="http://"><img class="foot-whatsapp-logo" src="imgages/whatsapp.png" alt="whatsapp-logo"> </a>
+                                    <a href="http://"><img class="foot-email-logo" src="imgages/email.png" alt="email-logo"> </a>
                                 </div>
                             </li>
                         </ul>
