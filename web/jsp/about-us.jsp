@@ -13,6 +13,7 @@ and open the template in the editor.
     </head>
     <body>
         <body>
+            <jsp:include page="Header.jsp" /> 
             <div class="description">
                 <div class="slide">
                     <img src="b6.jpg" alt="Image 11">
