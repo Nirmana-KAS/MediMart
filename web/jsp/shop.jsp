@@ -13,68 +13,75 @@
         <link rel="stylesheet" href="css/shop.css">
     </head>
     <body>
-        <div id="filterBox">
-            <h2>Category</h2>
-            <div id="catetorylist">
-            <div>
-                <label for="">
-                    <input type="checkbox"> AYURVEDIC
-                </label> 
-                  <label for="">
-                    <input type="checkbox"> BABY CARE
-                </label> 
-                  <label for="">
-                    <input type="checkbox"> HELTHCARE
-                </label> 
+        <table>
+        <thead>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+     
+    <tbody>
+        <tr>
+         <td id =leftbox>
+             <div>
+                 <select name="sory by">
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                     <option></option>
+                 </select>
+             </div>
+            <div id="filterBox">
+                <h2>Product Catalog</h2>
+                    <label>
+                        <input type="checkbox" class="filter-checkbox" value="category1"> Category 1<br>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="filter-checkbox" value="category1"> Category 1<br>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="filter-checkbox" value="category1"> Category 1<br>
+                    </label>
             </div>
-            </div>
-        </div>
-        <table border="0">
-           
+                    
+        </td>
+        
+             <td>
+        <table border="0" id="product">
             <tbody>
-                <tr >
-                    <td rowspan="3">
-                        Categories
-                        <a href="">Ayurvedic Care</a>
-                        <a href="">Baby Care</a>
-                        <a href="">Dental Care</a>
-                        <a href="">Diabetes Care</a>
-                        <a href="">Blood Pressure Monitor</a>
-                        <a href="">First aid item</a>
-                            
-                        <select name="sort by">
-                            <option disabled="disabled">sort bye</option>
-                           <option>price low to high</option>
-                            <option>price high to low</option>
-                            <option>best seller</option>
-                            <option>availability</option>
-                        </select>  
-                    </td>
-                
+                <tr>
                     <td><div id="card"><img id="img" src="https://unionchemistspharmacy.lk/wp-content/uploads/2023/09/cosmed_urun_750x1000_24-300x300.jpg"/><div id="medname">Vitemin C</div><div id="medprice">Rs.24545.00</div><div id="center"><input type="submit" value="Add to Cart" id="addcart" /></div></div></td>
                     <td><div id="card"><img id="img" src="https://unionchemistspharmacy.lk/wp-content/uploads/2023/09/cosmed_urun_750x1000_24-300x300.jpg"/><div id="medname">Vitemin C</div><div id="medprice">Rs.24545.00</div><div id="center"><input type="submit" value="Add to Cart" id="addcart" /></div></div></td> 
                     <td><div id="card"><img id="img" src="https://unionchemistspharmacy.lk/wp-content/uploads/2023/09/cosmed_urun_750x1000_24-300x300.jpg"/><div id="medname">Vitemin C</div><div id="medprice">Rs.24545.00</div><div id="center"><input type="submit" value="Add to Cart" id="addcart" /></div></div></td>
                 </tr>
                 
                 <tr>
-                    <td><div id="card"><img id="img" src="https://unionchemistspharmacy.lk/wp-content/uploads/2023/09/cosmed_urun_750x1000_24-300x300.jpg"/><div id="medname">Vitemin C</div><div id="medprice">Rs.24545.00</div><div id="center"><input type="submit" value="Add to Cart" id="addcart" /></div></div></td>
+                    <td><div id="card"><img id="img" src="https://unionchemistspharmacy.lk/wp-content/uploads/2023/09/cosmed_urun_750x1000_24-300x300.jpg"/><div id="medname">Vitemin C</div><div id="medprice">Rs.24545.00</div><div id="center"><input type="submit" value="Add to Cart" id="addcart"  /></div></div></td>
                     <td><div id="card"><img id="img" src="https://unionchemistspharmacy.lk/wp-content/uploads/2023/09/cosmed_urun_750x1000_24-300x300.jpg"/><div id="medname">Vitemin C</div><div id="medprice">Rs.24545.00</div><div id="center"><input type="submit" value="Add to Cart" id="addcart" /></div></div></td> 
                     <td><div id="card"><img id="img" src="https://unionchemistspharmacy.lk/wp-content/uploads/2023/09/cosmed_urun_750x1000_24-300x300.jpg"/><div id="medname">Vitemin C</div><div id="medprice">Rs.24545.00</div><div id="center"><input type="submit" value="Add to Cart" id="addcart" /></div></div></td>
                 </tr>
                 <tr>
                    <td><div id="card"><img id="img" src="https://unionchemistspharmacy.lk/wp-content/uploads/2023/09/cosmed_urun_750x1000_24-300x300.jpg"/><div id="medname">Vitemin C</div><div id="medprice">Rs.24545.00</div><div id="center"><input type="submit" value="Add to Cart" id="addcart" /></div></div></td>
                     <td><div id="card"><img id="img" src="https://unionchemistspharmacy.lk/wp-content/uploads/2023/09/cosmed_urun_750x1000_24-300x300.jpg"/><div id="medname">Vitemin C</div><div id="medprice">Rs.24545.00</div><div id="center"><input type="submit" value="Add to Cart" id="addcart" /></div></div></td> 
-                    <td><div id="card"><img id="img" src="https://unionchemistspharmacy.lk/wp-content/uploads/2023/09/cosmed_urun_750x1000_24-300x300.jpg"/><div id="medname">Vitemin C</div><div id="medprice">Rs.24545.00</div><div id="center"><input type="submit" value="Add to Cart" id="addcart" /></div></div></td>
+                    <td><div id="card"><img id="img" src="https://unionchemistspharmacy.lk/wp-content/uploads/2023/09/cosmed_urun_750x1000_24-300x300.jpg"/><div id="medname">Vitemin C</div><div id="medprice">Rs.24545.00</div><div id="center"><input type="submit" value="Add to Cart" id="addcart"<a href=""></a> /></div></div></td>
                 </tr>
-                <tr><td colspan="4>"
+                <tr><td colspan="4">
           <div id="container">
                 <a href="#" id="previous">&laquo;Previous</a>
                 <a href="#" id="next">&raquo;Next</a>
- </div>
+                        </div></td>
         </tr>
             </tbody>
-             
-            
-        </table>
+         </table>
+                  
+                 </td>
+        </tr>
+        </tbody>
+        
+</table>
+
+       
     </body>
 </html>
+    
