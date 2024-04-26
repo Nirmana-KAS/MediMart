@@ -28,7 +28,7 @@
     <br>
     <div class="section2">
       <div class="slide">
-        <img src="images/Natrual_Foods.jpg" alt="Image 1">
+        <img src="images/nfoods.jpg" alt="Image 1">
         <div class="info-box">
           <h2>Naturally<br> Good</h2>
           <p><b>Up To 25% OFF</b><br><br><button class="custom-button">Shop Now</button></p>
