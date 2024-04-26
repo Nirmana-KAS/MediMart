@@ -175,6 +175,15 @@ and open the template in the editor.
               carousel.style.transform = `translateX(${newPosition})`;
             }          
             setInterval(showNextItem, 5000); 
-          </script>        
+          </script> 
+          <section class="description4">
+            <div class="content4">
+              <h1>Thank You For Trusting<br> MEDIMART!</h1>
+              <br>
+                <p>Thank you for entrusting your wellness journey to MediMart, where care meets convenience! Your visit and choice to join us online is a sweet 
+                testament to our commitment to providing top-notch service and quality products. We're honored to be part of your health and well-being, and 
+                we look forward to serving you with dedication and warmth on every step of your healthcare voyage.</p>
+            </div>
+          </section>        
     </body>
 </html>

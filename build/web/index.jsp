@@ -28,28 +28,28 @@
     <br>
     <div class="section2">
       <div class="slide">
-        <img src="imgages/Natrual_Foods.jpg" alt="Image 1">
+        <img src="images/Natrual_Foods.jpg" alt="Image 1">
         <div class="info-box">
           <h2>Naturally<br> Good</h2>
           <p><b>Up To 25% OFF</b><br><br><button class="custom-button">Shop Now</button></p>
         </div>
       </div>
       <div class="slide">
-        <img src="imgages/daily essentials.jpg" alt="Image 2">
+        <img src="images/daily essentials.jpg" alt="Image 2">
         <div class="info-box">
           <h2>Daily Health<br> Essentials</h2>
           <p><b>Up To 15% OFF</b><br><br><button class="custom-button">Shop Now</button></p>
         </div>
       </div>
       <div class="slide">
-        <img src="imgages/medicine.jpg" alt="Image 3">
+        <img src="images/medicine.jpg" alt="Image 3">
         <div class="info-box">
           <h2>High Quality Medicines</h2>
           <p><b>Up To 5% OFF</b><br><br><button class="custom-button">Shop Now</button></p>
         </div>
       </div>
       <div class="slide">
-        <img src="imgages/healthcare.jpg" alt="Image 4">
+        <img src="images/healthcare.jpg" alt="Image 4">
         <div class="info-box">
           <h2>Healthcare Products</h2>
           <p><b>Up To 30% OFF</b><br><br><button class="custom-button">Shop Now</button></p>
@@ -62,21 +62,21 @@
       </div>
     <div class ="description1">
     <div class = "info-content">
-     <img src="imgages/a.jpg" alt="Image 5">  
+     <img src="images/a.jpg" alt="Image 5">  
      <div class="info-box" >     
        <h2>Best In Pharma Service</h2>
        <p>Best In Pharma Service offers top-tier pharmaceutical solutions, delivering excellence in quality, reliability, and innovation to meet diverse healthcare needs.</p>
     </div>
   </div>  
     <div class = "info-content">
-      <img src="imgages/c.jpg" alt="Image 6">
+      <img src="images/c.jpg" alt="Image 6">
       <div class="info-box">  
         <h2>Consult A Doctor Now</h2>
         <p>Instant access to professional medical advice anytime, anywhere. Consult a Doctor Now for quick, personalized assistance.</p>
     </div>
   </div>    
   <div class = "info-content">
-    <img src="imgages/b.jpg" alt="Image 7">
+    <img src="images/b.jpg" alt="Image 7">
     <div class="info-box">  
        <h2>Generic Medicines & Prescription Drugs</h2>
        <p>Quality medicine ensures safe and effective treatment. Trust in your prescription's efficacy and safety with rigorously tested medications meeting stringent quality standards.</p>
@@ -93,19 +93,19 @@
   </div>
   <div class ="description2">
     <div class = "info-content2">
-      <img src="imgages/delivery.jpg" alt="Image 8">  
+      <img src="images/delivery.jpg" alt="Image 8">  
       <div class="info-box" >     
       <h2>Free & Fast Delivery</h2>
     </div>
   </div>  
   <div class = "info-content2">
-    <img src="imgages/save money.jpg" alt="Image 9">
+    <img src="images/save money.jpg" alt="Image 9">
     <div class="info-box">  
     <h2>Saving Money</h2>
   </div>
 </div>  
 <div class = "info-content2">
-    <img src="imgages/time saving.jpg" alt="Image 10">
+    <img src="images/time saving.jpg" alt="Image 10">
     <div class="info-box">  
     <h2>Saving Time</h2>
   </div>
@@ -120,7 +120,7 @@
         above all else, delivering nothing short of excellence straight to your doorstep.</p>
   </div>
   <div class="slide6">
-    <img src="imgages/c1.jpg" alt="Image 11">
+    <img src="images/c1.jpg" alt="Image 11">
   </div>
 </div>
 <div class="description5">
@@ -129,19 +129,19 @@
   </div>
   <div class="section5">
   <div class="slide">
-    <img src="imgages/img1.jpg" alt="Image 12">
+    <img src="images/img1.jpg" alt="Image 12">
   </div>
   <div class="slide">
-    <img src="imgages/img 2.jpg" alt="Image 13">
+    <img src="images/img 2.jpg" alt="Image 13">
   </div>
   <div class="slide">
-    <img src="imgages/img3.jpg" alt="Image 14">
+    <img src="images/img3.jpg" alt="Image 14">
   </div>
   <div class="slide">
-    <img src="imgages/img4.jpg" alt="Image 15">
+    <img src="images/img4.jpg" alt="Image 15">
   </div>
   <div class="slide">
-    <img src="imgages/img5.jpg" alt="Image 15">
+    <img src="images/img5.jpg" alt="Image 15">
   </div>
   </div>
   <div class="section6">
@@ -155,7 +155,7 @@
   </div>
   <div class="description4">
     <div class="info-content3">
-      <img src="imgages/covid-19.jpg" alt="Image 16">  
+      <img src="images/covid-19.jpg" alt="Image 16">  
       <div class="info-box" >     
         <h2>4 Years In, a Sobering Look at Long COVID Progress</h2>
         <p>Four years ago in the spring of 2020, physicians and patients coined the term "long COVID" to describe 
@@ -168,7 +168,7 @@
      </div>
     </div>
     <div class="info-content3">
-      <img src="imgages/future.jpg" alt="Image 17">  
+      <img src="images/future.jpg" alt="Image 17">  
       <div class="info-box" >     
         <h2>The Future of Pharmacy: How Advancements in Technology Are Transforming the Field</h2>
         <p>Rapid technological advancements have reshaped various aspects of our world, prompting discussions on the value of human connection, 
@@ -180,7 +180,7 @@
      </div>
     </div>
     <div class="info-content3">
-      <img src="imgages/migraine.jpeg" alt="Image 18">  
+      <img src="images/migraine.jpeg" alt="Image 18">  
       <div class="info-box" >     
         <h2>Extension Trial Analysis Shows Long-Term Safety, Efficacy of Atogepant in Patients With Migraines</h2>
         <p>Results from the open-label, 156-week extension phase 3 trial (NCT04686136) that evaluated the long-term safety and tolerability 
