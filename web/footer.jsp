@@ -13,6 +13,7 @@ and open the template in the editor.
     </head>
     <body>
         <!-- Footer section start -->
+        <footer>
             <div class="footer">
                 <!-- Fist left side on footer -->
                     <div class="first-left">
