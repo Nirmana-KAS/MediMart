@@ -95,4 +95,28 @@
         }
 
         setInterval(slide, 3000);
+
+
+        document.getElementById('sort').addEventListener('change', function() {
+        const sortBy = this.value;
+        let sortedProducts = [];
+
+        switch (sortBy) {
+            case 'price_low_to_high':
+                sortedProducts = products.slice().sort((a, b) => a.price - b.price);
+                break;
+            case 'price_high_to_low':
+                sortedProducts = products.slice().sort((a, b) => b.price - a.price);
+                break;
+            case 'name_a_to_z':
+                sortedProducts = products.slice().sort((a, b) => a.name.localeCompare(b.name));
+                break;
+            case 'name_z_to_a':
+                sortedProducts = products.slice().sort((a, b) => b.name.localeCompare(a.name));
+                break;
+            default:
+                sortedProducts = products.slice();
+                break;
+        }
+
     </script>
