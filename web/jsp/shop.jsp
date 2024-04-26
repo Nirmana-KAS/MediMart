@@ -52,30 +52,6 @@
         </tr>
             <tbody>
                 <tr>
-                  <td rowspan="3" id="leftbox">
-                    <div id="a">
-                      <h5> Sort By</h5>
-                      <select name="sory by" id="sort">
-                         <option>Default</option>
-                         <option>price law to high</option>
-                         <option></option>
-                         <option></option>
-                       </select>
-                    </div>
-                       
-                    <div id="filterBox">
-                      <h2>Product Catalog</h2>
-                        <label>
-                            <input type="checkbox" class="filter-checkbox" value="category1"> Category 1<br>
-                        </label>
-                        <label>
-                            <input type="checkbox" class="filter-checkbox" value="category1"> Category 1<br>
-                        </label>
-                        <label>
-                            <input type="checkbox" class="filter-checkbox" value="category1"> Category 1<br>
-                        </label>
-                    </div>
-                  </td>
                     
                         <td><div id="card"><img id="img" src="https://unionchemistspharmacy.lk/wp-content/uploads/2023/09/cosmed_urun_750x1000_24-300x300.jpg"/><div id="medname">Vitemin C</div><div id="medprice">Rs.24545.00</div><div id="center"><input type="submit" value="Add to Cart" id="addcart" /></div></div></td>
                         <td><div id="card"><img id="img" src="https://unionchemistspharmacy.lk/wp-content/uploads/2023/09/cosmed_urun_750x1000_24-300x300.jpg"/><div id="medname">Vitemin C</div><div id="medprice">Rs.24545.00</div><div id="center"><input type="submit" value="Add to Cart" id="addcart" /></div></div></td> 
@@ -103,12 +79,20 @@
             </tbody>
         </table>
        <script>
-      $(document).ready(function(){
-        $('.slick-carousel').slick({
-          autoplay: true,
-          autoplaySpeed: 2000, // Adjust as needed
-          arrows: true, // Enable navigation arrows
-          dots: true // Enable navigation dots
-        });
-      });
+     const carousel = document.querySelector('.carousel');
+        const images = document.querySelector('.carousel-images');
+
+        let counter = 1;
+        const size = carousel.clientWidth;
+
+        function slide() {
+            if (counter >= images.children.length) {
+                counter = 0;
+            }
+            images.style.transition = 'transform 0.5s ease-in-out';
+            images.style.transform = `translateX(-${counter * size}px)`;
+            counter++;
+        }
+
+        setInterval(slide, 3000);
     </script>
