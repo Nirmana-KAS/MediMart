@@ -29,15 +29,7 @@
             <!-- Container for sort by, filter section, and quantity controls -->
             <div class="options-container">
                 <!-- Sort by list -->
-                <div class="sort-by">
-                    <label for="sort">Sort By:</label>
-                    <select name="sort" id="sort">
-                        <option value="price_low_to_high">Price Low to High</option>
-                        <option value="price_high_to_low">Price High to Low</option>
-                        <option value="name_a_to_z">Name A to Z</option>
-                        <option value="name_z_to_a">Name Z to A</option>
-                    </select>
-                </div>
+               
         
                 <!-- Filter section -->
                 <div class="filter-section">
