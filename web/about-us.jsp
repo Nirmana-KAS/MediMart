@@ -16,7 +16,7 @@ and open the template in the editor.
             <jsp:include page="Header.jsp" /> 
             <div class="description">
                 <div class="slide">
-                    <img src="b6.jpg" alt="Image 11">
+                    <img src="images/b6.jpg" alt="Image 11">
                   </div>      
                 <div class="content">
                   <h2><b>Get To Know MEDIMART</b></h2>
@@ -39,7 +39,7 @@ and open the template in the editor.
                 </div>        
         <div class="slide2">
               <div class="info-box">
-                <img src="gq.jpeg" alt="Image 1">
+                <img src="images/gq.jpeg" alt="Image 1">
                 <div class="info-content">
                     <h2>Good Quality</h2>
                     <p>Discover premium health solutions at MediMart! From trusted brands to rigorously tested medications, 
@@ -47,7 +47,7 @@ and open the template in the editor.
                 </div>
             </div>       
             <div class="info-box">
-                <img src="free d.jpg" alt="Image 2">
+                <img src="images/free d.jpg" alt="Image 2">
                 <div class="info-content">
                     <h2>Free Delivery</h2>
                     <p>Enjoy the convenience of doorstep delivery with MediMart! Get your essential medications delivered for free, right to your doorstep. 
@@ -55,7 +55,7 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="info-box">
-                <img src="safety.jpg" alt="Image 3">
+                <img src="images/safety.jpg" alt="Image 3">
                 <div class="info-content">
                     <h2>Safety</h2>
                     <p>Discover peace of mind with MediMart's safety-first approach to medicines. Our meticulously curated selection ensures every product meets stringent quality standards, 
