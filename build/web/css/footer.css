@@ -1,1 +1,99 @@
-/*footer css*/
+/*footer styles start*/
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #33b90a;
+    color: rgb(255, 255, 255);
+  }
+  
+  /*First left side footer styles start*/
+  .first-left {
+   display: flex;
+   float: left;
+   margin-left: 50px;
+  }
+  
+  .first-left ul {
+   list-style: none;
+   justify-content: center;
+   align-items: center;
+  }
+  
+  .decription-footer {
+   justify-content: center;
+   
+  }
+  
+  .first-left li{
+   display: flex;
+   justify-content: center;
+   
+  }
+  
+  .first-left p {
+   font-size: 15px;
+  }
+   
+  .first-left .decription-footer .medimart-logo  {
+   width: 150px;
+   background-color: #ffffff;
+   border-radius: 90px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+  }
+  
+  .footer-social-links a{
+   margin: 0px 25px 0px 0px;
+  }
+  
+  .foot-facebook-logo {
+   width: 25px;
+  }
+  
+  .foot-messenger-logo{
+   width: 25px;
+  }
+  
+  .foot-whatsapp-logo {
+   width: 25px;
+  }
+  
+  .foot-email-logo {
+  width: 25px;
+  }
+  /*First left side footer styles end*/
+  
+  /*Second left side footer styles start*/
+  .second-left {
+  display: flex;
+  float: left;
+  margin: 15px 100px 0px 300px;
+  }
+  
+  .footer .second-left ul {
+  list-style-image: url('img/MEDIMartOnlyLogo.png');
+  }
+  
+  .footer .second-left li {
+  margin-top: 20px;
+  font-size: 17px;
+  color: #ffffff;
+  }
+  
+  .footer .second-left a:hover {
+  color: black;
+  text-decoration: none;
+  }
+  
+  .footer .second-left a {
+  color: #ffffff;
+  margin-left: 10px;
+  }
+  /*Second left side footer styles end*/
+  /*All footer styles end*/
+  
+  
+  
+  
+  
