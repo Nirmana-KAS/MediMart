@@ -196,7 +196,7 @@
       <div class="info-box3" >     
         <h2>Extension Trial Analysis Shows Long-Term Safety, Efficacy of Atogepant in Patients With Migraines</h2>
         <p>Results from the open-label, 156-week extension phase 3 trial (NCT04686136) that evaluated the long-term safety and tolerability 
-          of atogepant (Qulipta; AbbVie) for the prevention of migraines in patients with chronic or episodic migraine were announced. The findings demonstrated that atogepantâs 
+          of atogepant for the prevention of migraines in patients with chronic or episodic migraine were announced. The findings demonstrated that atogepantâs 
           safety profile was consistent with previous data and no new safety signals were detected. The findings will be presented at the American Academy of 
           Neurology Annual Meeting from April 13, 2024, to April 18, 2024, in Denver, Colorado.
         <br>
