@@ -1,103 +1,209 @@
 body{
-    background-color:  #e6ffff;
+    background-color: #e6f9ff;
     align-content: center;
-    margin: 30px 30px 30px 150px;
-}
-div#card{
-    height: 300px;
-    width: 250px;
-    box-shadow: 2px 2px 4px 4px #e0e0e0;
-    margin-left: 20px;
-    margin-right: 10px;
-    background-color: #b3ffff;
-    margin-bottom: 20px;
-}
- div#card:hover {
-     background-color:#b3ffd9;
- }
-
-div#card:active {
-    background-color: #00e6e6;
-    box-shadow: 0 3px #666;
-    transform: translateY(1px);
-}
-img#img{
-     height: 150px;
-    width: 150px;
-    margin-left: 40px;
-    margin-right:40px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-div#medname{
-    font-family:timesnewroman;
-    font-size: 20px;
-    text-align: center;
-    color: black;
-    font-weight: bold;
-}
-div#medprice{
-    font-family:	Arial;
-    font-size: 12px;
-    text-align: center;
-    margin-top: 10px;
-    color: #2af4e5;
-   
-    border-top: 6px;
-    padding-bottom:10px;
-}
-
-#addcart{
-    background-color: #00cccc;
-    color: #91fffa;
-    border:none; 
-    margin-left: 80px;
-    font-size: 15px;
-}
-
-#addcart:hover {background-color: #006666}
-
-#addcart:active {
-    background-color: #003333;
-    box-shadow: 0 3px #666;
-    transform: translateY(4px);
-}
-
- a#previous{
-     background-color: chocolate;
-      margin-left: 100px;
-                  margin-right: 100px;
-}  
-    div#container{font-size: 30px;
-                  justify-content: center;
-                  align-items: center;
-                  margin-left: 100px;
-                  margin-right: 100px;
+    margin: 10px 30px 0px 20px;
+    
     }
-    div#main{
-        box-sizing:inherit;
-        background-color: #e6fff2;
-        
-    }
-    div#filterBox{
-        flex-basis: 100%;
+    /* Carousel container */
+    .carousel {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Example height, adjust as needed */
+    overflow: hidden; 
     }
     
-    #product{
-        flex-basis: 20%;
-        display:flex;
-        justify-content: space-between;
-        margin-left: 50px
+    /* Image container */
+    .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
     }
-    #catetorylist label{
-        display: block;
-        padding: 10px;
+    .carousel-image {
+    flex: 0 0 100%; /* Each image takes up the full width of the container */
     }
-    #leftbox{
-        background-color: #e6fff2;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 200px;
-        padding-top: 50px;
-        
+    
+    /* Individual images */
+    .carousel-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     }
+    
+    
+    /* Product grid */
+    .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 40px;
+    }
+    
+    /* Product card */
+    .product-card {
+    height: 300px;
+    width: 250px;
+    box-shadow: 2px 2px 3px 3px #e6f9ff;
+    padding: 10px;
+    background-color:#b3ecff;
+    margin-bottom: 20px;
+    text-decoration:none;
+    align-content: center;
+    }
+    
+    .product-card:hover .description {
+    display: block;
+    }
+    
+    
+    /* Hover effect: Scale up when hovering */
+    .product-card:hover {
+    transform: scaleX(1.05) scaleY(1.25); /* Increase size by 5% */
+    }
+    
+    .card-content {
+    /* Set card content styles */
+    text-align: center; /* Center align content within the card */
+    
+    }
+    
+    
+    /* Product description */
+    .description {
+    display: none;
+    }
+    
+    /* Sort by list */
+    .sort-by {
+    margin-bottom: 10px;
+    margin-right: 20px;
+    padding-bottom: 40px; 
+    
+    
+    }
+    
+    /* Filter section */
+    .filter-section {
+    margin-bottom: 10px;
+    
+    }
+    
+    /* Filter checkbox */
+    .filter-checkbox {
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    
+    }
+    
+    .options-container{
+    float: left;
+    padding: 40px 20px 20px 40px;
+    color:#ffffff;
+    margin:40px 50px;
+    background-color: #0099cc;
+    
+    }
+    
+    /* Add to cart button */
+    .add-to-cart-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0099cc;
+    
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family:Lucia Sans;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /* Pagination buttons */
+    .pagination {
+    margin: 20px 20px 60px 60px;
+    align-content: center;
+    text-align: center;
+    }
+    
+    .pagination button {
+    
+    background-image: linear-gradient(#f7f8fa ,#e7e9ec);
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    box-shadow: rgba(255,255,255,.6) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 14px;
+    height: 29px;
+    font-size: 13px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 11px;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    }
+    
+    .pagination button:active {
+    border-bottom-color: #a2a6ac;
+    }
+    
+    .pagination button:active:hover {
+    border-bottom-color: #a2a6ac;
+    }
+    
+    .pagination button:hover {
+    border-color: #a2a6ac #979aa1 #82858a;
+    }
+    
+    .pagination button:focus {
+    border-color:#b3b3b3;
+    box-shadow:#b3b3b3 0 0 3px 2px;
+    outline: 0;
+    }
+    
+    
+    
+    /* Product image */
+    .product-image {
+    width: 100%;
+    height: auto;
+        }
+    .slogan-head  {
+    position: absolute;
+    top: 78%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: #0747a1;
+    padding: 10px 0px;
+    font-size: 35px;
+    font-family:serif;
+    
+    }
+    
+    .slogan-description  {
+    position: absolute;
+    top: 91%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    color:#03002e;
+    padding: 10px 10px;
+    font-size: 19px;
+    font-family:Georgia;
+    }
+    
