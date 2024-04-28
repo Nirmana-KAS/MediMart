@@ -125,7 +125,9 @@ and open the template in the editor.
                                     <div class="Sign-links">
                                         <a href="#about" class="active">SIGN IN / UP</a>
                                     </div>
-                                    <a href="#shoppingcart" class=""><img class="Shoppingcartwhite" src="images/Shoppingcartwhite.png" alt=""></a>
+                                    <div class="shoppingcart-links">
+                                        <a href="#shoppingcart" class=""><img class="shopping-cart" src="images/ShoppingCartBlack.png" alt="shopping-cart"></a>
+                                    </div>
                                 </div>
                         </div>
                     <!-- Navbar end -->

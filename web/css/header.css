@@ -4,7 +4,7 @@
 /* Topbar Styles*/
 .header .topbar{
     overflow: hidden;
-      background-color:#17D2C4;
+    background-color:#17D2C4;
   }
   
   /* Topbar Left Side Styles*/
@@ -14,7 +14,7 @@
   }
   
   .topbar .left-side a{
-    padding: 2px 10px 2px 10px;
+    padding: 0px 10px 0px 10px;
     text-decoration: none;
     font-size: 12px;
     color: #000000;
@@ -41,6 +41,7 @@
   .topbar .right-side{
     float: right;
     display: flex;
+    justify-content: center;
   }
   
   .topbar .right-side a{
@@ -75,7 +76,6 @@
   }
   
   .topbar .right-side .social-links .follow {
-    margin-top: px;
     margin-right: 10px;
     margin-left: 10px;
   }
@@ -114,10 +114,8 @@
 .topnav {
   background-color: #17D2C4;
   overflow: hidden;
-  border-radius: 0;
   font-family: Arial;
   font-weight: 700;
-  padding: 10px 10px 9px 10px;
 }
 
 /* Navbar on left side styles started */
@@ -125,16 +123,16 @@
   float: left;
   color: #000000;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 20px 16px 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 110%;
+  align-items: center;
 }
 
 /* Change the color of left side Navbar links on hover */
 .topnav-left a:hover {
   background-color: #00FFB0;
   color: rgb(0, 0, 0);
-  border-radius: 25px;
 }
 
 /* Dropdown Menu Style Started */
@@ -144,15 +142,14 @@
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 120%;  
   border: none;
   outline: none;
   color: rgb(0, 0, 0);
-  padding: 14px 16px;
+  padding: 16px 20px 16px 20px;
   background-color: inherit;
   font: inherit;
   margin: 0;
-  border-radius: 25px;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -168,7 +165,6 @@
   left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  border-radius: 25px;
   overflow: hidden;
 }
 
@@ -176,7 +172,6 @@
   background: #00FFB0;
   padding: 16px;
   color: rgb(0, 0, 0);
-  border-radius: 25px 25px 0px 0px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -219,10 +214,10 @@
 .topnav-centered {
   float: none;
   position: absolute;
-  margin-left: 42%;
-  border: 5px solid rgb(128, 128, 128);
+  margin-left: 42.5%;
   border-radius: 25px;
   font-weight: 700;
+  margin-top: 6px;
 }
 
 /* Seerch bar styles Started */
@@ -233,11 +228,6 @@
   font-size: 17px;
   border: none;
   border-radius: 20px 0px 0px 20px;
-}
-
-/* Change the color of links on hover */
-.topnav-centered:hover{
-  border: 5px solid #00FFB0;
 }
 
 /* Seerch bar Search button styles Started */
@@ -263,36 +253,37 @@
 /* Sign in & Sign up Styles */
 .topnav-right a{
   float: right;
+}
+
+.topnav-right .Sign-links a{
+  font-size: 110%;
   color: #000000;
   text-align: center;
-  padding: 13px 16px 9px 16px;
+  padding: 17px 20px 16px 20px;
   text-decoration: none;
-  font-size: 17px;
-  align-items: center;
-  margin-left: 10px;
+  align-items: center;  
 }
 
 .topnav-right a:hover {
   background: #00FFB0;
-  border-radius: 50px;
 }
 
-.topnav-right a.active{
+.topnav-right .Sign-links .a active{
   color: #000000;
-  border-radius: 25px;
-  border: 4px solid #00FFB0;
 }
 
-.topnav-right a.active:hover{
+.topnav-right .Sign-links a.active:hover{
   color: #ffffff;
-  border-radius: 25px;
-  border: 4px solid #00FFB0;
-  background: none;
 }
 
 /* Shoping Cart img Styles */
-.topnav-right a .Shoppingcartwhite{
-  width: 33px;
+.shoppingcart-links a{
+    padding: 7.5px 0px 7.5px 0px;
+    text-align: center;
+}
+
+.topnav-right a .shopping-cart{
+  width: 30%;
 }
 /* Right-aligned Side Styles Ended */
 /* Navbar Styles Ended */
