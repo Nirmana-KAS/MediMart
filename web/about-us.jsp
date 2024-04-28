@@ -12,7 +12,6 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/about-us.css"> 
     </head>
     <body>
-        <body>
             <jsp:include page="Header.jsp" /> 
             <div class="description">
                 <div class="slide">
