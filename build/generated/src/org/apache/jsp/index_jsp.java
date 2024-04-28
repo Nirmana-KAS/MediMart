@@ -55,7 +55,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write(" \r\n");
       out.write("        </div>\r\n");
       out.write("      <section class=\"hero-section\">\r\n");
-      out.write("        <img src=\"images/b3.jpg\" alt=\"hero Background Image\" style=\"position:relative;width: 2000px; height: 1200px; z-index: -1;\">\r\n");
+      out.write("        <img src=\"images/b3.jpg\" alt=\"hero Background Image\" style=\"position:relative;width: 2000px; height: 1000px; z-index: -1;\">\r\n");
       out.write("        <div class=\"hero-content\">\r\n");
       out.write("          <h1>WELCOME TO MEDIMART</h1>\r\n");
       out.write("          <p><b>Your Trusted Online Pharmacy Destination!</b><br>\r\n");
@@ -141,19 +141,19 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("  <div class =\"description2\">\r\n");
       out.write("    <div class = \"info-content2\">\r\n");
       out.write("      <img src=\"images/delivery.jpg\" alt=\"Image 8\">  \r\n");
-      out.write("      <div class=\"info-box\" >     \r\n");
+      out.write("      <div class=\"info-box1\" >     \r\n");
       out.write("      <h2>Free & Fast Delivery</h2>\r\n");
       out.write("    </div>\r\n");
       out.write("  </div>  \r\n");
       out.write("  <div class = \"info-content2\">\r\n");
       out.write("    <img src=\"images/save money.jpg\" alt=\"Image 9\">\r\n");
-      out.write("    <div class=\"info-box\">  \r\n");
+      out.write("    <div class=\"info-box1\">  \r\n");
       out.write("    <h2>Saving Money</h2>\r\n");
       out.write("  </div>\r\n");
       out.write("</div>  \r\n");
       out.write("<div class = \"info-content2\">\r\n");
       out.write("    <img src=\"images/time saving.jpg\" alt=\"Image 10\">\r\n");
-      out.write("    <div class=\"info-box\">  \r\n");
+      out.write("    <div class=\"info-box1\">  \r\n");
       out.write("    <h2>Saving Time</h2>\r\n");
       out.write("  </div>\r\n");
       out.write("</div>\r\n");
@@ -203,7 +203,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("  <div class=\"description4\">\r\n");
       out.write("    <div class=\"info-content3\">\r\n");
       out.write("      <img src=\"images/covid-19.jpg\" alt=\"Image 17\">  \r\n");
-      out.write("      <div class=\"info-box\" >     \r\n");
+      out.write("      <div class=\"info-box3\" >     \r\n");
       out.write("        <h2>4 Years In, a Sobering Look at Long COVID Progress</h2>\r\n");
       out.write("        <p>Four years ago in the spring of 2020, physicians and patients coined the term \"long COVID\" to describe \r\n");
       out.write("          a form of the viral infection from which recovery seemed impossible. (And the old nickname \"long-haulers\" seems so quaint now.)\r\n");
@@ -216,7 +216,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </div>\r\n");
       out.write("    <div class=\"info-content3\">\r\n");
       out.write("      <img src=\"images/future.jpg\" alt=\"Image 18\">  \r\n");
-      out.write("      <div class=\"info-box\" >     \r\n");
+      out.write("      <div class=\"info-box3\" >     \r\n");
       out.write("        <h2>The Future of Pharmacy: How Advancements in Technology Are Transforming the Field</h2>\r\n");
       out.write("        <p>Rapid technological advancements have reshaped various aspects of our world, prompting discussions on the value of human connection, \r\n");
       out.write("          particularly in patient care within the field of pharmacy. Interestingly, many technological innovations in pharmacy not only preserve but also enhance \r\n");
@@ -228,7 +228,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </div>\r\n");
       out.write("    <div class=\"info-content3\">\r\n");
       out.write("      <img src=\"images/migraine.jpeg\" alt=\"Image 19\">  \r\n");
-      out.write("      <div class=\"info-box\" >     \r\n");
+      out.write("      <div class=\"info-box3\" >     \r\n");
       out.write("        <h2>Extension Trial Analysis Shows Long-Term Safety, Efficacy of Atogepant in Patients With Migraines</h2>\r\n");
       out.write("        <p>Results from the open-label, 156-week extension phase 3 trial (NCT04686136) that evaluated the long-term safety and tolerability \r\n");
       out.write("          of atogepant (Qulipta; AbbVie) for the prevention of migraines in patients with chronic or episodic migraine were announced. The findings demonstrated that atogepantâs \r\n");

@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -122,10 +122,12 @@ and open the template in the editor.
                                 </div>
                             <!-- Right area on Navbar -->
                                 <div class="topnav-right">
+                                    <div class="shoppingcart-link">
+                                        <a href="#shoppingcart" class=""><img class="shopping-cart" src="images/ShoppingCartBlack.png" alt="shopping-cart"></a>
+                                    </div>
                                     <div class="Sign-links">
                                         <a href="#about" class="active">SIGN IN / UP</a>
                                     </div>
-                                    <a href="#shoppingcart" class=""><img class="Shoppingcartwhite" src="images/Shoppingcartwhite.png" alt=""></a>
                                 </div>
                         </div>
                     <!-- Navbar end -->
