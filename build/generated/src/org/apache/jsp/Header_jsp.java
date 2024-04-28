@@ -41,7 +41,7 @@ public final class Header_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write(" <!DOCTYPE html>\r\n");
+      out.write("<!DOCTYPE html>\r\n");
       out.write("<!--\r\n");
       out.write("To change this license header, choose License Headers in Project Properties.\r\n");
       out.write("To change this template file, choose Tools | Templates\r\n");

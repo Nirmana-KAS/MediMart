@@ -5,7 +5,7 @@
 .header .topbar{
     overflow: hidden;
     background-color:#17D2C4;
-  }
+ }
   
   /* Topbar Left Side Styles*/
   .topbar .left-side{
@@ -14,7 +14,7 @@
   }
   
   .topbar .left-side a{
-    padding: 0px 10px 0px 10px;
+    padding: 2px 10px 2px 10px;
     text-decoration: none;
     font-size: 12px;
     color: #000000;
@@ -41,7 +41,6 @@
   .topbar .right-side{
     float: right;
     display: flex;
-    justify-content: center;
   }
   
   .topbar .right-side a{
@@ -76,6 +75,7 @@
   }
   
   .topbar .right-side .social-links .follow {
+    margin-top: px;
     margin-right: 10px;
     margin-left: 10px;
   }
@@ -123,10 +123,9 @@
   float: left;
   color: #000000;
   text-align: center;
-  padding: 16px 20px 16px 20px;
+  padding: 15px 16px;
   text-decoration: none;
-  font-size: 110%;
-  align-items: center;
+  font-size: 17px;
 }
 
 /* Change the color of left side Navbar links on hover */
@@ -142,11 +141,11 @@
 }
 
 .dropdown .dropbtn {
-  font-size: 120%;  
+  font-size: 17px;  
   border: none;
   outline: none;
   color: rgb(0, 0, 0);
-  padding: 16px 20px 16px 20px;
+  padding: 15px 16px;
   background-color: inherit;
   font: inherit;
   margin: 0;
@@ -215,9 +214,8 @@
   float: none;
   position: absolute;
   margin-left: 42.5%;
-  border-radius: 25px;
   font-weight: 700;
-  margin-top: 6px;
+  margin-top: 5px;
 }
 
 /* Seerch bar styles Started */
@@ -251,39 +249,30 @@
 
 /* Right-aligned Side Styles Started */
 /* Sign in & Sign up Styles */
-.topnav-right a{
+.topnav-right {
+  display: flex;
   float: right;
+  color: #000000;
 }
 
 .topnav-right .Sign-links a{
-  font-size: 110%;
-  color: #000000;
-  text-align: center;
-  padding: 17px 20px 16px 20px;
+  float: right;
+  padding: 16.5px;
   text-decoration: none;
-  align-items: center;  
+}
+
+.topnav-right .shoppingcart-link a{
+  float: right;
+  padding: 8px 16px 8px 16px;
 }
 
 .topnav-right a:hover {
   background: #00FFB0;
 }
 
-.topnav-right .Sign-links .a active{
-  color: #000000;
-}
-
-.topnav-right .Sign-links a.active:hover{
-  color: #ffffff;
-}
-
 /* Shoping Cart img Styles */
-.shoppingcart-links a{
-    padding: 7.5px 0px 7.5px 0px;
-    text-align: center;
-}
-
 .topnav-right a .shopping-cart{
-  width: 30%;
+  width: 40px;
 }
 /* Right-aligned Side Styles Ended */
 /* Navbar Styles Ended */
