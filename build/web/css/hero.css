@@ -1,10 +1,5 @@
 
       /* CSS styles for the hero section */
-      body{
-         background:cover;
-         background-size:2000px 1050px; 
-         background-repeat: no-repeat;
-       }
        .hero-section {
          margin-top: 70px;
          position: relative;
@@ -193,7 +188,7 @@
         display:flex;
         background-color: #bcf3f4;
         width: auto;
-        height: 30%;
+        height: 40%;
         padding-bottom: 80px;
         padding-left: 10%;
         padding-top: 5%;
@@ -306,9 +301,6 @@
         border-radius: 2%;
      }
      .info-content3 img {
-         padding-top: 10px;
-         width: 60%;
-         height:80%;
          width: 60%;
          height:100%;
          margin-left: 15px;
