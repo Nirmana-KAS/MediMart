@@ -21,7 +21,7 @@
                         <div class="first-left">
                             <ul class="about-footer-links">
                                 <li>
-                                    <a href="http://"><img class="medimart-logo" src="images/Medi Mart Logo New 1.png" alt="medimart-logo"></a>
+                                    <a href="http://"><img class="medimart-logo" src="images/MediMartFootLogo.png" alt="medimart-logo"></a>
                                 </li>
                                 <li>
                                     <p class="About-footer">
