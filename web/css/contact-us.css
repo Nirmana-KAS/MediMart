@@ -59,85 +59,97 @@ body {
     top: 80%; /* Adjust the top position of the vector */
     left: 30%; /* Adjust the left position of the vector */
 }
-
-form{
-    background: #ffff;
+.tableform {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    padding: 2vw 4vw;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+} 
+
+.table-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
-form h2{
+
+.form-column {
+    padding: 0 5%; /* Add padding for spacing between columns */
+}
+
+table {
+    width: 80%; /* Adjust as needed */
+    border-collapse: collapse;
+}
+.image-column {
+    width: 50%; /* Adjust as needed */
+}
+
+.form-column {
+    width: 50%; /* Adjust as needed */
+    vertical-align: top;
+}
+
+.large-image {
+    background: #ffff;
+    padding: 2vw; /* Reduce padding to decrease the size of the form area */
+    border-radius: 5px;
+    text-align: center; /* Center the content in the large-image div */
+}
+
+.image-column {
+    width: 30%; /* Adjust the width of the image column */
+}
+.form-column {
+    width: 70%; /* Adjust the width of the form column */
+
+}
+
+.large-image img {
+    width: 100%; /* Make the image take full width of its container */
+}
+
+form {
+    background: #ffff;
+    padding: 2vw; /* Reduce padding to decrease the size of the form area */
+    border-radius: 5px;
+    max-width: 70%; /* Limit the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+}
+form h2 {
     text-align: center;
     color: #555;
     font-weight: 800;
     margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-form input,form textarea{
+form input, form textarea {
     border: 0;
-    margin: 10px 0;
-    padding: 20px;
+    margin: 10px auto; /* Center the input fields horizontally */
+    padding: 15px; /* Increase padding to make input fields larger */
     outline: none;
     background: #f5f5f5;
     font-size: 16px;
+    width: calc(100% - 30px); /* Adjust the width of input fields */
+    display: block; /* Ensure input fields take full width */
+}
+form textarea {
+    height: 100px; /* Increase height of textarea */
 }
 
-form button{
-    padding: 15px;
+form button {
+    padding: 12px; /* Reduce padding to make the button smaller */
     background: #ff5361;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px; /* Reduce font size to fit smaller button */
     border: none;
     outline: none;
     cursor: pointer;
-    width: 200px;
-    margin: 20px auto 0;
+    width: 50%; /* Make the button take half width of its container */
+    margin: 20px auto; /* Center the button horizontally */
+    display: block; /* Ensure button takes full width */
     border-radius: 30px; 
+    font-family: 'Times New Roman', Times, serif;
 }
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .copyright {
-    font-size: 14px;
-  }
-
-.social-icons {
-    text-align: center;
-    margin-bottom: 20px;
-}
-   
-.social-icons a {
-    display: inline-block;
-    margin: 0 10px;
-}
-.social-icons img {
-    width: 40px;
-    height: 40px;
-}
-.contact-info {
-            margin-top: 30px;
-        }
-        .contact-info h3 {
-            margin-bottom: 10px;
-        }
-        .contact-info p {
-            margin-bottom: 5px;
-        }
-.confirmation-message {
-            display: none;
-            background-color: #dff0d8;
-            color: #3c763d;
-            border: 1px solid #d6e9c6;
-            border-radius: 4px;
-            padding: 15px;
-            margin-top: 20px;
-        }
