@@ -4,8 +4,8 @@
 /* Topbar Styles*/
 .header .topbar{
     overflow: hidden;
-      background-color:#17D2C4;
-  }
+    background-color:#17D2C4;
+ }
   
   /* Topbar Left Side Styles*/
   .topbar .left-side{
@@ -107,17 +107,15 @@
 
 /* Main Logo Styles */
 .MainLogo {
-  width: 150px;
+  width: 160px;
 }
 
 /* Start Navbar Styles */
 .topnav {
   background-color: #17D2C4;
   overflow: hidden;
-  border-radius: 35px;
   font-family: Arial;
   font-weight: 700;
-  padding: 10px 10px 9px 10px;
 }
 
 /* Navbar on left side styles started */
@@ -125,7 +123,7 @@
   float: left;
   color: #000000;
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -134,7 +132,6 @@
 .topnav-left a:hover {
   background-color: #00FFB0;
   color: rgb(0, 0, 0);
-  border-radius: 25px;
 }
 
 /* Dropdown Menu Style Started */
@@ -144,15 +141,14 @@
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 17px;  
   border: none;
   outline: none;
   color: rgb(0, 0, 0);
-  padding: 14px 16px;
+  padding: 15px 16px;
   background-color: inherit;
   font: inherit;
   margin: 0;
-  border-radius: 25px;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -168,7 +164,6 @@
   left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  border-radius: 25px;
   overflow: hidden;
 }
 
@@ -176,7 +171,6 @@
   background: #00FFB0;
   padding: 16px;
   color: rgb(0, 0, 0);
-  border-radius: 25px 25px 0px 0px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -219,10 +213,9 @@
 .topnav-centered {
   float: none;
   position: absolute;
-  margin-left: 42%;
-  border: 5px solid rgb(128, 128, 128);
-  border-radius: 25px;
+  margin-left: 42.5%;
   font-weight: 700;
+  margin-top: 5px;
 }
 
 /* Seerch bar styles Started */
@@ -233,11 +226,6 @@
   font-size: 17px;
   border: none;
   border-radius: 20px 0px 0px 20px;
-}
-
-/* Change the color of links on hover */
-.topnav-centered:hover{
-  border: 5px solid #00FFB0;
 }
 
 /* Seerch bar Search button styles Started */
@@ -261,38 +249,30 @@
 
 /* Right-aligned Side Styles Started */
 /* Sign in & Sign up Styles */
-.topnav-right a{
+.topnav-right {
+  display: flex;
   float: right;
   color: #000000;
-  text-align: center;
-  padding: 13px 16px 9px 16px;
+}
+
+.topnav-right .Sign-links a{
+  float: right;
+  padding: 16.5px;
   text-decoration: none;
-  font-size: 17px;
-  align-items: center;
-  margin-left: 10px;
+}
+
+.topnav-right .shoppingcart-link a{
+  float: right;
+  padding: 8px 16px 8px 16px;
 }
 
 .topnav-right a:hover {
   background: #00FFB0;
-  border-radius: 50px;
-}
-
-.topnav-right a.active{
-  color: #000000;
-  border-radius: 25px;
-  border: 4px solid #00FFB0;
-}
-
-.topnav-right a.active:hover{
-  color: #ffffff;
-  border-radius: 25px;
-  border: 4px solid #00FFB0;
-  background: none;
 }
 
 /* Shoping Cart img Styles */
-.topnav-right a .Shoppingcartwhite{
-  width: 33px;
+.topnav-right a.shopping-cart{
+  width: 40px;
 }
 /* Right-aligned Side Styles Ended */
 /* Navbar Styles Ended */

@@ -1,11 +1,7 @@
 
       /* CSS styles for the hero section */
-      body{
-         background:cover;
-         background-size:2000px 1050px; 
-         background-repeat: no-repeat;
-       }
        .hero-section {
+         margin-top: 70px;
          position: relative;
          height: 850px;
          width: auto;
@@ -66,12 +62,13 @@
          padding:auto;
        }
      .slide {
-        flex: 0 0 auto;
+        flex:0 0 auto;
         width: 20%;
         scroll-snap-align: start;
         position: relative;
         padding-left: 60px;
         padding-right: 10px;
+        margin-left: 60px;
      }
      .slide img {
         width: 110%;
@@ -79,7 +76,7 @@
         border-radius: 10px;
         border-color: #03002e;
      }
-     .info-box {
+     .info-box{
         position: absolute;
         top: 85%;
         left:45%;
@@ -87,11 +84,10 @@
         background-color: rgba(255, 255, 255, 0.8);
         padding: 10px;
         border-radius: 10px;
-        text-align:center;
+        
         color:#03002e;
      }
     .info-box h2 {
-        margin-top: 0;
         font-size: 1.5em;
         color:#0747a1;
         font-family:'Times New Roman', Times, serif;
@@ -103,6 +99,50 @@
         font-family: Georgia, 'Times New Roman', Times, serif;
         text-align: justify;
      }
+        .info-box1{
+        position: absolute;
+        top: 85%;
+        left:45%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+        border-radius: 10px;
+        color:#03002e;
+        margin-top: 60px;
+     }
+     
+       .info-box1 h2 {
+        font-size: 1.5em;
+        color:#0747a1;
+        font-family:'Times New Roman', Times, serif;
+     }
+     
+     .info-box3{
+        position: absolute;
+        top: 130%;
+        left:45%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        color:#03002e;
+        text-align:justify;
+        padding: 10px;
+     }
+     
+     .info-box3 h2{
+        font-size: 1.5em;
+        color:#0747a1;
+        font-family:'Times New Roman', Times, serif; 
+        text-align: center;
+     }
+     info-box3 p{
+        margin-bottom: 0;
+        font-size: 1.1em;
+        color: #03002e;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align:justify;
+     }
+     
       .description{
         background-color:#bcf3f4;
         margin-top: 12%;
@@ -124,13 +164,13 @@
      }
       .info-content img{
         width: 100%;
-        height:140%;
+        height:150%;
      }
       .content{
         background-color: #bcf3f4;
         width: auto;
         height: 20%;
-        padding-top: 90px;
+        padding-top: 40px;
         text-align: center;
      }
        .content h2 {
@@ -148,7 +188,7 @@
         display:flex;
         background-color: #bcf3f4;
         width: auto;
-        height: 30%;
+        height: 40%;
         padding-bottom: 80px;
         padding-left: 10%;
         padding-top: 5%;
@@ -218,8 +258,8 @@
      }
      .section5 {
          display:flex;
-         width: 80%;
-         height: 30%;
+         width: 75%;
+         height: 20%;
          margin-top: 6%;
          padding: auto;
          text-align: center;
@@ -261,9 +301,8 @@
         border-radius: 2%;
      }
      .info-content3 img {
-         padding-top: 10px;
          width: 60%;
-         height:80%;
+         height:100%;
          margin-left: 15px;
      }   
      

@@ -5,9 +5,12 @@
     <title>Hero Section</title>
     <link rel="stylesheet" type="text/css" href="css/hero.css">
     </head>
-    <jsp:include page="Header.jsp" />
-    <body background="images/b3.jpg">
+    <body>
+        <div>
+            <jsp:include page="Header.jsp" /> 
+        </div>
       <section class="hero-section">
+        <img src="images/b3.jpg" alt="hero Background Image" style="position:relative;width: 2000px; height: 1000px; z-index: -1;">
         <div class="hero-content">
           <h1>WELCOME TO MEDIMART</h1>
           <p><b>Your Trusted Online Pharmacy Destination!</b><br>
@@ -50,7 +53,7 @@
       <div class="slide">
         <img src="images/healthcare.jpg" alt="Image 4">
         <div class="info-box">
-          <h2>Healthcare Products</h2>
+          <h2>Healthcare <br>Products</h2>
           <p><b>Up To 30% OFF</b><br><br><button class="custom-button">Shop Now</button></p>
         </div>
       </div>
@@ -93,19 +96,19 @@
   <div class ="description2">
     <div class = "info-content2">
       <img src="images/delivery.jpg" alt="Image 8">  
-      <div class="info-box" >     
+      <div class="info-box1" >     
       <h2>Free & Fast Delivery</h2>
     </div>
   </div>  
   <div class = "info-content2">
     <img src="images/save money.jpg" alt="Image 9">
-    <div class="info-box">  
+    <div class="info-box1">  
     <h2>Saving Money</h2>
   </div>
 </div>  
 <div class = "info-content2">
     <img src="images/time saving.jpg" alt="Image 10">
-    <div class="info-box">  
+    <div class="info-box1">  
     <h2>Saving Time</h2>
   </div>
 </div>
@@ -155,7 +158,7 @@
   <div class="description4">
     <div class="info-content3">
       <img src="images/covid-19.jpg" alt="Image 17">  
-      <div class="info-box" >     
+      <div class="info-box3" >     
         <h2>4 Years In, a Sobering Look at Long COVID Progress</h2>
         <p>Four years ago in the spring of 2020, physicians and patients coined the term "long COVID" to describe 
           a form of the viral infection from which recovery seemed impossible. (And the old nickname "long-haulers" seems so quaint now.)
@@ -168,7 +171,7 @@
     </div>
     <div class="info-content3">
       <img src="images/future.jpg" alt="Image 18">  
-      <div class="info-box" >     
+      <div class="info-box3" >     
         <h2>The Future of Pharmacy: How Advancements in Technology Are Transforming the Field</h2>
         <p>Rapid technological advancements have reshaped various aspects of our world, prompting discussions on the value of human connection, 
           particularly in patient care within the field of pharmacy. Interestingly, many technological innovations in pharmacy not only preserve but also enhance 
@@ -180,7 +183,7 @@
     </div>
     <div class="info-content3">
       <img src="images/migraine.jpeg" alt="Image 19">  
-      <div class="info-box" >     
+      <div class="info-box3" >     
         <h2>Extension Trial Analysis Shows Long-Term Safety, Efficacy of Atogepant in Patients With Migraines</h2>
         <p>Results from the open-label, 156-week extension phase 3 trial (NCT04686136) that evaluated the long-term safety and tolerability 
           of atogepant (Qulipta; AbbVie) for the prevention of migraines in patients with chronic or episodic migraine were announced. The findings demonstrated that atogepant’s 
