@@ -238,7 +238,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("      <div class=\"info-box3\" >     \r\n");
       out.write("        <h2>Extension Trial Analysis Shows Long-Term Safety, Efficacy of Atogepant in Patients With Migraines</h2>\r\n");
       out.write("        <p>Results from the open-label, 156-week extension phase 3 trial (NCT04686136) that evaluated the long-term safety and tolerability \r\n");
-      out.write("          of atogepant (Qulipta; AbbVie) for the prevention of migraines in patients with chronic or episodic migraine were announced. The findings demonstrated that atogepantâs \r\n");
+      out.write("          of atogepant for the prevention of migraines in patients with chronic or episodic migraine were announced. The findings demonstrated that atogepantâs \r\n");
       out.write("          safety profile was consistent with previous data and no new safety signals were detected. The findings will be presented at the American Academy of \r\n");
       out.write("          Neurology Annual Meeting from April 13, 2024, to April 18, 2024, in Denver, Colorado.\r\n");
       out.write("        <br>\r\n");
