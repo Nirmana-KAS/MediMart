@@ -56,7 +56,7 @@ and open the template in the editor.
                                 </div>
                             <!-- Left area on Navbar -->
                                 <div class="topnav-left">
-                                    <a href="#news" class="active">Home</a>
+                                    <a href="index.jsp" class="active">Home</a>
                                     <div class="dropdown">
                                         <button class="dropbtn">Shop 
                                             <i class="fa fa-caret-down"></i>
@@ -117,8 +117,8 @@ and open the template in the editor.
                                             </div>
                                         </div>
                                     </div> 
-                                    <a href="#contact">About Us</a>
-                                    <a href="#contact">Contact</a>
+                                    <a href="about-us.jsp">About Us</a>
+                                    <a href="contact-us.jsp">Contact</a>
                                 </div>
                             <!-- Right area on Navbar -->
                                 <div class="topnav-right">
