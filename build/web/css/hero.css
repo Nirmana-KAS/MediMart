@@ -72,20 +72,20 @@
      }
      .slide img {
         width: 110%;
-        height:140%;
+        height:100%;
         border-radius: 10px;
         border-color: #03002e;
      }
      .info-box{
         position: absolute;
-        top: 85%;
+        top: 50%;
         left:45%;
         transform: translate(-50%, -50%);
         background-color: rgba(255, 255, 255, 0.8);
         padding: 10px;
         border-radius: 10px;
-        
         color:#03002e;
+        margin: 10px;
      }
     .info-box h2 {
         font-size: 1.5em;
@@ -93,7 +93,6 @@
         font-family:'Times New Roman', Times, serif;
      }
      .info-box p {
-        margin-bottom: 0;
         font-size: 1.1em;
         color: #03002e;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -108,7 +107,7 @@
         padding: 10px;
         border-radius: 10px;
         color:#03002e;
-        margin-top: 60px;
+        margin-top: 80px;
      }
      
        .info-box1 h2 {
@@ -145,26 +144,27 @@
      
       .description{
         background-color:#bcf3f4;
-        margin-top: 12%;
+        margin-top: 8%;
      }
      .description1{
         display: flex;
         background-color: #bcf3f4;
         width: auto;
-        height: 30%;
-        padding-bottom: 80px;
+        height: 10%;
+        
      }
       .info-content {
         flex: 0 0 auto;
         width: 30%;
         scroll-snap-align: start;
         position: relative;
-        padding-left: 40px;
+        padding-left: 100px;
         padding-right: 10px;
      }
       .info-content img{
+        padding-top: 40px;
         width: 100%;
-        height:150%;
+        height:90%;
      }
       .content{
         background-color: #bcf3f4;
@@ -172,6 +172,7 @@
         height: 20%;
         padding-top: 40px;
         text-align: center;
+        
      }
        .content h2 {
          font-size: 2.8em;
@@ -180,7 +181,7 @@
      }   
        .content p {
          font-size: 1.5em;
-         padding: 15px;
+         padding: 25px;
          color: #03002e;
          font-family:Georgia, 'Times New Roman', Times, serif;
      }
@@ -188,8 +189,8 @@
         display:flex;
         background-color: #bcf3f4;
         width: auto;
-        height: 40%;
-        padding-bottom: 80px;
+        height: 600%;
+        padding-bottom: 120px;
         padding-left: 10%;
         padding-top: 5%;
      }
