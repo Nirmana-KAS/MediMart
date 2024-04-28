@@ -135,3 +135,21 @@ form input, form textarea {
     width: calc(100% - 30px); /* Adjust the width of input fields */
     display: block; /* Ensure input fields take full width */
 }
+form textarea {
+    height: 100px; /* Increase height of textarea */
+}
+
+form button {
+    padding: 12px; /* Reduce padding to make the button smaller */
+    background: #ff5361;
+    color: #fff;
+    font-size: 16px; /* Reduce font size to fit smaller button */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 50%; /* Make the button take half width of its container */
+    margin: 20px auto; /* Center the button horizontally */
+    display: block; /* Ensure button takes full width */
+    border-radius: 30px; 
+    font-family: 'Times New Roman', Times, serif;
+}
