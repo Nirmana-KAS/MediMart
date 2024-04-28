@@ -49,13 +49,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"css/hero.css\">\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
-      out.write("        <div>\r\n");
-      out.write("            ");
-      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "Header.jsp", out, false);
-      out.write(" \r\n");
-      out.write("        </div>\r\n");
       out.write("      <section class=\"hero-section\">\r\n");
-      out.write("        <img src=\"images/b3.jpg\" alt=\"hero Background Image\" style=\"position:relative;width: 2000px; height: 1200px; z-index: -1;\">\r\n");
+      out.write("        <img src=\"b3.jpg\" alt=\"hero Background Image\" style=\"position:relative;width: 2000px; height: 1200px; z-index: -1;\">\r\n");
       out.write("        <div class=\"hero-content\">\r\n");
       out.write("          <h1>WELCOME TO MEDIMART</h1>\r\n");
       out.write("          <p><b>Your Trusted Online Pharmacy Destination!</b><br>\r\n");
