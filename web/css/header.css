@@ -80,7 +80,7 @@
     margin-left: 10px;
   }
   
-  .right-side .whatsapp-logo {
+   .whatsapp-logo {
     width: 25px;
     margin-top: 4px;
     margin-right: 10px;
@@ -88,7 +88,7 @@
     margin-bottom: 4px;
   }
   
-  .right-side .facebook-logo {
+ .facebook-logo {
     width: 25px;
     margin-top: 4px;
     margin-left: 10px;
@@ -96,7 +96,7 @@
     margin-bottom: 4px;
   }
   
-  .right-side .messenger-logo {
+ .messenger-logo {
     width: 25px;
     margin-top: 4px;
     margin-left: 10px;
@@ -229,18 +229,18 @@
 }
 
 /* Seerch bar Search button styles Started */
-.topnav-centered .search-container button {
+.search-container button {
   float: right;
   padding: 10px 15px;
   background: #acacac;
-  font-size: 17px;
+  font-size: 26px;
   border: none;
   cursor: pointer;
   border-radius: 0px 20px 20px 0px;
 }
 
 /* Change the color of links on hover */
-.topnav-centered .search-container button:hover {
+.search-container button:hover {
   background: #00FFB0;
   color: rgb(0, 0, 0);
 }
@@ -255,7 +255,7 @@
   color: #000000;
 }
 
-.topnav-right .Sign-links a{
+.Sign-links a{
   float: right;
   padding: 16.5px;
   text-decoration: none;
