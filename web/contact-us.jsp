@@ -14,6 +14,9 @@
         <link rel="stylesheet" href="css/contact-us.css">
     </head>
     <body>
+        <div>
+            <jsp:include page="Header.jsp" /> 
+        </div>
         <div class="container">
             <div class="container2">
                 <img src="images/vector1.png" alt="Vector 1" class="vector vector-1">
@@ -45,5 +48,8 @@
                 </tr>
             </table>
         </div>
+    <div>
+       <jsp:include page="footer.jsp" />  
+    </div>       
     </body>
 </html>

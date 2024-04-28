@@ -30,7 +30,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext _jspx_page_context = null;
 
     try {
-      response.setContentType("text/html");
+      response.setContentType("text/html;charset=UTF-8");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -41,12 +41,10 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
-      out.write("<!--\r\n");
-      out.write("To change this license header, choose License Headers in Project Properties.\r\n");
-      out.write("To change this template file, choose Tools | Templates\r\n");
-      out.write("and open the template in the editor.\r\n");
-      out.write("-->\r\n");
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <title>TODO supply a title</title>\r\n");
@@ -64,7 +62,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <div class=\"background\"></div>\r\n");
       out.write("            <div class=\"container\">\r\n");
       out.write("                <div class=\"content\">\r\n");
-      out.write("                    <h2 class=\"logo\">Medi Mart</h2>\r\n");
+      out.write("                    <h2 class=\"logo\">MediMart</h2>\r\n");
       out.write("                    \r\n");
       out.write("                    \r\n");
       out.write("                </div>\r\n");
@@ -94,7 +92,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            <button type=\"submit\" class=\"btn\">Sign In</button>\r\n");
       out.write("    \r\n");
       out.write("                            <div class=\"login-register\">\r\n");
-      out.write("                                <p>Don't have an account?<a href=\"register.jsp\" class=\"register-link\">Sign Up</a></p>\r\n");
+      out.write("                                <p>Don't have an account?<a href=\"sign up.jsp\" class=\"register-link\">Sign Up</a></p>\r\n");
       out.write("                            </div>\r\n");
       out.write("                        </form>\r\n");
       out.write("                    </div>\r\n");

@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="css/shop.css">
     </head>
     <body>
+        <div>
+            <jsp:include page="Header.jsp" /> 
+        </div>
         <div class="carousel">
             <div class="carousel-images">
                 <div class="carousel-image">
@@ -271,6 +274,8 @@
             });
         </script>
     
-        
+    <div>
+       <jsp:include page="footer.jsp" />  
+    </div>  
     </body>
 </html>    

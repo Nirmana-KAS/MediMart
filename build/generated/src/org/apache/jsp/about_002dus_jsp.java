@@ -30,7 +30,7 @@ public final class about_002dus_jsp extends org.apache.jasper.runtime.HttpJspBas
     PageContext _jspx_page_context = null;
 
     try {
-      response.setContentType("text/html");
+      response.setContentType("text/html;charset=UTF-8");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -41,12 +41,10 @@ public final class about_002dus_jsp extends org.apache.jasper.runtime.HttpJspBas
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
-      out.write("<!--\r\n");
-      out.write("To change this license header, choose License Headers in Project Properties.\r\n");
-      out.write("To change this template file, choose Tools | Templates\r\n");
-      out.write("and open the template in the editor.\r\n");
-      out.write("-->\r\n");
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <title>TODO supply a title</title>\r\n");
@@ -55,9 +53,11 @@ public final class about_002dus_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("        <link rel=\"stylesheet\" href=\"css/about-us.css\"> \r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
+      out.write("        <div>\r\n");
       out.write("            ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "Header.jsp", out, false);
       out.write(" \r\n");
+      out.write("        </div>\r\n");
       out.write("            <div class=\"description\">\r\n");
       out.write("                <div class=\"slide\">\r\n");
       out.write("                    <img src=\"images/b6.jpg\" alt=\"Image 1\">\r\n");
@@ -233,6 +233,11 @@ public final class about_002dus_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                <button class=\"custom-button\">Start shopping With Us</button>\r\n");
       out.write("            </div>\r\n");
       out.write("          </section>  \r\n");
+      out.write("    <div>\r\n");
+      out.write("       ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "footer.jsp", out, false);
+      out.write("  \r\n");
+      out.write("    </div>\r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
