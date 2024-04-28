@@ -261,7 +261,7 @@
   text-decoration: none;
 }
 
-.topnav-right .shoppingcart-link a{
+.shoppingcart-link a{
   float: right;
   padding: 8px 16px 8px 16px;
 }
@@ -271,7 +271,7 @@
 }
 
 /* Shoping Cart img Styles */
-.topnav-right a.shopping-cart{
+.shopping-cart{
   width: 40px;
 }
 /* Right-aligned Side Styles Ended */
