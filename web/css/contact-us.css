@@ -153,3 +153,20 @@ form button {
     border-radius: 30px; 
     font-family: 'Times New Roman', Times, serif;
 }
+form button:hover {
+    background-color: #fdf9fa; /* Change background color on hover */
+    color: #ff5361;
+}
+
+form input[type="text"]:hover {
+    background-color: #beb5b5; /* Change background color on hover */
+    color: #fff;
+}
+form input[type="email"]:hover {
+    background-color: #beb5b5; /* Change background color on hover */
+    color: #fff;
+}
+form textarea:hover {
+    background-color: #beb5b5; /* Change background color on hover */
+    color: #fff;
+}
