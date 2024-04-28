@@ -19,11 +19,11 @@
                 <img src="images/vector1.png" alt="Vector 1" class="vector vector-1">
                 <img src="images/vector2.png" alt="Vector 2" class="vector vector-2">
                 <img src="images/vector3.png" alt="Vector 3" class="vector vector-3">
-                <img src="images/vector1.png" alt="Vector 4" class="vector vector-4">
-                <img src="images/vector2.png" alt="Vector 5" class="vector vector-5">
-                <img src="images/vector3.png" alt="Vector 6" class="vector vector-6">
-                <img src="images/vector3.png" alt="Vector 7" class="vector vector-7">
-                <img src="images/vector3.png" alt="Vector 8" class="vector vector-8"> 
+                <img src="images/vector4.png" alt="Vector 4" class="vector vector-4">
+                <img src="images/vector5.png" alt="Vector 5" class="vector vector-5">
+                <img src="images/vector6.png" alt="Vector 6" class="vector vector-6">
+                <img src="images/vector7.png" alt="Vector 7" class="vector vector-7">
+                <img src="images/vector8.png" alt="Vector 8" class="vector vector-8"> 
             </div>
         <div class="tableform" >
             <table >
