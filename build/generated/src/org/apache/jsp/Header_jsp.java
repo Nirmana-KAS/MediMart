@@ -41,7 +41,7 @@ public final class Header_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write(" <!DOCTYPE html>\r\n");
+      out.write("<!DOCTYPE html>\r\n");
       out.write("<!--\r\n");
       out.write("To change this license header, choose License Headers in Project Properties.\r\n");
       out.write("To change this template file, choose Tools | Templates\r\n");
@@ -165,10 +165,12 @@ public final class Header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                </div>\r\n");
       out.write("                            <!-- Right area on Navbar -->\r\n");
       out.write("                                <div class=\"topnav-right\">\r\n");
+      out.write("                                    <div class=\"shoppingcart-link\">\r\n");
+      out.write("                                        <a href=\"#shoppingcart\" class=\"\"><img class=\"shopping-cart\" src=\"images/ShoppingCartBlack.png\" alt=\"shopping-cart\"></a>\r\n");
+      out.write("                                    </div>\r\n");
       out.write("                                    <div class=\"Sign-links\">\r\n");
       out.write("                                        <a href=\"#about\" class=\"active\">SIGN IN / UP</a>\r\n");
       out.write("                                    </div>\r\n");
-      out.write("                                    <a href=\"#shoppingcart\" class=\"\"><img class=\"Shoppingcartwhite\" src=\"images/Shoppingcartwhite.png\" alt=\"\"></a>\r\n");
       out.write("                                </div>\r\n");
       out.write("                        </div>\r\n");
       out.write("                    <!-- Navbar end -->\r\n");
