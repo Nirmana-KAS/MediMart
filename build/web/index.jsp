@@ -5,30 +5,29 @@
     <title>Hero Section</title>
     <link rel="stylesheet" type="text/css" href="css/hero.css">
     </head>
-    <body> 
-    <!-- Hero Section -->
-    <jsp:include page="Header.jsp" /> 
-    <section class="hero-section">
-      <div class="hero-content">
-        <h1>WELCOME TO MEDIMART</h1>
-        <p><b>Your Trusted Online Pharmacy Destination!</b><br>
-          <br>
-            Explore a wide range of high - quality <br>
-            medications, health products & wellness<br>
-            essentials, all conveniently available at<br>
-            your fingertips.With our seamless shopping<br>
-            experience,expert guidance & reliable delivery,<br> 
-            your journey to better health begins here.
+    <jsp:include page="Header.jsp" />
+    <body background="images/b3.jpg">
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>WELCOME TO MEDIMART</h1>
+          <p><b>Your Trusted Online Pharmacy Destination!</b><br>
             <br>
-            <br><b>Start shopping with confidence at MediMart today!</b></p>
-            <button class="custom-button">Shop Now</button>
-      </div>
-    </section> 
+              Explore a wide range of high - quality <br>
+              medications, health products & wellness<br>
+              essentials, all conveniently available at<br>
+              your fingertips.With our seamless shopping<br>
+              experience,expert guidance & reliable delivery,<br> 
+              your journey to better health begins here.
+              <br>
+              <br><b>Start shopping with confidence at MediMart today!</b></p>
+              <button class="custom-button">Shop Now</button>
+        </div>
+      </section> 
     <br>
     <br>
     <div class="section2">
       <div class="slide">
-        <img src="images/Natrual_Foods.jpg" alt="Image 1">
+        <img src="images/nfoods.jpg" alt="Image 1">
         <div class="info-box">
           <h2>Naturally<br> Good</h2>
           <p><b>Up To 25% OFF</b><br><br><button class="custom-button">Shop Now</button></p>
@@ -141,7 +140,7 @@
     <img src="images/img4.jpg" alt="Image 15">
   </div>
   <div class="slide">
-    <img src="images/img5.jpg" alt="Image 15">
+    <img src="images/img5.jpg" alt="Image 16">
   </div>
   </div>
   <div class="section6">
@@ -155,7 +154,7 @@
   </div>
   <div class="description4">
     <div class="info-content3">
-      <img src="images/covid-19.jpg" alt="Image 16">  
+      <img src="images/covid-19.jpg" alt="Image 17">  
       <div class="info-box" >     
         <h2>4 Years In, a Sobering Look at Long COVID Progress</h2>
         <p>Four years ago in the spring of 2020, physicians and patients coined the term "long COVID" to describe 
@@ -168,7 +167,7 @@
      </div>
     </div>
     <div class="info-content3">
-      <img src="images/future.jpg" alt="Image 17">  
+      <img src="images/future.jpg" alt="Image 18">  
       <div class="info-box" >     
         <h2>The Future of Pharmacy: How Advancements in Technology Are Transforming the Field</h2>
         <p>Rapid technological advancements have reshaped various aspects of our world, prompting discussions on the value of human connection, 
@@ -180,7 +179,7 @@
      </div>
     </div>
     <div class="info-content3">
-      <img src="images/migraine.jpeg" alt="Image 18">  
+      <img src="images/migraine.jpeg" alt="Image 19">  
       <div class="info-box" >     
         <h2>Extension Trial Analysis Shows Long-Term Safety, Efficacy of Atogepant in Patients With Migraines</h2>
         <p>Results from the open-label, 156-week extension phase 3 trial (NCT04686136) that evaluated the long-term safety and tolerability 

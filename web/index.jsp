@@ -5,6 +5,7 @@
     <title>Hero Section</title>
     <link rel="stylesheet" type="text/css" href="css/hero.css">
     </head>
+    <jsp:include page="Header.jsp" />
     <body background="images/b3.jpg">
       <section class="hero-section">
         <div class="hero-content">
