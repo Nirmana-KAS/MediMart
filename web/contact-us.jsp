@@ -18,15 +18,25 @@
                 <img src="vector3.png" alt="Vector 7" class="vector vector-7">
                 <img src="vector3.png" alt="Vector 8" class="vector vector-8"> 
             </div>
-
-            <form action="ContactServlet" method="post">
-                <h2>Get in Touch</h2>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Email Id" required>
-                <input type="text" name="phone" placeholder="Phone No." required>
-                <textarea name="message" rows="4" placeholder="How can we help you ?"></textarea>
-                <button type="submit" name="submit">Send</button>  
-            </form>
-        </div> 
+        <div class="tableform" >
+            <table >
+                <tr>
+                    <td class="image-column">
+                        <!-- Your large image goes here -->
+                        <img src="con 02.png" alt="Large Image" height="100%" width=100%>
+                    </td>
+                    <td class="form-column">
+                        <form action="ContactServlet" method="post">
+                            <h2>Get in Touch</h2>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Email Id" required>
+                            <input type="text" name="phone" placeholder="Phone No." required>
+                            <textarea name="message" rows="4" placeholder="How can we help you ?"></textarea>
+                            <button type="submit" name="submit">Send</button> 
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </body>
 </html>
