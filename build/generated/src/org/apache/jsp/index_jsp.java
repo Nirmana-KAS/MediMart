@@ -48,11 +48,14 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <title>Hero Section</title>\r\n");
       out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"css/hero.css\">\r\n");
       out.write("    </head>\r\n");
-      out.write("    ");
+      out.write("    <body>\r\n");
+      out.write("        <div>\r\n");
+      out.write("            ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "Header.jsp", out, false);
-      out.write("\r\n");
-      out.write("    <body background=\"images/b3.jpg\">\r\n");
+      out.write(" \r\n");
+      out.write("        </div>\r\n");
       out.write("      <section class=\"hero-section\">\r\n");
+      out.write("        <img src=\"images/b3.jpg\" alt=\"hero Background Image\" style=\"position:relative;width: 2000px; height: 1200px; z-index: -1;\">\r\n");
       out.write("        <div class=\"hero-content\">\r\n");
       out.write("          <h1>WELCOME TO MEDIMART</h1>\r\n");
       out.write("          <p><b>Your Trusted Online Pharmacy Destination!</b><br>\r\n");
@@ -95,7 +98,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("      <div class=\"slide\">\r\n");
       out.write("        <img src=\"images/healthcare.jpg\" alt=\"Image 4\">\r\n");
       out.write("        <div class=\"info-box\">\r\n");
-      out.write("          <h2>Healthcare Products</h2>\r\n");
+      out.write("          <h2>Healthcare <br>Products</h2>\r\n");
       out.write("          <p><b>Up To 30% OFF</b><br><br><button class=\"custom-button\">Shop Now</button></p>\r\n");
       out.write("        </div>\r\n");
       out.write("      </div>\r\n");

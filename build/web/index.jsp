@@ -5,9 +5,12 @@
     <title>Hero Section</title>
     <link rel="stylesheet" type="text/css" href="css/hero.css">
     </head>
-    <jsp:include page="Header.jsp" />
-    <body background="images/b3.jpg">
+    <body>
+        <div>
+            <jsp:include page="Header.jsp" /> 
+        </div>
       <section class="hero-section">
+        <img src="images/b3.jpg" alt="hero Background Image" style="position:relative;width: 2000px; height: 1200px; z-index: -1;">
         <div class="hero-content">
           <h1>WELCOME TO MEDIMART</h1>
           <p><b>Your Trusted Online Pharmacy Destination!</b><br>
@@ -50,7 +53,7 @@
       <div class="slide">
         <img src="images/healthcare.jpg" alt="Image 4">
         <div class="info-box">
-          <h2>Healthcare Products</h2>
+          <h2>Healthcare <br>Products</h2>
           <p><b>Up To 30% OFF</b><br><br><button class="custom-button">Shop Now</button></p>
         </div>
       </div>
