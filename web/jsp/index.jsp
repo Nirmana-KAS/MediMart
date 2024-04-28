@@ -5,8 +5,9 @@
     <title>Hero Section</title>
     <link rel="stylesheet" type="text/css" href="hero.css">
     </head>
-    <body background="images/b3.jpg">
+    <body>
       <section class="hero-section">
+        <img src="b3.jpg" alt="hero Background Image" style="position:relative;width: 2000px; height: 1200px; z-index: -1;">
         <div class="hero-content">
           <h1>WELCOME TO MEDIMART</h1>
           <p><b>Your Trusted Online Pharmacy Destination!</b><br>
