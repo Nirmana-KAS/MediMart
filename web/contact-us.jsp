@@ -8,6 +8,17 @@
     </head>
     <body>
         <div class="container">
+            <div class="container2">
+                <img src="vector1.png" alt="Vector 1" class="vector vector-1">
+                <img src="vector2.png" alt="Vector 2" class="vector vector-2">
+                <img src="vector3.png" alt="Vector 3" class="vector vector-3">
+                <img src="vector1.png" alt="Vector 4" class="vector vector-4">
+                <img src="vector2.png" alt="Vector 5" class="vector vector-5">
+                <img src="vector3.png" alt="Vector 6" class="vector vector-6">
+                <img src="vector3.png" alt="Vector 7" class="vector vector-7">
+                <img src="vector3.png" alt="Vector 8" class="vector vector-8"> 
+            </div>
+
             <form action="ContactServlet" method="post">
                 <h2>Get in Touch</h2>
                 <input type="text" name="name" placeholder="Your Name" required>
