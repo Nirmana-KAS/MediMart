@@ -30,7 +30,7 @@
                 <tr>
                     <td class="image-column">
                         <!-- Your large image goes here -->
-                        <img src="images/con 110.png" alt="Large Image" height="100%" width=100%>
+                        <img src="images/con 02.png" alt="Large Image" height="100%" width=100%>
                     </td>
                     <td class="form-column">
                         <form action="ContactServlet" method="post">
