@@ -101,3 +101,19 @@ table {
 .image-column {
     width: 30%; /* Adjust the width of the image column */
 }
+.form-column {
+    width: 70%; /* Adjust the width of the form column */
+
+}
+
+.large-image img {
+    width: 100%; /* Make the image take full width of its container */
+}
+
+form {
+    background: #ffff;
+    padding: 2vw; /* Reduce padding to decrease the size of the form area */
+    border-radius: 5px;
+    max-width: 70%; /* Limit the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+}
