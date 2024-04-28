@@ -42,7 +42,7 @@ body{
     transform: translate(-50%, -50%);
     width: 75%;
     height: 500px;
-    background: url('5675.jpg') no-repeat;
+    background: url('images/5675.jpg') no-repeat;
     background-size: calc(110vh - 50px);
     background-position: left;
     background-position-x: -70px;

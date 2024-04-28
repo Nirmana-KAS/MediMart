@@ -51,7 +51,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <body> \r\n");
       out.write("    <!-- Hero Section -->\r\n");
       out.write("    ");
-      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "header.jsp", out, false);
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "Header.jsp", out, false);
       out.write(" \r\n");
       out.write("    <section class=\"hero-section\">\r\n");
       out.write("      <div class=\"hero-content\">\r\n");
@@ -238,6 +238,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </div>\r\n");
       out.write("  </div>\r\n");
       out.write("</div>\r\n");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "footer.jsp", out, false);
+      out.write(" \r\n");
       out.write("</body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {

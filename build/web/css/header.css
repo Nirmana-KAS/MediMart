@@ -103,5 +103,196 @@
     margin-right: 10px;
     margin-bottom: 4px;
   }
-
   /* End All Topbar Styles*/
+
+/* Main Logo Styles */
+.MainLogo {
+  width: 150px;
+}
+
+/* Start Navbar Styles */
+.topnav {
+  background-color: #17D2C4;
+  overflow: hidden;
+  border-radius: 0;
+  font-family: Arial;
+  font-weight: 700;
+  padding: 10px 10px 9px 10px;
+}
+
+/* Navbar on left side styles started */
+.topnav-left a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of left side Navbar links on hover */
+.topnav-left a:hover {
+  background-color: #00FFB0;
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+}
+
+/* Dropdown Menu Style Started */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+  border-radius: 25px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #00FFB0;
+  color: rgb(0, 0, 0);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.dropdown-content .header {
+  background: #00FFB0;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  border-radius: 25px 25px 0px 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #dddddd;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #00FFB0;
+  color: rgb(0, 0, 0);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Dropdown Menu Style Ended */
+/* Navbar on left side styles Ended */
+
+/* Navbar on Center Area styles started */
+.topnav-centered {
+  float: none;
+  position: absolute;
+  margin-left: 42%;
+  border: 5px solid rgb(128, 128, 128);
+  border-radius: 25px;
+  font-weight: 700;
+}
+
+/* Seerch bar styles Started */
+/* Seerch bar text box styles */
+.topnav-centered input[type=text] {
+  padding: 10px;
+  margin-top: 0px;
+  font-size: 17px;
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+}
+
+/* Change the color of links on hover */
+.topnav-centered:hover{
+  border: 5px solid #00FFB0;
+}
+
+/* Seerch bar Search button styles Started */
+.topnav-centered .search-container button {
+  float: right;
+  padding: 10px 15px;
+  background: #acacac;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px 20px 20px 0px;
+}
+
+/* Change the color of links on hover */
+.topnav-centered .search-container button:hover {
+  background: #00FFB0;
+  color: rgb(0, 0, 0);
+}
+/* Seerch bar styles Ended */
+/* Navbar on Center Area styles Ended */
+
+/* Right-aligned Side Styles Started */
+/* Sign in & Sign up Styles */
+.topnav-right a{
+  float: right;
+  color: #000000;
+  text-align: center;
+  padding: 13px 16px 9px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.topnav-right a:hover {
+  background: #00FFB0;
+  border-radius: 50px;
+}
+
+.topnav-right a.active{
+  color: #000000;
+  border-radius: 25px;
+  border: 4px solid #00FFB0;
+}
+
+.topnav-right a.active:hover{
+  color: #ffffff;
+  border-radius: 25px;
+  border: 4px solid #00FFB0;
+  background: none;
+}
+
+/* Shoping Cart img Styles */
+.topnav-right a .Shoppingcartwhite{
+  width: 33px;
+}
+/* Right-aligned Side Styles Ended */
+/* Navbar Styles Ended */
