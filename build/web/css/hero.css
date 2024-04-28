@@ -84,7 +84,7 @@
         background-color: rgba(255, 255, 255, 0.8);
         padding: 10px;
         border-radius: 10px;
-        text-align:center;
+        
         color:#03002e;
      }
     .info-box h2 {
@@ -107,7 +107,6 @@
         background-color: rgba(255, 255, 255, 0.8);
         padding: 10px;
         border-radius: 10px;
-        text-align:center;
         color:#03002e;
         margin-top: 60px;
      }
@@ -125,21 +124,23 @@
         transform: translate(-50%, -50%);
         background-color: rgba(255, 255, 255, 0.8);
         border-radius: 10px;
-        text-align:center;
         color:#03002e;
+        text-align:justify;
+        padding: 10px;
      }
      
      .info-box3 h2{
         font-size: 1.5em;
         color:#0747a1;
         font-family:'Times New Roman', Times, serif; 
+        text-align: center;
      }
      info-box3 p{
         margin-bottom: 0;
         font-size: 1.1em;
         color: #03002e;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        text-align: justify;
+        text-align:justify;
      }
      
       .description{

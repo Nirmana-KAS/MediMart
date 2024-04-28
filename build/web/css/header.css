@@ -271,7 +271,7 @@
 }
 
 /* Shoping Cart img Styles */
-.topnav-right a .shopping-cart{
+.topnav-right a.shopping-cart{
   width: 40px;
 }
 /* Right-aligned Side Styles Ended */
