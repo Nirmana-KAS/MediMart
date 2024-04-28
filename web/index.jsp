@@ -10,7 +10,7 @@
             <jsp:include page="Header.jsp" /> 
         </div>
       <section class="hero-section">
-        <img src="images/b3.jpg" alt="hero Background Image" style="position:relative;width: 2000px; height: 1200px; z-index: -1;">
+        <img src="images/b3.jpg" alt="hero Background Image" style="position:relative;width: 2000px; height: 1000px; z-index: -1;">
         <div class="hero-content">
           <h1>WELCOME TO MEDIMART</h1>
           <p><b>Your Trusted Online Pharmacy Destination!</b><br>
