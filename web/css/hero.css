@@ -1,6 +1,7 @@
 
       /* CSS styles for the hero section */
        .hero-section {
+         margin-top: 170px;
          position: relative;
          height: 850px;
          width: auto;
@@ -61,12 +62,13 @@
          padding:auto;
        }
      .slide {
-        flex: 0 0 auto;
+        flex:15px 10px;
         width: 20%;
         scroll-snap-align: start;
         position: relative;
         padding-left: 60px;
         padding-right: 10px;
+        margin-left: 60px;
      }
      .slide img {
         width: 110%;
@@ -86,7 +88,7 @@
         color:#03002e;
      }
     .info-box h2 {
-        margin-top: 0;
+        margin-top: 5px;
         font-size: 1.5em;
         color:#0747a1;
         font-family:'Times New Roman', Times, serif;

@@ -99,7 +99,7 @@ public final class Header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                </div>\r\n");
       out.write("                            <!-- Left area on Navbar -->\r\n");
       out.write("                                <div class=\"topnav-left\">\r\n");
-      out.write("                                    <a href=\"#news\" class=\"active\">Home</a>\r\n");
+      out.write("                                    <a href=\"index.jsp\" class=\"active\">Home</a>\r\n");
       out.write("                                    <div class=\"dropdown\">\r\n");
       out.write("                                        <button class=\"dropbtn\">Shop \r\n");
       out.write("                                            <i class=\"fa fa-caret-down\"></i>\r\n");
@@ -160,8 +160,8 @@ public final class Header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                            </div>\r\n");
       out.write("                                        </div>\r\n");
       out.write("                                    </div> \r\n");
-      out.write("                                    <a href=\"#contact\">About Us</a>\r\n");
-      out.write("                                    <a href=\"#contact\">Contact</a>\r\n");
+      out.write("                                    <a href=\"about-us.jsp\">About Us</a>\r\n");
+      out.write("                                    <a href=\"contact-us.jsp\">Contact</a>\r\n");
       out.write("                                </div>\r\n");
       out.write("                            <!-- Right area on Navbar -->\r\n");
       out.write("                                <div class=\"topnav-right\">\r\n");
