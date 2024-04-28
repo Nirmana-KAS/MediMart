@@ -1,3 +1,5 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -163,7 +165,7 @@
         <p>Four years ago in the spring of 2020, physicians and patients coined the term "long COVID" to describe 
           a form of the viral infection from which recovery seemed impossible. (And the old nickname "long-haulers" seems so quaint now.)
           What started as a pandemic that killed nearly 3 million people globally in 2020 alone would turn into a chronic disease causing
-           a long list of symptoms — from extreme fatigue, to brain fog, tremors, nausea, headaches, rapid heartbeat, and more.
+           a long list of symptoms â from extreme fatigue, to brain fog, tremors, nausea, headaches, rapid heartbeat, and more.
           Today, 6.4% of Americans report symptoms of long COVID, and many have never recovered.
         <br>
         <a href="https://www.medscape.com/viewarticle/years-sobering-look-long-covid-progress-2024a10007a8?form=fpf">Read More</a></p>
@@ -175,8 +177,8 @@
         <h2>The Future of Pharmacy: How Advancements in Technology Are Transforming the Field</h2>
         <p>Rapid technological advancements have reshaped various aspects of our world, prompting discussions on the value of human connection, 
           particularly in patient care within the field of pharmacy. Interestingly, many technological innovations in pharmacy not only preserve but also enhance 
-          the pharmacist’s ability to connect with patients, fostering compassion, which is crucial for positive health outcomes.
-           These advancements have significantly expanded pharmacists’ capacity for direct patient care.
+          the pharmacistâs ability to connect with patients, fostering compassion, which is crucial for positive health outcomes.
+           These advancements have significantly expanded pharmacistsâ capacity for direct patient care.
           <br>
         <a href="https://www.pharmacytimes.com/view/the-future-of-pharmacy-how-advancements-in-technology-are-transforming-the-field">Read More</a></p>
      </div>
@@ -186,7 +188,7 @@
       <div class="info-box3" >     
         <h2>Extension Trial Analysis Shows Long-Term Safety, Efficacy of Atogepant in Patients With Migraines</h2>
         <p>Results from the open-label, 156-week extension phase 3 trial (NCT04686136) that evaluated the long-term safety and tolerability 
-          of atogepant (Qulipta; AbbVie) for the prevention of migraines in patients with chronic or episodic migraine were announced. The findings demonstrated that atogepant’s 
+          of atogepant (Qulipta; AbbVie) for the prevention of migraines in patients with chronic or episodic migraine were announced. The findings demonstrated that atogepantâs 
           safety profile was consistent with previous data and no new safety signals were detected. The findings will be presented at the American Academy of 
           Neurology Annual Meeting from April 13, 2024, to April 18, 2024, in Denver, Colorado.
         <br>
