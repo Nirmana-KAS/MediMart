@@ -16,7 +16,8 @@ body {
     position: absolute;
     width: 50px; /* Adjust the size of the vector */
     height: auto;
-    z-index: 0; /* Push the vectors behind the content */
+    /* z-index: 0;  Push the vectors behind the content */
+    opacity: 0;
 }
 
 .vector-1 {
@@ -81,6 +82,8 @@ body {
 table {
     width: 80%; /* Adjust as needed */
     border-collapse: collapse;
+    z-index: 0;
+    position: absolute;
 }
 .image-column {
     width: 50%; /* Adjust as needed */
