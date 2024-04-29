@@ -14,18 +14,15 @@
         <link rel="stylesheet" href="css/login.css">
     </head>
     <body>
-        
-        
-            <header class="header">
-               
-            </header>
             
-            <div class="background"></div>
+        <div class="background"></div>
+
             <div class="container">
+            <div class="image01">
+                <img src="images/login-and-sign up/5675.png"style="position:relative;width: 800px; height: 550px; z-index: -1;">
+            </div>
                 <div class="content">
                     <h2 class="logo">MediMart</h2>
-                    
-                    
                 </div>
                 
                 <div class="logreg-box">

@@ -18,7 +18,7 @@
         </div>
         <div class="container">
             <h1>Your Cart</h1>
-                        <!-- Cart items will be dynamically added here -->
+                      
     
     <div class="cart-table">
         <div class="cart-header">
@@ -27,53 +27,95 @@
             <div class="column">Price</div>
             <div class="column">Quantity</div>
             <div class="column">Total</div>
+         <div class="column"> </div>
+        
         </div>
+         <!--  cart items (this are example....link this to add to cart button......    @ harsha) -->
         <div class="cart-item">
-            <div class="column"><img src="image/1.jpg" alt="Product 1"></div>
-            <div class="column">Product 1</div>
-            <div class="column price">10.00</div>
+            <div class="column"><img src="image/1.jpg" alt="BRILINTA 90MG TAB 56S"></div>
+            <div class="column" id="set">BRILINTA 90MG TAB 56S</div>
+            <div class="column price" id="set">302.54 </div>
             <div class="column quantity">
                 <button class="decrease">-</button>
                 <input type="number" value="1">
                 <button class="increase">+</button>
             </div>
-            <div class="column total">10.00</div>
+            <div class="column total" id="set">302.54</div>
+    <div class="column"><button class="remove-item">Remove</button></div> 
         </div>
         <div class="cart-item">
-            <div class="column"><img src="image/2.jpg" alt="Product 2"></div>
-            <div class="column">Product 2</div>
-            <div class="column price">15.00</div>
+            <div class="column"><img src="image/2.jpg" alt="PLAVIX 75MG TABS 28 S"></div>
+            <div class="column" id="set">PLAVIX 75MG TABS 28 S</div>
+            <div class="column price" id="set">34.72 </div>
             <div class="column quantity">
                 <button class="decrease">-</button>
                 <input type="number" value="1">
                 <button class="increase">+</button>
             </div>
-            <div class="column total">15.00</div>
+            <div class="column total"id="set" >34.72</div>
+    <div class="column"><button class="remove-item">Remove</button></div> 
         </div>
-        <!-- Add more cart items as needed -->
+    
+    <div class="cart-item">
+            <div class="column"><img src="image/3.png" alt="CLOPIVAS 75MG"></div>
+            <div class="column" id="set">CLOPIVAS 75MG</div>
+            <div class="column price" id="set">15.87</div>
+            <div class="column quantity">
+                <button class="decrease">-</button>
+                <input type="number" value="1">
+                <button class="increase">+</button>
+            </div>
+            <div class="column total" id="set">15.87</div>
+    <div class="column"><button class="remove-item">Remove</button></div> 
+        </div>
+    
     </div>
-    <div>Total: <span id="cart-total">25.00</span></div>
+     <!--  //////////////////////////////////////////////////////////// -->
+    
+    <div> <span id="cart-total">00.00</span></div>
     
     
             </div>
         </div>
+    
+    <div class="checkout-box">
+        <h2>Checkout</h2>
+        <div class="subtotal">
+            Subtotal: <span id="subtotal"></span>
+        </div>
+        <div class="delivery-charges">
+            Delivery Charges: <span id="delivery-charges">250.00</span>
+        </div>
+        <div class="coupon">
+            <label for="coupon-input">Enter Coupon:</label>
+            <input type="text" id="coupon-input">
+            <button id="apply-coupon">Apply</button>
+        </div>
+        <div class="grand-total">
+            Grand Total: <span id="grand-total"></span>
+        </div>
+        <button id="checkout-button">Checkout</button>
+    </div>
+    
     
     <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // Function to calculate total price for a single item
+        // calculate total price for a single item
         function calculateItemTotal(price, quantity) {
             return price * quantity;
         }
     
-        // Function to update total price for a single item
+        // update total price for a single item
         function updateItemTotal(row) {
             var price = parseFloat(row.querySelector(".price").innerText);
             var quantity = parseInt(row.querySelector(".quantity input").value);
             var total = calculateItemTotal(price, quantity);
             row.querySelector(".total").innerText = total.toFixed(2);
+            updateCartTotal();
+            updateCheckoutBox(); 
         }
     
-        // Function to update total price for all items in the cart
+        //  update total price for all items 
         function updateCartTotal() {
             var cartItems = document.querySelectorAll(".cart-item");
             var totalPrice = 0;
@@ -89,7 +131,6 @@
             input.addEventListener("change", function() {
                 var row = this.closest(".cart-item");
                 updateItemTotal(row);
-                updateCartTotal();
             });
         });
     
@@ -101,7 +142,6 @@
                 input.value = parseInt(input.value) + 1;
                 var row = this.closest(".cart-item");
                 updateItemTotal(row);
-                updateCartTotal();
             });
         });
     
@@ -113,16 +153,49 @@
                     input.value = parseInt(input.value) - 1;
                     var row = this.closest(".cart-item");
                     updateItemTotal(row);
-                    updateCartTotal();
                 }
             });
         });
-    });
     
+        //  calculate subtotal
+        function calculateSubtotal() {
+            var subtotal = parseFloat(document.querySelector("#cart-total").innerText);
+            return subtotal;
+        }
+    
+       //  update checkout box
+    function updateCheckoutBox() {
+        document.querySelector("#subtotal").innerText = calculateSubtotal().toFixed(2);
+        calculateGrandTotal(); 
+      
+    }
+    
+    
+       //-------------
+        updateCheckoutBox();
+    });
+    var removeButtons = document.querySelectorAll(".remove-item");
+        removeButtons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                var row = this.closest(".cart-item");
+                row.remove();
+                updateCartTotal();
+                updateCheckoutBox();
+            });
+        });
+    
+    function calculateGrandTotal() {
+        var subtotal = parseFloat(document.querySelector("#cart-total").innerText);
+        var deliveryCharges = parseFloat(document.getElementById("delivery-charges").innerText);
+        var grandTotal = subtotal + deliveryCharges;
+        document.getElementById("grand-total").innerText = grandTotal.toFixed(2);
+    }
     </script>
     <div>
        <jsp:include page="footer.jsp" />  
     </div>
     </body>
+    
+    
     
 </html>

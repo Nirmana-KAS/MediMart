@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Contact-Us</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/contact-us.css">
@@ -17,7 +17,7 @@
         <div>
             <jsp:include page="Header.jsp" /> 
         </div>
-        <div class="container">
+        <div class="container0">
             <div class="container2">
                 <img src="images/vector1.png" alt="Vector 1" class="vector vector-1">
                 <img src="images/vector2.png" alt="Vector 2" class="vector vector-2">
@@ -47,6 +47,7 @@
                     </td>
                 </tr>
             </table>
+        </div>
         </div>
     <div>
        <jsp:include page="footer.jsp" />  

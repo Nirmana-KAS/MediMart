@@ -1,5 +1,4 @@
 body{
-  background:cover;
   background-size:2000px 1050px; 
   background-repeat: no-repeat;
  }
@@ -12,8 +11,8 @@ body{
 }
 .order-summary{
   flex: 1;
-  padding: 20px;
-  border: 1px solid #a8a6a6;
+  padding: 30px;
+  border: 1px solid #474646;
   border-radius: 10px;
   margin-right: 25px;
   margin-top: 25%;
@@ -25,20 +24,20 @@ body{
 .checkout-form {
   flex: 1;
   padding: 20px;
-  border: 1px solid #a8a6a6;
+  border: 1px solid #474646;
   border-radius: 10px;
   margin-right: 25px;
   margin-top: 25%;
 }
 .order-summary h2{
-  margin-top: 0;
+  margin-top: 10px;
   font-size: 2.8em;
   color:#0747a1;
   font-family:'Times New Roman', Times, serif;
   text-align: center;
 }
 .checkout-form h2 {
-  margin-top: 0;
+  margin-top: 10px;
   font-size: 2.8em;
   color:#0747a1;
   font-family:'Times New Roman', Times, serif;

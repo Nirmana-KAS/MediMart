@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(25deg, #2587b4, #2b46a0, #64c4b4, #12c48e);
     overflow: hidden; /* Hide any overflow content */
 } 
+.container0{
+     background-image: #ffff;
+}
 
 .container2 {
     position:absolute;
@@ -66,6 +70,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
 } 
 
 .table-container {
@@ -102,7 +107,7 @@ table {
 }
 
 .image-column {
-    width: 30%; /* Adjust the width of the image column */
+    width: 45%; /* Adjust the width of the image column */
 }
 .form-column {
     width: 70%; /* Adjust the width of the form column */
@@ -114,10 +119,10 @@ table {
 }
 
 form {
-    background: #ffff;
+    background: #e4e4e4;
     padding: 2vw; /* Reduce padding to decrease the size of the form area */
     border-radius: 5%;
-    max-width: 70%; /* Limit the maximum width of the form */
+    max-width: 80%; /* Limit the maximum width of the form */
     margin: 0 auto; /* Center the form horizontally */
 }
 form h2 {
@@ -125,7 +130,7 @@ form h2 {
     color: #555;
     font-weight: 800;
     margin-bottom: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 form input, form textarea {
@@ -154,22 +159,27 @@ form button {
     margin: 20px auto; /* Center the button horizontally */
     display: block; /* Ensure button takes full width */
     border-radius: 30px; 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 form button:hover {
     background-color: #fdf9fa; /* Change background color on hover */
     color: #ff5361;
+    border: 1px solid #ff5361;
 }
 
 form input[type="text"]:hover {
     background-color: #beb5b5; /* Change background color on hover */
     color: #fff;
+    border-radius: 0px;
 }
 form input[type="email"]:hover {
     background-color: #beb5b5; /* Change background color on hover */
     color: #fff;
+    border-radius: 0px;
 }
 form textarea:hover {
     background-color: #beb5b5; /* Change background color on hover */
     color: #fff;
+    border-radius: 0px;
 }
