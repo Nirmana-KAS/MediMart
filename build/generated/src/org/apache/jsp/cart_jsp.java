@@ -73,7 +73,7 @@ public final class cart_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        </div>\r\n");
       out.write("         <!--  cart items (this are example....link this to add to cart button......    @ harsha) -->\r\n");
       out.write("        <div class=\"cart-item\">\r\n");
-      out.write("            <div class=\"column\"><img src=\"image/1.jpg\" alt=\"BRILINTA 90MG TAB 56S\"></div>\r\n");
+      out.write("            <div class=\"column\"><img src=\"images/products/1.jpg\" alt=\"BRILINTA 90MG TAB 56S\"></div>\r\n");
       out.write("            <div class=\"column\" id=\"set\">BRILINTA 90MG TAB 56S</div>\r\n");
       out.write("            <div class=\"column price\" id=\"set\">302.54 </div>\r\n");
       out.write("            <div class=\"column quantity\">\r\n");
@@ -85,7 +85,7 @@ public final class cart_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <div class=\"column\"><button class=\"remove-item\">Remove</button></div> \r\n");
       out.write("        </div>\r\n");
       out.write("        <div class=\"cart-item\">\r\n");
-      out.write("            <div class=\"column\"><img src=\"image/2.jpg\" alt=\"PLAVIX 75MG TABS 28 S\"></div>\r\n");
+      out.write("            <div class=\"column\"><img src=\"images/products/2.jpg\" alt=\"PLAVIX 75MG TABS 28 S\"></div>\r\n");
       out.write("            <div class=\"column\" id=\"set\">PLAVIX 75MG TABS 28 S</div>\r\n");
       out.write("            <div class=\"column price\" id=\"set\">34.72 </div>\r\n");
       out.write("            <div class=\"column quantity\">\r\n");
@@ -98,7 +98,7 @@ public final class cart_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        </div>\r\n");
       out.write("    \r\n");
       out.write("    <div class=\"cart-item\">\r\n");
-      out.write("            <div class=\"column\"><img src=\"image/3.png\" alt=\"CLOPIVAS 75MG\"></div>\r\n");
+      out.write("            <div class=\"column\"><img src=\"images/products/3.png\" alt=\"CLOPIVAS 75MG\"></div>\r\n");
       out.write("            <div class=\"column\" id=\"set\">CLOPIVAS 75MG</div>\r\n");
       out.write("            <div class=\"column price\" id=\"set\">15.87</div>\r\n");
       out.write("            <div class=\"column quantity\">\r\n");
@@ -135,7 +135,7 @@ public final class cart_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <div class=\"grand-total\">\r\n");
       out.write("            Grand Total: <span id=\"grand-total\"></span>\r\n");
       out.write("        </div>\r\n");
-      out.write("        <button id=\"checkout-button\">Checkout</button>\r\n");
+      out.write("        <button id=\"checkout-button\" href=\"checkout.jsp\">Checkout</button>\r\n");
       out.write("    </div>\r\n");
       out.write("    \r\n");
       out.write("    \r\n");

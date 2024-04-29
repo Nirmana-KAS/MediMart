@@ -11,9 +11,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MediMart Checkout</title>
-    <link rel="stylesheet" type="text/css" href="checkout.css">
+    <link rel="stylesheet" type="text/css" href="css/checkout.css">
 </head>
-<body background="images/checkout1.jpg">
+<body background="images/checkout/checkout1.jpg">
     <div class="container">
         <div class="order-summary">
           <h2>Order Summary</h2>
