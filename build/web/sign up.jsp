@@ -23,8 +23,11 @@
             
             <div class="background"></div>
             <div class="container">
+            <div class="image01">
+                <img src="images/login-and-sign up/5670.jpg"style="position:relative;width: 800px; height: 580px; z-index: -1;">
+            </div>
                 <div class="content">
-                    <h2 class="logo">Medi Mart</h2>
+                    <h2 class="logo">MediMart</h2>
                     
                     
                 </div>
