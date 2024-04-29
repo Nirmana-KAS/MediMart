@@ -180,7 +180,19 @@
             });
         });
     
-   
+    function calculateGrandTotal() {
+        // Get the subtotal from the HTML element
+        var subtotal = parseFloat(document.querySelector("#cart-total").innerText);
+        
+        // Get the delivery charges from the HTML element
+        var deliveryCharges = parseFloat(document.getElementById("delivery-charges").innerText);
+    
+        // Calculate the grand total
+        var grandTotal = subtotal + deliveryCharges;
+    
+        // Update the HTML element displaying the grand total
+        document.getElementById("grand-total").innerText = grandTotal.toFixed(2); // Adjust decimal places as needed
+    }
     </script>
     </body>
     
