@@ -60,7 +60,7 @@ public final class footer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <div class=\"first-left\">\r\n");
       out.write("                            <ul class=\"about-footer-links\">\r\n");
       out.write("                                <li>\r\n");
-      out.write("                                    <a href=\"http://\"><img class=\"medimart-logo\" src=\"images/Medi Mart Logo New 1.png\" alt=\"medimart-logo\"></a>\r\n");
+      out.write("                                    <a href=\"http://\"><img class=\"medimart-logo\" src=\"images/MediMartFootLogo.png\" alt=\"medimart-logo\"></a>\r\n");
       out.write("                                </li>\r\n");
       out.write("                                <li>\r\n");
       out.write("                                    <p class=\"About-footer\">\r\n");
