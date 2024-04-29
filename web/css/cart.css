@@ -66,7 +66,7 @@ body{
         cursor: pointer;
         padding: 5px 10px;
     margin:5px 3px 5px 3px;
-    ma
+    
     }
     
     .quantity input {
@@ -147,4 +147,7 @@ body{
     white-space: nowrap;
     margin-top:10px;
     }
-    
+    h1{
+        font-family:Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif; 
+        }
+        

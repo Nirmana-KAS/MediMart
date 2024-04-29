@@ -15,7 +15,7 @@
     <body>
         <div class="container">
             <h1>Your Cart</h1>
-                        <!-- Cart items will be dynamically added here -->
+                      
     
     <div class="cart-table">
         <div class="cart-header">
@@ -27,6 +27,7 @@
          <div class="column"> </div>
         
         </div>
+         <!--  cart items (this are example....link this to add to cart button......    @ harsha) -->
         <div class="cart-item">
             <div class="column"><img src="image/1.jpg" alt="BRILINTA 90MG TAB 56S"></div>
             <div class="column" id="set">BRILINTA 90MG TAB 56S</div>
@@ -37,7 +38,7 @@
                 <button class="increase">+</button>
             </div>
             <div class="column total" id="set">302.54</div>
-    <div class="column"><button class="remove-item">Remove</button></div> <!-- New column for remove button -->
+    <div class="column"><button class="remove-item">Remove</button></div> 
         </div>
         <div class="cart-item">
             <div class="column"><img src="image/2.jpg" alt="PLAVIX 75MG TABS 28 S"></div>
@@ -49,7 +50,7 @@
                 <button class="increase">+</button>
             </div>
             <div class="column total"id="set" >34.72</div>
-    <div class="column"><button class="remove-item">Remove</button></div> <!-- New column for remove button -->
+    <div class="column"><button class="remove-item">Remove</button></div> 
         </div>
     
     <div class="cart-item">
@@ -62,12 +63,12 @@
                 <button class="increase">+</button>
             </div>
             <div class="column total" id="set">15.87</div>
-    <div class="column"><button class="remove-item">Remove</button></div> <!-- New column for remove button -->
+    <div class="column"><button class="remove-item">Remove</button></div> 
         </div>
     
-    
-        <!-- Add more cart items as needed -->
     </div>
+     <!--  //////////////////////////////////////////////////////////// -->
+    
     <div> <span id="cart-total">00.00</span></div>
     
     
@@ -96,22 +97,22 @@
     
     <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // Function to calculate total price for a single item
+        // calculate total price for a single item
         function calculateItemTotal(price, quantity) {
             return price * quantity;
         }
     
-        // Function to update total price for a single item
+        // update total price for a single item
         function updateItemTotal(row) {
             var price = parseFloat(row.querySelector(".price").innerText);
             var quantity = parseInt(row.querySelector(".quantity input").value);
             var total = calculateItemTotal(price, quantity);
             row.querySelector(".total").innerText = total.toFixed(2);
             updateCartTotal();
-            updateCheckoutBox(); // Update checkout box after updating item total
+            updateCheckoutBox(); 
         }
     
-        // Function to update total price for all items in the cart
+        //  update total price for all items 
         function updateCartTotal() {
             var cartItems = document.querySelectorAll(".cart-item");
             var totalPrice = 0;
@@ -153,21 +154,21 @@
             });
         });
     
-        // Function to calculate subtotal
+        //  calculate subtotal
         function calculateSubtotal() {
             var subtotal = parseFloat(document.querySelector("#cart-total").innerText);
             return subtotal;
         }
     
-       // Function to update checkout box
+       //  update checkout box
     function updateCheckoutBox() {
         document.querySelector("#subtotal").innerText = calculateSubtotal().toFixed(2);
-        calculateGrandTotal(); // Call the function to calculate grand total
-        // Add other necessary calculations here
+        calculateGrandTotal(); 
+      
     }
     
     
-        // Initial update of checkout box
+       //-------------
         updateCheckoutBox();
     });
     var removeButtons = document.querySelectorAll(".remove-item");
@@ -181,17 +182,10 @@
         });
     
     function calculateGrandTotal() {
-        // Get the subtotal from the HTML element
         var subtotal = parseFloat(document.querySelector("#cart-total").innerText);
-        
-        // Get the delivery charges from the HTML element
         var deliveryCharges = parseFloat(document.getElementById("delivery-charges").innerText);
-    
-        // Calculate the grand total
         var grandTotal = subtotal + deliveryCharges;
-    
-        // Update the HTML element displaying the grand total
-        document.getElementById("grand-total").innerText = grandTotal.toFixed(2); // Adjust decimal places as needed
+        document.getElementById("grand-total").innerText = grandTotal.toFixed(2);
     }
     </script>
     </body>
