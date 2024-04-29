@@ -4,7 +4,7 @@
 /* Topbar Styles*/
 .header .topbar{
     overflow: hidden;
-    background-color:#17D2C4;
+    background-color: #009999;
  }
   
   /* Topbar Left Side Styles*/
@@ -22,7 +22,7 @@
   }
   
   .topbar .left-side a:hover{
-    color: #ffffff;
+      color: #ffffff;
   }
   
   .left-side .logo24-7{
@@ -68,6 +68,7 @@
   .topbar .right-side .social-links {
     margin: 4px 4px 4px 4px;
     border: 2px solid #000000;
+    border-radius: 25px;
   }
   
   .topbar .right-side .social-links a{
@@ -75,7 +76,6 @@
   }
   
   .topbar .right-side .social-links .follow {
-    margin-top: px;
     margin-right: 10px;
     margin-left: 10px;
   }
@@ -112,7 +112,7 @@
 
 /* Start Navbar Styles */
 .topnav {
-  background-color: #17D2C4;
+  background-color: #009999;
   overflow: hidden;
   font-family: Arial;
   font-weight: 700;

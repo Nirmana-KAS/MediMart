@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" href="images/MediMartLogoF.png">
+        <link rel="icon" href="images/header-and-footer/MediMartLogoF.png">
         <link rel="stylesheet" href="css/header.css">
     </head>
     <body>
@@ -23,18 +23,18 @@
                     <!-- Topbar start -->
                         <div class="topbar">
                             <div class="left-side">
-                                <a href="http://"><img class="logo24-7" src="images/24_7.png" alt="logo24-7"> Online Service</a>
-                                <a href="http://"><img class="openhours-logo" src="images/openhours.png" alt="openhours-logo"> Open Hours: Mon to Sat 8.00 A.M. - 9.00 P.M. </a>
-                                <a href="http://"><img class="location-logo" src="images/location.png" alt="location-logo"> NO:121/2, High level Road, Homagama </a>
+                                <a href="http://"><img class="logo24-7" src="images/header-and-footer/24_7.png" alt="logo24-7"> Online Service</a>
+                                <a href="http://"><img class="openhours-logo" src="images/header-and-footer/openhours.png" alt="openhours-logo"> Open Hours: Mon to Sat 8.00 A.M. - 9.00 P.M. </a>
+                                <a href="http://"><img class="location-logo" src="images/header-and-footer/location.png" alt="location-logo"> NO:121/2, High level Road, Homagama </a>
                             </div>
                             <div class="right-side">
-                                <a href="http://"><img class="hotline-logo" src="images/hotline.png" alt="hotline-logo"> HOTLINE: +9411 222 333 444 </a>
-                                <a href="http://"><img class="email-logo" src="images/email.png" alt="email-logo"> medimartonlinesl@gmail.com </a>
+                                <a href="http://"><img class="hotline-logo" src="images/header-and-footer/hotline.png" alt="hotline-logo"> HOTLINE: +9411 222 333 444 </a>
+                                <a href="http://"><img class="email-logo" src="images/header-and-footer/email.png" alt="email-logo"> medimartonlinesl@gmail.com </a>
                                 <div class="social-links">
                                     <a href="http://" class="follow">FOLLOW ON</a>
-                                    <a href="http://"><img class="facebook-logo" src="images/facebook.png" alt="facebook-logo"> </a>
-                                    <a href="http://"><img class="messenger-logo" src="images/messenger.png" alt="messenger-logo"> </a>
-                                    <a href="http://"><img class="whatsapp-logo" src="images/whatsapp.png" alt="whatsapp-logo"> </a>
+                                    <a href="http://"><img class="facebook-logo" src="images/header-and-footer/facebook.png" alt="facebook-logo"> </a>
+                                    <a href="http://"><img class="messenger-logo" src="images/header-and-footer/messenger.png" alt="messenger-logo"> </a>
+                                    <a href="http://"><img class="whatsapp-logo" src="images/header-and-footer/whatsapp.png" alt="whatsapp-logo"> </a>
                                 </div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@
                     <!-- Main Logo of Website -->
                     <center>
                         <p>
-                            <img class="MainLogo" src="images/MediMartLogoF.png" alt="MainLogo">
+                            <img class="MainLogo" src="images/header-and-footer/MediMartLogoF.png" alt="MainLogo">
                         </p>
                     </center>
                     <!-- Navbar start -->
@@ -126,10 +126,10 @@
                             <!-- Right area on Navbar -->
                                 <div class="topnav-right">
                                     <div class="shoppingcart-link">
-                                        <a href="cart.jsp" class=""><img class="shopping-cart" src="images/ShoppingCartBlack.png" alt="shopping-cart"></a>
+                                        <a href="cart.jsp" class=""><img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart"></a>
                                     </div>
                                     <div class="Sign-links">
-                                        <a href="" class="active">SIGN IN / UP</a>
+                                        <a href="login.jsp" class="active">SIGN IN / UP</a>
                                     </div>
                                 </div>
                         </div>
