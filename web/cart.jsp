@@ -27,36 +27,75 @@
             <div class="column">Price</div>
             <div class="column">Quantity</div>
             <div class="column">Total</div>
+         <div class="column"> </div>
+        
         </div>
         <div class="cart-item">
-            <div class="column"><img src="image/1.jpg" alt="Product 1"></div>
-            <div class="column">Product 1</div>
-            <div class="column price">10.00</div>
+            <div class="column"><img src="image/1.jpg" alt="BRILINTA 90MG TAB 56S"></div>
+            <div class="column" id="set">BRILINTA 90MG TAB 56S</div>
+            <div class="column price" id="set">302.54 </div>
             <div class="column quantity">
                 <button class="decrease">-</button>
                 <input type="number" value="1">
                 <button class="increase">+</button>
             </div>
-            <div class="column total">10.00</div>
+            <div class="column total" id="set">302.54</div>
+    <div class="column"><button class="remove-item">Remove</button></div> <!-- New column for remove button -->
         </div>
         <div class="cart-item">
-            <div class="column"><img src="image/2.jpg" alt="Product 2"></div>
-            <div class="column">Product 2</div>
-            <div class="column price">15.00</div>
+            <div class="column"><img src="image/2.jpg" alt="PLAVIX 75MG TABS 28 S"></div>
+            <div class="column" id="set">PLAVIX 75MG TABS 28 S</div>
+            <div class="column price" id="set">34.72 </div>
             <div class="column quantity">
                 <button class="decrease">-</button>
                 <input type="number" value="1">
                 <button class="increase">+</button>
             </div>
-            <div class="column total">15.00</div>
+            <div class="column total"id="set" >34.72</div>
+    <div class="column"><button class="remove-item">Remove</button></div> <!-- New column for remove button -->
         </div>
+    
+    <div class="cart-item">
+            <div class="column"><img src="image/3.png" alt="CLOPIVAS 75MG"></div>
+            <div class="column" id="set">CLOPIVAS 75MG</div>
+            <div class="column price" id="set">15.87</div>
+            <div class="column quantity">
+                <button class="decrease">-</button>
+                <input type="number" value="1">
+                <button class="increase">+</button>
+            </div>
+            <div class="column total" id="set">15.87</div>
+    <div class="column"><button class="remove-item">Remove</button></div> <!-- New column for remove button -->
+        </div>
+    
+    
         <!-- Add more cart items as needed -->
     </div>
-    <div>Total: <span id="cart-total">25.00</span></div>
+    <div> <span id="cart-total">00.00</span></div>
     
     
             </div>
         </div>
+    
+    <div class="checkout-box">
+        <h2>Checkout</h2>
+        <div class="subtotal">
+            Subtotal: <span id="subtotal"></span>
+        </div>
+        <div class="delivery-charges">
+            Delivery Charges: <span id="delivery-charges">250.00</span>
+        </div>
+        <div class="coupon">
+            <label for="coupon-input">Enter Coupon:</label>
+            <input type="text" id="coupon-input">
+            <button id="apply-coupon">Apply</button>
+        </div>
+        <div class="grand-total">
+            Grand Total: <span id="grand-total"></span>
+        </div>
+        <button id="checkout-button">Checkout</button>
+    </div>
+    
     
     <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -71,6 +110,8 @@
             var quantity = parseInt(row.querySelector(".quantity input").value);
             var total = calculateItemTotal(price, quantity);
             row.querySelector(".total").innerText = total.toFixed(2);
+            updateCartTotal();
+            updateCheckoutBox(); // Update checkout box after updating item total
         }
     
         // Function to update total price for all items in the cart
@@ -89,7 +130,6 @@
             input.addEventListener("change", function() {
                 var row = this.closest(".cart-item");
                 updateItemTotal(row);
-                updateCartTotal();
             });
         });
     
@@ -101,7 +141,6 @@
                 input.value = parseInt(input.value) + 1;
                 var row = this.closest(".cart-item");
                 updateItemTotal(row);
-                updateCartTotal();
             });
         });
     
@@ -113,16 +152,56 @@
                     input.value = parseInt(input.value) - 1;
                     var row = this.closest(".cart-item");
                     updateItemTotal(row);
-                    updateCartTotal();
                 }
             });
         });
-    });
     
+        // Function to calculate subtotal
+        function calculateSubtotal() {
+            var subtotal = parseFloat(document.querySelector("#cart-total").innerText);
+            return subtotal;
+        }
+    
+       // Function to update checkout box
+    function updateCheckoutBox() {
+        document.querySelector("#subtotal").innerText = calculateSubtotal().toFixed(2);
+        calculateGrandTotal(); // Call the function to calculate grand total
+        // Add other necessary calculations here
+    }
+    
+    
+        // Initial update of checkout box
+        updateCheckoutBox();
+    });
+    var removeButtons = document.querySelectorAll(".remove-item");
+        removeButtons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                var row = this.closest(".cart-item");
+                row.remove();
+                updateCartTotal();
+                updateCheckoutBox();
+            });
+        });
+    
+    function calculateGrandTotal() {
+        // Get the subtotal from the HTML element
+        var subtotal = parseFloat(document.querySelector("#cart-total").innerText);
+        
+        // Get the delivery charges from the HTML element
+        var deliveryCharges = parseFloat(document.getElementById("delivery-charges").innerText);
+    
+        // Calculate the grand total
+        var grandTotal = subtotal + deliveryCharges;
+    
+        // Update the HTML element displaying the grand total
+        document.getElementById("grand-total").innerText = grandTotal.toFixed(2); // Adjust decimal places as needed
+    }
     </script>
     <div>
        <jsp:include page="footer.jsp" />  
     </div>
     </body>
+    
+    
     
 </html>
