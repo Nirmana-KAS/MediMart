@@ -3,7 +3,7 @@
 .decription-footer {
   margin: 0 auto;
   overflow-x:hidden;
-  background-color: #003399;
+  background-color: #009999;
   color: #ffffff;
 }
 
@@ -71,7 +71,7 @@ margin: 15px 100px 0px 100px;
 }
 
  .second-left ul {
-  list-style-image: url('images/MediMartUlLogo.png');
+  list-style-image: url('MediMartUlLogo.png');
   margin-top: 20px;
 }
 
@@ -141,7 +141,7 @@ margin: 15px 100px 0px 100px;
 }
 
 .first-right ul {
-  list-style-image: url('images/openhoursfoot.png');
+  list-style-image: url('openhoursfoot.png');
 }
 
  .first-right h5 {
@@ -220,7 +220,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background: #ffffff;
+  background: #00FFB0;
   color: #000000;
 }
 
