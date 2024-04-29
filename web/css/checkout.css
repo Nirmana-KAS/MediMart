@@ -11,7 +11,7 @@ body{
 }
 .order-summary{
   flex: 1;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #a8a6a6;
   border-radius: 10px;
   margin-right: 25px;
