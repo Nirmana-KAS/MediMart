@@ -36,6 +36,7 @@
                         <img src="images/con 02.png" alt="Large Image" height="100%" width=100%>
                     </td>
                     <td class="form-column">
+                        <div class="detail">
                         <form action="ContactServlet" method="post">
                             <h2>Get in Touch</h2>
                             <input type="text" name="name" placeholder="Your Name" required>
@@ -44,6 +45,7 @@
                             <textarea name="message" rows="4" placeholder="How can we help you ?"></textarea>
                             <button type="submit" name="submit">Send</button> 
                         </form>
+                        </div>
                     </td>
                 </tr>
             </table>
