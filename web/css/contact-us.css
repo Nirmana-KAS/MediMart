@@ -16,7 +16,8 @@ body {
     position: absolute;
     width: 50px; /* Adjust the size of the vector */
     height: auto;
-    z-index: 0; /* Push the vectors behind the content */
+    /* z-index: 0;  Push the vectors behind the content */
+    opacity: 0;
 }
 
 .vector-1 {
@@ -81,6 +82,8 @@ body {
 table {
     width: 80%; /* Adjust as needed */
     border-collapse: collapse;
+    z-index: 0;
+    position: absolute;
 }
 .image-column {
     width: 50%; /* Adjust as needed */
@@ -113,7 +116,7 @@ table {
 form {
     background: #ffff;
     padding: 2vw; /* Reduce padding to decrease the size of the form area */
-    border-radius: 5px;
+    border-radius: 5%;
     max-width: 70%; /* Limit the maximum width of the form */
     margin: 0 auto; /* Center the form horizontally */
 }
@@ -152,4 +155,21 @@ form button {
     display: block; /* Ensure button takes full width */
     border-radius: 30px; 
     font-family: 'Times New Roman', Times, serif;
+}
+form button:hover {
+    background-color: #fdf9fa; /* Change background color on hover */
+    color: #ff5361;
+}
+
+form input[type="text"]:hover {
+    background-color: #beb5b5; /* Change background color on hover */
+    color: #fff;
+}
+form input[type="email"]:hover {
+    background-color: #beb5b5; /* Change background color on hover */
+    color: #fff;
+}
+form textarea:hover {
+    background-color: #beb5b5; /* Change background color on hover */
+    color: #fff;
 }
