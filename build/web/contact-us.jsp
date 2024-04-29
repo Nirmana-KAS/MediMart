@@ -17,7 +17,7 @@
         <div>
             <jsp:include page="Header.jsp" /> 
         </div>
-        <div class="container">
+        <div class="container0">
             <div class="container2">
                 <img src="images/vector1.png" alt="Vector 1" class="vector vector-1">
                 <img src="images/vector2.png" alt="Vector 2" class="vector vector-2">
@@ -47,6 +47,7 @@
                     </td>
                 </tr>
             </table>
+        </div>
         </div>
     <div>
        <jsp:include page="footer.jsp" />  
