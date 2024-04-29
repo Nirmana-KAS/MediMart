@@ -35,7 +35,7 @@
       <option value="cashondelivery">Cash on Delivery</option>
       <option value="paypal">PayPal</option>
     </select>
-    <button type="submit">Place Order</button>
+    <center><button type="submit">Place Order</button></center>
   </form>
 </div>
 </div>
