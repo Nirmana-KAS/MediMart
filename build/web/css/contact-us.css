@@ -118,14 +118,14 @@ table {
     width: 100%; /* Make the image take full width of its container */
 }
 
-form {
+.tableform form {
     background: #e4e4e4;
     padding: 2vw; /* Reduce padding to decrease the size of the form area */
     border-radius: 5%;
     max-width: 80%; /* Limit the maximum width of the form */
     margin: 0 auto; /* Center the form horizontally */
 }
-form h2 {
+.tableform form h2 {
     text-align: center;
     color: #555;
     font-weight: 800;
@@ -133,26 +133,27 @@ form h2 {
     font-family: 'Poppins', sans-serif;
 }
 
-form input, form textarea {
+.tableform form input, 
+.tableform form textarea {
     border: 0;
     margin: 10px auto; /* Center the input fields horizontally */
     padding: 15px; /* Increase padding to make input fields larger */
     outline: none;
-    background: #f5f5f5;
+    background: #fff;
     font-size: 16px;
     width: calc(100% - 30px); /* Adjust the width of input fields */
     display: block; /* Ensure input fields take full width */
+    border-radius: 5px;
 }
-form textarea {
+.tableform form textarea {
     height: 100px; /* Increase height of textarea */
 }
 
-form button {
+.tableform form button {
     padding: 12px; /* Reduce padding to make the button smaller */
     background: #ff5361;
     color: #fff;
     font-size: 16px; /* Reduce font size to fit smaller button */
-    border: none;
     outline: none;
     cursor: pointer;
     width: 50%; /* Make the button take half width of its container */
@@ -161,24 +162,25 @@ form button {
     border-radius: 30px; 
     font-family: 'Poppins', sans-serif;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border: 1px solid #ff5361;
 }
-form button:hover {
+.tableform form button:hover {
     background-color: #fdf9fa; /* Change background color on hover */
     color: #ff5361;
     border: 1px solid #ff5361;
 }
 
-form input[type="text"]:hover {
+.tableform form input[type="text"]:hover {
     background-color: #beb5b5; /* Change background color on hover */
     color: #fff;
     border-radius: 0px;
 }
-form input[type="email"]:hover {
+.tableform form input[type="email"]:hover {
     background-color: #beb5b5; /* Change background color on hover */
     color: #fff;
     border-radius: 0px;
 }
-form textarea:hover {
+.tableform form textarea:hover {
     background-color: #beb5b5; /* Change background color on hover */
     color: #fff;
     border-radius: 0px;
