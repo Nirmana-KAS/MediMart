@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="css/cart.css">
     </head>
     <body>
+        <div>
+            <jsp:include page="Header.jsp" /> 
+        </div>
         <div class="container">
             <h1>Your Cart</h1>
                         <!-- Cart items will be dynamically added here -->
@@ -117,6 +120,9 @@
     });
     
     </script>
+    <div>
+       <jsp:include page="footer.jsp" />  
+    </div>
     </body>
     
 </html>

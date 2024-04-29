@@ -53,6 +53,11 @@ public final class contact_002dus_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("        <link rel=\"stylesheet\" href=\"css/contact-us.css\">\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
+      out.write("        <div>\r\n");
+      out.write("            ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "Header.jsp", out, false);
+      out.write(" \r\n");
+      out.write("        </div>\r\n");
       out.write("        <div class=\"container\">\r\n");
       out.write("            <div class=\"container2\">\r\n");
       out.write("                <img src=\"images/vector1.png\" alt=\"Vector 1\" class=\"vector vector-1\">\r\n");
@@ -69,7 +74,7 @@ public final class contact_002dus_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("                <tr>\r\n");
       out.write("                    <td class=\"image-column\">\r\n");
       out.write("                        <!-- Your large image goes here -->\r\n");
-      out.write("                        <img src=\"images/con 110.png\" alt=\"Large Image\" height=\"100%\" width=100%>\r\n");
+      out.write("                        <img src=\"images/con 02.png\" alt=\"Large Image\" height=\"100%\" width=100%>\r\n");
       out.write("                    </td>\r\n");
       out.write("                    <td class=\"form-column\">\r\n");
       out.write("                        <form action=\"ContactServlet\" method=\"post\">\r\n");
@@ -84,6 +89,11 @@ public final class contact_002dus_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("                </tr>\r\n");
       out.write("            </table>\r\n");
       out.write("        </div>\r\n");
+      out.write("    <div>\r\n");
+      out.write("       ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "footer.jsp", out, false);
+      out.write("  \r\n");
+      out.write("    </div>       \r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {

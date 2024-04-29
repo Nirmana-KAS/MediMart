@@ -23,7 +23,7 @@
             <div class="background"></div>
             <div class="container">
                 <div class="content">
-                    <h2 class="logo">Medi Mart</h2>
+                    <h2 class="logo">MediMart</h2>
                     
                     
                 </div>
@@ -53,7 +53,7 @@
                             <button type="submit" class="btn">Sign In</button>
     
                             <div class="login-register">
-                                <p>Don't have an account?<a href="register.jsp" class="register-link">Sign Up</a></p>
+                                <p>Don't have an account?<a href="sign up.jsp" class="register-link">Sign Up</a></p>
                             </div>
                         </form>
                     </div>

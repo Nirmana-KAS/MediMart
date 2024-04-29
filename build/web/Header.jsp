@@ -59,8 +59,9 @@
                             <!-- Left area on Navbar -->
                                 <div class="topnav-left">
                                     <a href="index.jsp" class="active">Home</a>
+                                    <a href="shop.jsp">Shop</a>
                                     <div class="dropdown">
-                                        <button class="dropbtn">Shop 
+                                        <button class="dropbtn">Products
                                             <i class="fa fa-caret-down"></i>
                                         </button>
                                         <div class="dropdown-content">
@@ -125,10 +126,10 @@
                             <!-- Right area on Navbar -->
                                 <div class="topnav-right">
                                     <div class="shoppingcart-link">
-                                        <a href="#shoppingcart" class=""><img class="shopping-cart" src="images/ShoppingCartBlack.png" alt="shopping-cart"></a>
+                                        <a href="cart.jsp" class=""><img class="shopping-cart" src="images/ShoppingCartBlack.png" alt="shopping-cart"></a>
                                     </div>
                                     <div class="Sign-links">
-                                        <a href="#about" class="active">SIGN IN / UP</a>
+                                        <a href="" class="active">SIGN IN / UP</a>
                                     </div>
                                 </div>
                         </div>

@@ -81,15 +81,17 @@ margin: 15px 100px 0px 100px;
   color: #ffffff;
 }
 
+ .second-left a {
+  color: #ffffff;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
  .second-left a:hover {
   color: black;
   text-decoration: none;
 }
 
- .second-left a {
-  color: #ffffff;
-  margin-left: 10px;
-}
 /*Second left side footer styles end*/
 
 /*Center area footer styles start*/
@@ -109,6 +111,7 @@ margin: 15px 100px 0px 100px;
 
 .foot-center li a{
   color: #ffffff;
+  text-decoration: none;
 }
 
 .custemercare {
@@ -173,6 +176,7 @@ margin: 15px 100px 0px 100px;
 
 .second-right a:hover {
   color: #000000;
+  text-decoration: none;
 }
 
 .second-right h5 {

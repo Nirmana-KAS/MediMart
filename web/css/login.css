@@ -42,7 +42,7 @@ body{
     transform: translate(-50%, -50%);
     width: 75%;
     height: 500px;
-    background: url('images/5675.jpg') no-repeat;
+    background-image: url('5675.png') no-repeat;
     background-size: calc(110vh - 50px);
     background-position: left;
     background-position-x: -70px;
@@ -64,6 +64,7 @@ body{
     flex-direction: column;
     
 }
+
 .content .logo{
     margin-top: -40px;
     margin-left: -50px;

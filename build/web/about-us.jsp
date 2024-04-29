@@ -14,7 +14,9 @@
         <link rel="stylesheet" href="css/about-us.css"> 
     </head>
     <body>
+        <div>
             <jsp:include page="Header.jsp" /> 
+        </div>
             <div class="description">
                 <div class="slide">
                     <img src="images/b6.jpg" alt="Image 1">
@@ -188,5 +190,8 @@
                 <button class="custom-button">Start shopping With Us</button>
             </div>
           </section>  
+    <div>
+       <jsp:include page="footer.jsp" />  
+    </div>
     </body>
 </html>
