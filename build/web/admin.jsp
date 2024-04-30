@@ -1,5 +1,5 @@
 <%-- 
-    Document   : admiin
+    Document   : admin
     Created on : Mar 30, 2024, 11:09:51 AM
     Author     : dines
 --%>
@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Admin Panel</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/admin.css">
@@ -20,7 +20,7 @@
             </header>
             <nav class="sidebar">
               <ul>
-                <li><a href="#">Products</a></li>
+                <li><a href="shop.jsp">Products</a></li>
                 <li><a href="#">Users</a></li>
                 <li><a href="#">Settings</a></li>
               </ul>
@@ -44,30 +44,57 @@
               <div class="product-form">
                 <h3>Add Product</h3>
                 <form id="product-form">
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required>
-                  <label for="price">Price:</label>
-                  <input type="number" id="price" name="price" required>
+                  <label for="pid">Product ID:</label>
+                  <input type="text" name="pid" required>
+                  
+                  <label for="pname">Name</label>
+                  <input type="text"  name="pname" required>
+                  
+                  <label for="pprice">Price:</label>
+                  <input type="number" name="pprice" required>
+                  
+                  <label for="pdescription">Description:</label>
+                  <input type="text" name="pdescription" required>
+                  
+                  <label for="pquantity">Quantity:</label>
+                  <input type="number" name="pquantity" required>
+                  
+                  <label for="ptype">Type:</label>
+                  <input type="text" name="ptype" required>
+                  
                   <button type="submit">Add Product</button>
                 </form>
               </div>
               <div class="product-form">
                 <h3>Delete Product</h3>
                 <form id="product-form">
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required>
-                  <label for="price">Price:</label>
-                  <input type="number" id="price" name="price" required>
+                  <label for="pid">Product ID:</label>
+                  <input type="text" name="pid" required> 
+                  
                   <button type="submit">Delete Product</button>
                 </form>
               </div>
               <div class="product-form">
                 <h3>Edit Product</h3>
                 <form id="product-form">
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required>
-                  <label for="price">Price:</label>
-                  <input type="number" id="price" name="price" required>
+                 <label for="pid">Product ID:</label>
+                  <input type="text" name="pid" required>
+                  
+                  <label for="pname">Name</label>
+                  <input type="text"  name="pname" required>
+                  
+                  <label for="pprice">Price:</label>
+                  <input type="number" name="pprice" required>
+                  
+                  <label for="pdescription">Description:</label>
+                  <input type="text" name="pdescription" required>
+                  
+                  <label for="pquantity">Quantity:</label>
+                  <input type="number" name="pquantity" required>
+                  
+                  <label for="ptype">Type:</label>
+                  <input type="text" name="ptype" required>
+                  
                   <button type="submit">Edit Product</button>
                 </form>
               </div>
