@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="css/cart.css">
     </head>
     <body>
+        <div>
+            <jsp:include page="Header.jsp" /> 
+        </div>
         <div class="container">
             <h1>Your Cart</h1>
                       
@@ -29,7 +32,7 @@
         </div>
          <!--  cart items (this are example....link this to add to cart button......    @ harsha) -->
         <div class="cart-item">
-            <div class="column"><img src="image/1.jpg" alt="BRILINTA 90MG TAB 56S"></div>
+            <div class="column"><img src="images/products/1.jpg" alt="BRILINTA 90MG TAB 56S"></div>
             <div class="column" id="set">BRILINTA 90MG TAB 56S</div>
             <div class="column price" id="set">302.54 </div>
             <div class="column quantity">
@@ -41,7 +44,7 @@
     <div class="column"><button class="remove-item">Remove</button></div> 
         </div>
         <div class="cart-item">
-            <div class="column"><img src="image/2.jpg" alt="PLAVIX 75MG TABS 28 S"></div>
+            <div class="column"><img src="images/products/2.jpg" alt="PLAVIX 75MG TABS 28 S"></div>
             <div class="column" id="set">PLAVIX 75MG TABS 28 S</div>
             <div class="column price" id="set">34.72 </div>
             <div class="column quantity">
@@ -54,7 +57,7 @@
         </div>
     
     <div class="cart-item">
-            <div class="column"><img src="image/3.png" alt="CLOPIVAS 75MG"></div>
+            <div class="column"><img src="images/products/3.png" alt="CLOPIVAS 75MG"></div>
             <div class="column" id="set">CLOPIVAS 75MG</div>
             <div class="column price" id="set">15.87</div>
             <div class="column quantity">
@@ -91,7 +94,7 @@
         <div class="grand-total">
             Grand Total: <span id="grand-total"></span>
         </div>
-        <button id="checkout-button">Checkout</button>
+        <a href="checkout.jsp"><button id="checkout-button">Checkout</button></a>
     </div>
     
     
@@ -188,6 +191,9 @@
         document.getElementById("grand-total").innerText = grandTotal.toFixed(2);
     }
     </script>
+    <div>
+       <jsp:include page="footer.jsp" />  
+    </div>
     </body>
     
     

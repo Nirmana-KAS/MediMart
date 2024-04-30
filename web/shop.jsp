@@ -13,16 +13,19 @@
         <link rel="stylesheet" href="css/shop.css">
     </head>
     <body>
+        <div>
+            <jsp:include page="Header.jsp" /> 
+        </div>
         <div class="carousel">
             <div class="carousel-images">
                 <div class="carousel-image">
-                <img src='image\carosal2.jpg' alt="Image 1">
+                <img src="images/carosal/carosal2.jpg" alt="Image 1">
             </div>
             <div class="carousel-image">
-                <img src='image\carosal4.jpg' alt="Image 2">
+                <img src="images/carosal/carosal4.jpg" alt="Image 2">
             </div>
             <div class="carousel-image">
-                <img src='image\carosal3.jpg' alt="Image 3">
+                <img src="images/carosal/carosal3.jpg" alt="Image 3">
             </div>
             </div>
     <div class="slogan-head">Your Wellness, Our Priority</div>
@@ -139,30 +142,21 @@
     
             // Sample product data (replace with your actual data)
             const products = [
+   
+    { image: 'images/products/1.jpg', name: "BRILINTA 90MG TAB 56S", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication. When not to use, It is contraindicated in patients with known hypersensitivity to the drug.", price: 302.54 },
+                { image: 'images/products/2.jpg', name: "PLAVIX 75MG TABS 28 S", description: "Active ingredient clopidogrel hydrogen sulfate. Plavix 75 mg film-coated tablets Each film-coated tablet contains 75 mg of clopidogrel (as hydrogen sulphate).", price: 34.72  },
     
-    
-    
-            { image: 'image/1.jpg', name: "BRILINTA 90MG TAB 56S", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication. When not to use, It is contraindicated in patients with known hypersensitivity to the drug.", price: 302.54 },
-
-{ image: 'image/2.jpg', name: "PLAVIX 75MG TABS 28 S", description: "Active ingredient clopidogrel hydrogen sulfate. Plavix 75 mg film-coated tablets Each film-coated tablet contains 75 mg of clopidogrel (as hydrogen sulphate).", price: 34.72  }, 
-
-{ image: 'image/3.png', name: "CLOPIVAS 75MG", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication", price: 15.87 },
-
-{ image: 'image/4.jpg', name: "DIOVAN CAP 80MG", description: "Principal Novartis, Therapeutic Group Cardio Antihypertensive, Generic Name Valsartan. Diovan (Valsartan) - 80mg (28 Tablets) Diovan (Valsartan) ", price:199.44 },
-
-{ image: 'image/5.jpg', name: "OSARTIL 50MG TAB 100S", description: "Lowering blood pressure helps to prevent future heart attacks and strokes.common side effects such as fatigue, low blood pressure, cold hands and feet, headache, indigestion, diarrhea, etc.", price: 10.50  },
-
-{ image: 'image/6.jpg', name: " XPLENDED 5MG 10S", description: "Used along with a proper diet to help lower bad cholesterol and fats (such as LDL, triglycerides) and raise good cholesterol (HDL) in the blood.", price: 28.87 },
-
-{ image: 'image/7.jpeg', name: "CO-DIOVAN 160/12.50MG 28 S", description: "Co-Diovan fixed-dose combination is indicated in patients whose blood pressure is not adequately controlled on valsartan or hydrochlorothiazide monotherapy. ", price: 300.00 },
-
-{ image: 'image/8.jpg', name: "TELDAY 80MG 100 S", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication", price: 60.00 },
-
-{ image: 'image/9.jpg', name: "MINIPRESS XL 5MG TAB", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication", price: 135.50 },
-
-{ image: 'image/10.png', name: "NEBIVAS 5MG TAB 50 S", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication", price: 73.50 },
-
-
+     { image: 'images/products/3.png', name: "CLOPIVAS 75MG", description: "Principal Novartis, Therapeutic Group Cardio Antihypertensive, Generic Name Valsartan. Diovan (Valsartan) - 80mg (28 Tablets) Diovan (Valsartan) Uses,", price: 15.87 },
+    { image: 'images/products/4.jpg', name: "DIOVAN CAP 80MG", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication", price:199.44 },
+    { image: 'images/products/5.jpg', name: "CLOPIVAS 75MG", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication", price: 15.87 },
+    { image: 'images/products/6.jpg', name: "CLOPIVAS 75MG", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication", price: 15.87 },
+    { image: 'images/products/7.jpeg', name: "CLOPIVAS 75MG", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication", price: 15.87 },
+    { image: 'images/products/8.jpg', name: "CLOPIVAS 75MG", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication", price: 15.87 },
+    { image: 'images/products/9.jpg', name: "CLOPIVAS 75MG", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication", price: 15.87 },
+    { image: 'images/products/10.png', name: "CLOPIVAS 75MG", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication", price: 15.87 },
+    { image: 'images/products/11.png', name: "CLOPIVAS 75MG", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication", price: 15.87 },
+    { image: 'iimages/products/12.jpg', name: "CLOPIVAS 75MG", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication", price: 15.87 },
+              
                    ];
     
             const productsPerPage = 9; // Number of products per page
@@ -276,7 +270,7 @@
                 localStorage.setItem('cart', JSON.stringify(cartItems));
     
                 // Redirect to cart page
-                window.location.href = "C:\Users\sakun\OneDrive\Desktop\cart.html";
+                window.location.href = "cart.jsp";
             }
     
             // Attach event listener to Add to Cart buttons
@@ -286,6 +280,8 @@
             });
         </script>
     
-        
+    <div>
+       <jsp:include page="footer.jsp" />  
+    </div>  
     </body>
 </html>    

@@ -1,94 +1,95 @@
+
 /*footer styles start*/
 .decription-footer {
   margin: 0 auto;
-  overflow-x: hidden;
-  background-color: #003399;
+  overflow-x:hidden;
+  background-color: #009999;
   color: #ffffff;
 }
 
 /*First left side footer styles start*/
-.decription-footer .first-left {
-  display: flex;
-  float: left;
-  margin-left: 50px;
+.first-left {
+ display: flex;
+ float: left;
+ margin-left: 50px;
 }
 
-.decription-footer .first-left ul {
-  list-style: none;
-  justify-content: center;
-  align-items: center;
+.first-left ul {
+ list-style: none;
+ justify-content: center;
+ align-items: center;
 }
 
-.decription-footer .about-footer-links {
-  justify-content: center;
+ .about-footer-links {
+ justify-content: center;
 }
 
-.decription-footer .first-left li {
-  display: flex;
-  justify-content: center;
+ .first-left li{
+ display: flex;
+ justify-content: center;
 }
 
-.decription-footer .first-left p {
-  font-size: 15px;
+.first-left p {
+ font-size: 15px;
+}
+ 
+.medimart-logo  {
+ width: 150px;
+ background-color: #ffffff;
+ border-radius: 90px;
+ margin-top: 20px;
+ margin-bottom: 20px;
 }
 
-.first-left .about-footer-links .medimart-logo {
-  width: 150px;
-  background-color: #ffffff;
-  border-radius: 90px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.footer-social-links a {
-  margin: 0px 25px 0px 0px;
-  text-decoration: none;
+.footer-social-links a{
+ margin: 0px 25px 0px 0px;
+ text-decoration: none;
 }
 
 .foot-facebook-logo {
-  width: 25px;
+ width: 25px;
 }
 
-.foot-messenger-logo {
-  width: 25px;
+.foot-messenger-logo{
+ width: 25px;
 }
 
 .foot-whatsapp-logo {
-  width: 25px;
+ width: 25px;
 }
 
 .foot-email-logo {
-  width: 25px;
+width: 25px;
 }
-
 /*First left side footer styles end*/
 
 /*Second left side footer styles start*/
-.decription-footer .second-left {
-  display: flex;
-  float: left;
-  margin: 15px 100px 0px 100px;
+.second-left {
+display: flex;
+float: left;
+margin: 15px 100px 0px 100px;
 }
 
-.decription-footer .second-left ul {
-  list-style-image: url('images/MediMartUlLogo.png');
+ .second-left ul {
+  list-style-image: url('MediMartUlLogo.png');
   margin-top: 20px;
 }
 
-.decription-footer .second-left li {
+ .second-left li {
   margin-top: 20px;
   font-size: 17px;
   color: #ffffff;
 }
 
-.decription-footer .second-left a:hover {
-  color: black;
+ .second-left a {
+  color: #ffffff;
+  margin-left: 10px;
   text-decoration: none;
 }
 
-.decription-footer .second-left a {
-  color: #ffffff;
-  margin-left: 10px;
+ .second-left a:hover {
+  color: black;
+  text-decoration: none;
 }
 
 /*Second left side footer styles end*/
@@ -100,7 +101,7 @@
   margin-left: 38%;
 }
 
-.foot-center ul {
+.foot-center ul{
   list-style: none;
 }
 
@@ -108,102 +109,101 @@
   margin-top: 20px;
 }
 
-.foot-center li a {
+.foot-center li a{
   color: #ffffff;
+  text-decoration: none;
 }
 
-.foot-center .custemercare {
+.custemercare {
   width: 300px;
 }
 
-.foot-center .contact-number-links a:hover {
+.contact-number-links a:hover {
   color: black;
   text-decoration: none;
 }
 
-.foot-center .contact-number-links .cutomercare-logo {
+.cutomercare-logo {
   width: 20px;
 }
 
-.foot-center .contact-number-links .physicalstore-logo {
+.physicalstore-logo {
   width: 20px;
 }
-
 /*Center area footer styles end*/
 
 /*First right side footer styles start*/
-.decription-footer .first-right {
+.first-right {
   display: block;
   float: left;
-  margin-left: 435;
+  margin-left: 375px;
   padding-top: 30px;
 }
 
-.decription-footer .first-right ul {
-  list-style-image: url('images/openhoursfoot.png');
+.first-right ul {
+  list-style-image: url('openhoursfoot.png');
 }
 
-.decription-footer .first-right h5 {
+ .first-right h5 {
   margin-top: 15px;
 }
 
-.decription-footer .first-right li {
+.first-right li {
   margin-top: 15px;
 }
-
 /*First right side footer styles end*/
 
 /*Second right side footer styles start*/
-.decription-footer .second-right {
+.second-right {
   display: block;
   float: right;
   margin-right: 50px;
   padding-top: 30px;
 }
 
-.decription-footer .second-right ul {
+.second-right ul {
   list-style: none;
 }
 
-.decription-footer .second-right li {
+.second-right li {
   margin-top: 20px;
 }
 
-.decription-footer .second-right a {
+.second-right a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.decription-footer .second-right a:hover {
+.second-right a:hover {
   color: #000000;
+  text-decoration: none;
 }
 
-.decription-footer .second-right h5 {
+.second-right h5 {
   margin-top: 20px;
 }
 
-.decription-footer .second-right .footer-location-logo {
+.footer-location-logo {
   width: 20px;
 }
 
-.decription-footer .second-right .footer-fastdelivery-logo {
+.footer-fastdelivery-logo {
   width: 110px;
 }
 
-.decription-footer .second-right .footer-freedelivery-logo {
+.footer-freedelivery-logo {
   width: 130px;
 }
 
-.decription-footer .second-right .footer-safedelivery-logo {
+ .footer-safedelivery-logo {
   width: 100px;
 }
 
-.decription-footer .second-right form {
+.second-right form {
   background: none;
 }
 
-input[type=text],
-input[type=submit] {
+input[type=text], input[type=submit] {
   background: #ffffff;
   padding: 12px;
   border: 2px solid #ffffff;
@@ -220,7 +220,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background: #ffffff;
+  background: #00FFB0;
   color: #000000;
 }
 
@@ -228,7 +228,7 @@ input[type=submit]:hover {
 /*Second right side footer styles end*/
 
 /*Payment links area footer styles start*/
-.decription-footer .payment-links {
+.payment-links {
   display: flex;
   margin-bottom: 0px;
   margin: 0;
@@ -237,55 +237,56 @@ input[type=submit]:hover {
   padding-left: 35%;
 }
 
-.decription-footer .payment-links a {}
+.decription-footer .payment-links a {
+  
+}
 
-.payment-links .bank-logo {
+ .bank-logo {
   width: 35px;
 }
 
-.payment-links .visa-logo {
+ .visa-logo {
   width: 40px;
 }
 
-.payment-links .master-logo {
+ .master-logo {
   width: 40px;
 }
 
-.payment-links .paypal-logo {
+ .paypal-logo {
   width: 55px;
 }
 
-.payment-links .vishwa-logo {
+ .vishwa-logo {
   width: 40px;
 }
 
-.payment-links .amex-logo {
+ .amex-logo {
   width: 40px;
 }
 
-.payment-links .frimi-logo {
+ .frimi-logo {
   width: 40px;
 }
 
-.payment-links .genie-logo {
+ .genie-logo {
   width: 45px;
 }
 
-.payment-links .ezcash-logo {
+ .ezcash-logo {
   width: 40px;
 }
 
-.payment-links .lakpay-logo {
+ .lakpay-logo {
   width: 35px;
 }
 
-.payment-links .upay-logo {
+ .upay-logo {
   width: 40px;
 }
 
-.payment-links .mcash-logo {
+ .mcash-logo {
   width: 40px;
 }
-
 /*Payment links area footer styles end*/
-/*All footer styles end*/
+ /*All footer styles end*/

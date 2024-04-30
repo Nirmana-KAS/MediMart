@@ -30,7 +30,7 @@ public final class about_002dus_jsp extends org.apache.jasper.runtime.HttpJspBas
     PageContext _jspx_page_context = null;
 
     try {
-      response.setContentType("text/html");
+      response.setContentType("text/html;charset=UTF-8");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -41,12 +41,10 @@ public final class about_002dus_jsp extends org.apache.jasper.runtime.HttpJspBas
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
-      out.write("<!--\r\n");
-      out.write("To change this license header, choose License Headers in Project Properties.\r\n");
-      out.write("To change this template file, choose Tools | Templates\r\n");
-      out.write("and open the template in the editor.\r\n");
-      out.write("-->\r\n");
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <title>TODO supply a title</title>\r\n");
@@ -55,12 +53,14 @@ public final class about_002dus_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("        <link rel=\"stylesheet\" href=\"css/about-us.css\"> \r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
+      out.write("        <div>\r\n");
       out.write("            ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "Header.jsp", out, false);
       out.write(" \r\n");
+      out.write("        </div>\r\n");
       out.write("            <div class=\"description\">\r\n");
       out.write("                <div class=\"slide\">\r\n");
-      out.write("                    <img src=\"images/b6.jpg\" alt=\"Image 1\">\r\n");
+      out.write("                    <img src=\"images/about-us/b6.jpg\" alt=\"Image 1\">\r\n");
       out.write("                  </div>      \r\n");
       out.write("                <div class=\"content\">\r\n");
       out.write("                  <h2><b>Get To Know MEDIMART</b></h2>\r\n");
@@ -83,7 +83,7 @@ public final class about_002dus_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                </div>        \r\n");
       out.write("        <div class=\"slide2\">\r\n");
       out.write("              <div class=\"info-box\">\r\n");
-      out.write("                <img src=\"images/gq.jpeg\" alt=\"Image 2\">\r\n");
+      out.write("                <img src=\"images/about-us/gq.jpeg\" alt=\"Image 2\">\r\n");
       out.write("                <div class=\"info-content\">\r\n");
       out.write("                    <h2>Good Quality</h2>\r\n");
       out.write("                    <p>Discover premium health solutions at MediMart! From trusted brands to rigorously tested medications, \r\n");
@@ -91,7 +91,7 @@ public final class about_002dus_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                </div>\r\n");
       out.write("            </div>       \r\n");
       out.write("            <div class=\"info-box\">\r\n");
-      out.write("                <img src=\"images/free d.jpg\" alt=\"Image 3\">\r\n");
+      out.write("                <img src=\"images/about-us/free d.jpg\" alt=\"Image 3\">\r\n");
       out.write("                <div class=\"info-content\">\r\n");
       out.write("                    <h2>Free Delivery</h2>\r\n");
       out.write("                    <p>Enjoy the convenience of doorstep delivery with MediMart! Get your essential medications delivered for free, right to your doorstep. \r\n");
@@ -99,7 +99,7 @@ public final class about_002dus_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                </div>\r\n");
       out.write("            </div>\r\n");
       out.write("            <div class=\"info-box\">\r\n");
-      out.write("                <img src=\"images/safety.jpg\" alt=\"Image 4\">\r\n");
+      out.write("                <img src=\"images/about-us/safety.jpg\" alt=\"Image 4\">\r\n");
       out.write("                <div class=\"info-content\">\r\n");
       out.write("                    <h2>Safety</h2>\r\n");
       out.write("                    <p>Discover peace of mind with MediMart's safety-first approach to medicines. Our meticulously curated selection ensures every product meets stringent quality standards, \r\n");
@@ -223,7 +223,7 @@ public final class about_002dus_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("            setInterval(showNextItem, 5000); \r\n");
       out.write("          </script> \r\n");
       out.write("          <section class=\"description4\">\r\n");
-      out.write("            <img src=\"images/b4.jpg\" alt=\"Bottom Background Image\" style=\"position:relative; bottom: 0;padding-bottom: 30px; left: 0; width: 2000px; height: 600px; z-index: -1;\">\r\n");
+      out.write("            <img src=\"images/about-us/b4.jpg\" alt=\"Bottom Background Image\" style=\"position:relative; bottom: 0;padding-bottom: 30px; left: 0; width: 2000px; height: 600px; z-index: -1;\">\r\n");
       out.write("            <div class=\"content4\">\r\n");
       out.write("              <h1>Thank You For Trusting<br> MEDIMART!</h1>\r\n");
       out.write("              <br>\r\n");
@@ -233,6 +233,11 @@ public final class about_002dus_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("                <button class=\"custom-button\">Start shopping With Us</button>\r\n");
       out.write("            </div>\r\n");
       out.write("          </section>  \r\n");
+      out.write("    <div>\r\n");
+      out.write("       ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "footer.jsp", out, false);
+      out.write("  \r\n");
+      out.write("    </div>\r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {

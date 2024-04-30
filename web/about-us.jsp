@@ -1,9 +1,11 @@
+<%-- 
+    Document   : about-us
+    Created on : Mar 30, 2024, 11:09:51 AM
+    Author     : dines
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>TODO supply a title</title>
@@ -12,10 +14,12 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/about-us.css"> 
     </head>
     <body>
+        <div>
             <jsp:include page="Header.jsp" /> 
+        </div>
             <div class="description">
                 <div class="slide">
-                    <img src="images/b6.jpg" alt="Image 1">
+                    <img src="images/about-us/b6.jpg" alt="Image 1">
                   </div>      
                 <div class="content">
                   <h2><b>Get To Know MEDIMART</b></h2>
@@ -38,7 +42,7 @@ and open the template in the editor.
                 </div>        
         <div class="slide2">
               <div class="info-box">
-                <img src="images/gq.jpeg" alt="Image 2">
+                <img src="images/about-us/gq.jpeg" alt="Image 2">
                 <div class="info-content">
                     <h2>Good Quality</h2>
                     <p>Discover premium health solutions at MediMart! From trusted brands to rigorously tested medications, 
@@ -46,7 +50,7 @@ and open the template in the editor.
                 </div>
             </div>       
             <div class="info-box">
-                <img src="images/free d.jpg" alt="Image 3">
+                <img src="images/about-us/free d.jpg" alt="Image 3">
                 <div class="info-content">
                     <h2>Free Delivery</h2>
                     <p>Enjoy the convenience of doorstep delivery with MediMart! Get your essential medications delivered for free, right to your doorstep. 
@@ -54,7 +58,7 @@ and open the template in the editor.
                 </div>
             </div>
             <div class="info-box">
-                <img src="images/safety.jpg" alt="Image 4">
+                <img src="images/about-us/safety.jpg" alt="Image 4">
                 <div class="info-content">
                     <h2>Safety</h2>
                     <p>Discover peace of mind with MediMart's safety-first approach to medicines. Our meticulously curated selection ensures every product meets stringent quality standards, 
@@ -176,7 +180,7 @@ and open the template in the editor.
             setInterval(showNextItem, 5000); 
           </script> 
           <section class="description4">
-            <img src="images/b4.jpg" alt="Bottom Background Image" style="position:relative; bottom: 0;padding-bottom: 30px; left: 0; width: 2000px; height: 600px; z-index: -1;">
+            <img src="images/about-us/b4.jpg" alt="Bottom Background Image" style="position:relative; bottom: 0;padding-bottom: 30px; left: 0; width: 2000px; height: 600px; z-index: -1;">
             <div class="content4">
               <h1>Thank You For Trusting<br> MEDIMART!</h1>
               <br>
@@ -186,5 +190,8 @@ and open the template in the editor.
                 <button class="custom-button">Start shopping With Us</button>
             </div>
           </section>  
+    <div>
+       <jsp:include page="footer.jsp" />  
+    </div>
     </body>
 </html>

@@ -1,9 +1,11 @@
+<%-- 
+    Document   : sign up
+    Created on : Mar 30, 2024, 11:09:51 AM
+    Author     : dines
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>TODO supply a title</title>
@@ -21,8 +23,11 @@ and open the template in the editor.
             
             <div class="background"></div>
             <div class="container">
+            <div class="image01">
+                <img src="images/login-and-sign up/5670.jpg"style="position:relative;width: 800px; height: 580px; z-index: -1;">
+            </div>
                 <div class="content">
-                    <h2 class="logo">Medi Mart</h2>
+                    <h2 class="logo">MediMart</h2>
                     
                     
                 </div>

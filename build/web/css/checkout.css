@@ -1,0 +1,86 @@
+body{
+  background-size:2000px 1050px; 
+  background-repeat: no-repeat;
+ }
+ .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.order-summary{
+  flex: 1;
+  padding: 30px;
+  border: 1px solid #474646;
+  border-radius: 10px;
+  margin-right: 25px;
+  margin-top: 25%;
+  font-size: 1em;
+  color: #03002e;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+} 
+.checkout-form {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #474646;
+  border-radius: 10px;
+  margin-right: 25px;
+  margin-top: 25%;
+}
+.order-summary h2{
+  margin-top: 10px;
+  font-size: 2.8em;
+  color:#0747a1;
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+}
+.checkout-form h2 {
+  margin-top: 10px;
+  font-size: 2.8em;
+  color:#0747a1;
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+}
+.checkout-form input{
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #03002e;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+}
+.checkout-form textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #03002e;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+}
+.checkout-form select {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #03002e;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: justify;
+}
+.checkout-form button {
+  background-color:#0747a1;
+  border: none;
+  color:whitesmoke;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor:pointer;
+  border-radius: 8px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.checkout-form button:hover {
+  background-color: #17d2c4;
+}

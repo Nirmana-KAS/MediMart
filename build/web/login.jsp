@@ -1,9 +1,11 @@
+<%-- 
+    Document   : login
+    Created on : Mar 30, 2024, 11:09:51 AM
+    Author     : dines
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>TODO supply a title</title>
@@ -12,18 +14,15 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/login.css">
     </head>
     <body>
-        
-        
-            <header class="header">
-               
-            </header>
             
-            <div class="background"></div>
+        <div class="background"></div>
+
             <div class="container">
+            <div class="image01">
+                <img src="images/login-and-sign up/5675.png"style="position:relative;width: 800px; height: 550px; z-index: -1;">
+            </div>
                 <div class="content">
-                    <h2 class="logo">Medi Mart</h2>
-                    
-                    
+                    <h2 class="logo">MediMart</h2>
                 </div>
                 
                 <div class="logreg-box">
@@ -51,7 +50,7 @@ and open the template in the editor.
                             <button type="submit" class="btn">Sign In</button>
     
                             <div class="login-register">
-                                <p>Don't have an account?<a href="register.jsp" class="register-link">Sign Up</a></p>
+                                <p>Don't have an account?<a href="sign up.jsp" class="register-link">Sign Up</a></p>
                             </div>
                         </form>
                     </div>
