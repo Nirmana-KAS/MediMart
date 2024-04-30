@@ -31,13 +31,13 @@
     <div class="slogan-head">Your Wellness, Our Priority</div>
     <div class="slogan-description">"We prioritize your health and well-being by delivering quality medications and healthcare essentials directly to you, ensuring a seamless experience."</div>
         </div>
-        <!-- Container for sort by, filter section, and quantity controls -->
+        <!-- sort by, filter ,  quantity  -->
         <div class="options-container">
-            <!-- Sort by list -->
+           
             <div class="sort-by">
                 <label for="sort">Sort By:</label>
                 <select name="sort" id="sort">
-            <option value="default">Default</option>
+                    <option value="default">Default</option>
                     <option value="price_low_to_high">Price Low to High</option>
                     <option value="price_high_to_low">Price High to Low</option>
                     <option value="name_a_to_z">Name A to Z</option>
@@ -45,31 +45,36 @@
                 </select>
             </div>
     
-            <!-- Filter section -->
+    
+           
             <div class="filter-section">
                 <h3>Filter By:</h3>
-                <label for="filter1" class="filter-checkbox"><input type="checkbox" id="filter1"> Analgesics</label>
-                <label for="filter2" class="filter-checkbox"><input type="checkbox" id="filter2"> Antibiotics</label>
-                <label for="filter3" class="filter-checkbox"><input type="checkbox" id="filter3"> Antidepressants</label>
-            <label for="filter4" class="filter-checkbox"><input type="checkbox" id="filter1"> Antivirals</label>
-                <label for="filter5" class="filter-checkbox"><input type="checkbox" id="filter2"> Cardiovascular Medications</label>
-                <label for="filter6" class="filter-checkbox"><input type="checkbox" id="filter3"> Gastrointestinal Medications</label>
-            <label for="filter7" class="filter-checkbox"><input type="checkbox" id="filter2"> Topical Medications</label>
-                <label for="filter8" class="filter-checkbox"><input type="checkbox" id="filter3"> Vitamins and Supplements</label>
-                <!-- Add more checkboxes as needed -->
+                <label for="filter1" class="filter-checkbox"><input type="checkbox" id="filter1"> Option 1</label>
+                <label for="filter2" class="filter-checkbox"><input type="checkbox" id="filter2"> Option 2</label>
+                <label for="filter3" class="filter-checkbox"><input type="checkbox" id="filter3"> Option 3</label>
+                <label for="filter4" class="filter-checkbox"><input type="checkbox" id="filter4"> Option 1</label>
+                <label for="filter5" class="filter-checkbox"><input type="checkbox" id="filter5"> Option 2</label>
+                <label for="filter6" class="filter-checkbox"><input type="checkbox" id="filter6"> Option 3</label>
+                <label for="filter7" class="filter-checkbox"><input type="checkbox" id="filter7"> Option 1</label>
+                <label for="filter8" class="filter-checkbox"><input type="checkbox" id="filter8"> Option 2</label>
             </div>
     </div>
+
+
+
             <!-- Product grid -->
             <div class="product-grid">
-                <!-- Products will be dynamically generated here -->
             </div>
             <div class="pagination">
-                <button id="prevPageBtn"> <<.Previous Page </button>
-                <button id="nextPageBtn">Next Page>></button>
+                <button id="prevPageBtn"> <<...Previous Page </button>
+                <button id="nextPageBtn">Next Page...>></button>
             </div>
         </div>
     
-        <!-- JavaScript code -->
+
+
+        <!-- java script-->
+       
         <script>
     const carousel = document.querySelector('.carousel');
             const images = document.querySelector('.carousel-images');
@@ -86,57 +91,58 @@
                 counter++;
             }
     
-            setInterval(slide, 3000); // Change slide every 3 seconds
+            setInterval(slide, 3000); 
         
-        
-        // Function to handle sorting
-        document.getElementById('sort').addEventListener('change', function() {
-            const sortBy = this.value;
-            let sortedProducts = [];
+        //  sorting
+    document.getElementById('sort').addEventListener('change', function() {
+        const sortBy = this.value;
+        let sortedProducts = [];
+
+        switch (sortBy) {
+            case 'default':
+                sortedProducts = products.slice(); // Default to original order
+                break;
+
+            case 'price_low_to_high':
+                sortedProducts = products.slice().sort((a, b) => a.price - b.price);
+                break;
+            case 'price_high_to_low':
+                sortedProducts = products.slice().sort((a, b) => b.price - a.price);
+                break;
+            case 'name_a_to_z':
+                sortedProducts = products.slice().sort((a, b) => a.name.localeCompare(b.name));
+                break;
+            case 'name_z_to_a':
+                sortedProducts = products.slice().sort((a, b) => b.name.localeCompare(a.name));
+                break;
+                   }
+
+
+        displayProducts(sortedProducts);
+    });
+
     
-            switch (sortBy) {
-                case 'price_low_to_high':
-                    sortedProducts = products.slice().sort((a, b) => a.price - b.price);
-                    break;
-                case 'price_high_to_low':
-                    sortedProducts = products.slice().sort((a, b) => b.price - a.price);
-                    break;
-                case 'name_a_to_z':
-                    sortedProducts = products.slice().sort((a, b) => a.name.localeCompare(b.name));
-                    break;
-                case 'name_z_to_a':
-                    sortedProducts = products.slice().sort((a, b) => b.name.localeCompare(a.name));
-                    break;
-                default:
-                    sortedProducts = products.slice(); // Default to original order
-                    break;
-            }
-    
-            displayProducts(sortedProducts);
-        });
-    
-        // Function to handle filtering
-        document.querySelectorAll('.filter-checkbox input').forEach(checkbox => {
-            checkbox.addEventListener('change', function() {
-                const checkedFilters = Array.from(document.querySelectorAll('.filter-checkbox input:checked'))
-                                                .map(checkbox => checkbox.id);
-    
-                const filteredProducts = products.filter(product => {
-                    // Example: Filter products based on checkbox IDs
-                    return checkedFilters.includes('filter1') ? product.name.includes('Product 1') : true;
-                    // Add more conditions as needed for other filter options
-                });
-    
-                displayProducts(filteredProducts);
+          // filtering
+    document.querySelectorAll('.filter-checkbox input').forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            const checkedFilters = Array.from(document.querySelectorAll('.filter-checkbox input:checked'))
+                                            .map(checkbox => checkbox.id);
+
+            const filteredProducts = products.filter(product => {
+                // Example: Filter products based on checkbox IDs
+                return checkedFilters.includes('filter1') ? product.name.includes('Product 1') : true;
+                // Add more conditions as needed for other filter options
             });
+
+            displayProducts(filteredProducts);
         });
-    
+    });
+
     
     
             // Sample product data (replace with your actual data)
             const products = [
-    
-    
+   
     { image: 'images/products/1.jpg', name: "BRILINTA 90MG TAB 56S", description: "This medication is used to treat high blood pressure (hypertension). Side Effects, Dizziness or lightheadedness may occur as your body adjusts to the medication. When not to use, It is contraindicated in patients with known hypersensitivity to the drug.", price: 302.54 },
                 { image: 'images/products/2.jpg', name: "PLAVIX 75MG TABS 28 S", description: "Active ingredient clopidogrel hydrogen sulfate. Plavix 75 mg film-coated tablets Each film-coated tablet contains 75 mg of clopidogrel (as hydrogen sulphate).", price: 34.72  },
     
