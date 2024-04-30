@@ -73,7 +73,7 @@
     
     
             </div>
-        </div>
+    
     
     <div class="checkout-box">
         <h2>Checkout</h2>
