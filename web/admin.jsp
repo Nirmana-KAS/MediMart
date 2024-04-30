@@ -51,6 +51,26 @@
                   <button type="submit">Add Product</button>
                 </form>
               </div>
+              <div class="product-form">
+                <h3>Delete Product</h3>
+                <form id="product-form">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                  <label for="price">Price:</label>
+                  <input type="number" id="price" name="price" required>
+                  <button type="submit">Delete Product</button>
+                </form>
+              </div>
+              <div class="product-form">
+                <h3>Edit Product</h3>
+                <form id="product-form">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                  <label for="price">Price:</label>
+                  <input type="number" id="price" name="price" required>
+                  <button type="submit">Edit Product</button>
+                </form>
+              </div>
             </main>
           </div>
     </body>
