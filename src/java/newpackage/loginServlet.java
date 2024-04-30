@@ -11,9 +11,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -79,54 +76,59 @@ public class loginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       // processRequest(request, response);
+        //processRequest(request, response);
         String uname = request.getParameter("uname");
-       String uemail = request.getParameter("email");
-       String upsw = request.getParameter("psw");
-       String ucontact = request.getParameter("phn");
-       RequestDispatcher dispatcher =null;
-       Connection con = null;
-       
-       PrintWriter out = response.getWriter();
-       out.println(uname);
-       out.println(uemail);
-       out.println(upsw);
-       out.println(ucontact);
-       
-       try{
-           Class.forName("com.mysql.cj.jdbc.Driver");
-           con = DriverManager.getConnection("jdbc:mysql://localhost:3306/","root","");
-           PreparedStatement pst =con.prepareStatement("insert into users(uname,uemail,upsw,ucontact) values(?,?,?,?)");
-           pst.setString(1,uname);
-           pst.setString(2,uemail);
-           pst.setString(1,upsw);
-           pst.setString(1,ucontact);
-           
-           int rowCount = pst.executeUpdate();
-           dispatcher = request.getRequestDispatcher("registation.jsp");
-           if(rowCount > 0){
-               request.setAttribute("status","sucess");
-           }else{
-               request.setAttribute("status","failed");
-           }
-           dispatcher .forward(request, response);
-       }catch(Exception e){
-           e.printStackTrace();
-       }finally{
-           try {
-               con.close();
-           } catch (SQLException ex) {
-               Logger.getLogger(loginServlet.class.getName()).log(Level.SEVERE, null, ex);
-           }
-       } 
-    }
-    }
+        String uemail = request.getParameter("uemail");
+        String upsw = request.getParameter("upsw");
+        String ucontact= request.getParameter("ucontact");
+        
+        String url = "jdbc:mysql://localhost:3306/medimart";
+        String user = "root";
+        String dbPassword = "";
+        
+        try {
+            // Load MySQL JDBC driver
+            Class.forName("com.mysql.jdbc.Driver");
 
+            // Create SQL query to insert data into the database
+            try ( // Establish database connection
+                    Connection conn = DriverManager.getConnection(url, user, dbPassword)) {
+                // Create SQL query to insert data into the database
+                String sql = "INSERT INTO users (uname,uemail,upassword,ucontact) VALUES ( ?, ?, ?, ?)";
+                try (PreparedStatement statement = conn.prepareStatement(sql)) {
+                    statement.setString(1, uname);
+                    statement.setString(2, uemail);
+                    statement.setString(3,upsw );
+                    statement.setString(4,ucontact);
+                    // Execute the query
+                    int rowsInserted = statement.executeUpdate();
+                    if (rowsInserted > 0) {
+                        response.getWriter().println("<div style='position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: #e4e4e4; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 10px; text-align: center;'>");
+                        response.getWriter().println("<h1 style='color: #009999; font-family: Poppins;'>Registration Successfully.</h1>");
+                        response.getWriter().println("</div>");
+                    } else {
+                        response.getWriter().println("<div style='position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: #e4e4e4; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 10px; text-align: center;'>");
+                        response.getWriter().println("<h1 style='color: #009999; font-family: Poppins;'>Registration failed. Please try again!</h1>");
+                        response.getWriter().println("</div>"); 
+                    }
+                    // Close resources
+                }
+            }
+        } catch (ClassNotFoundException | SQLException | IOException e) {
+            response.getWriter().println("<div style='position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: #e4e4e4; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 10px; text-align: center;'>");
+            response.getWriter().println("<h1 style='color: #f5190a; font-family: Poppins;'>An error occurred: "+ e.getMessage()+" </h1>");
+            response.getWriter().println("</div>"); 
+    }
+    }
     /**
      * Returns a short description of the servlet.
      *
      * @return a String containing servlet description
      */
- 
+    @Override
+    public String getServletInfo() {
+        return "Short description";
+    }
 
 
+}

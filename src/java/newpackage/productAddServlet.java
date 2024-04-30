@@ -113,12 +113,12 @@ public class productAddServlet extends HttpServlet {
                     int rowsInserted = statement.executeUpdate();
                     if (rowsInserted > 0) {
                         response.getWriter().println("<div style='position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: #e4e4e4; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 10px; text-align: center;'>");
-                        response.getWriter().println("<h1 style='color: #009999; font-family: Poppins;'>Product Added Successfully <br>         ✅ </h1>");
+                        response.getWriter().println("<h1 style='color: #009999; font-family: Poppins;'>Product Added Successfully. </h1>");
                         response.getWriter().println("</div>");
 
                     } else {
                         response.getWriter().println("<div style='position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: #e4e4e4; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 10px; text-align: center;'>");
-                        response.getWriter().println("<h1 style='color: #009999; font-family: Poppins;'>Product Added Unsuccessfully <br>         ✅ </h1>");
+                        response.getWriter().println("<h1 style='color: #009999; font-family: Poppins;'>Product Added Unsuccessfully!</h1>");
                         response.getWriter().println("</div>");                    
                     }
                     // Close resources

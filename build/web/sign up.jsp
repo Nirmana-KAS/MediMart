@@ -35,35 +35,35 @@
                 <div class="logreg-box">
                     <div class="form-box login">
                         <form action="loginServlet" method="POST" >
-                            <h2>Sign In</h2>
+                            <h2>Sign Up</h2>
                             
                             <div class="input-box">
                                 <span class="icon"><i class='bx bxs-user'></i></span>
-                                <input type="text" required>
+                                <input type="text" name="uname" required>
                                 <label>Username</label>
                             </div>
     
                             <div class="input-box">
                                 <span class="icon"><i class='bx bxs-envelope' ></i></span>
-                                <input type="email" required>
+                                <input type="email" name="uemail" required>
                                 <label>Email</label>
                             </div>
     
                             <div class="input-box">
                                 <span class="icon"><i class='bx bxs-lock-alt'></i></span>
-                                <input type="password" required>
+                                <input type="password" name="upsw" required>
                                 <label>Password</label>
                             </div>
                             
                             <div class="input-box">
                                 <span class="icon"><i class='bx bxs-lock-alt'></i></span>
-                                <input type="password" required>
+                                <input type="password" name="urpsw"  required>
                                 <label>Repeat Password</label>
                             </div>
                             
                             <div class="input-box">
                                 <span class="icon"><i class='bx bxs-phone'></i></span>
-                                <input type="tel" required>
+                                <input type="tel" name="ucontact" required>
                                 <label>Contact Number</label>
                             </div>
     
@@ -72,7 +72,7 @@
                                 
                             </div>
     
-                            <button type="submit" class="btn">Sign Up</button>
+                            <button type="submit" class="btn">Sign In</button>
     
                             
                         </form>
