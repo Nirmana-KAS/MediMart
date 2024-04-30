@@ -47,7 +47,7 @@ public final class admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<!DOCTYPE html>\r\n");
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
-      out.write("        <title>TODO supply a title</title>\r\n");
+      out.write("        <title>Admin Panel</title>\r\n");
       out.write("        <meta charset=\"UTF-8\">\r\n");
       out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n");
       out.write("        <link rel=\"stylesheet\" href=\"css/admin.css\">\r\n");
@@ -59,7 +59,7 @@ public final class admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </header>\r\n");
       out.write("            <nav class=\"sidebar\">\r\n");
       out.write("              <ul>\r\n");
-      out.write("                <li><a href=\"#\">Products</a></li>\r\n");
+      out.write("                <li><a href=\"shop.jsp\">Products</a></li>\r\n");
       out.write("                <li><a href=\"#\">Users</a></li>\r\n");
       out.write("                <li><a href=\"#\">Settings</a></li>\r\n");
       out.write("              </ul>\r\n");
@@ -82,7 +82,7 @@ public final class admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("              </div>\r\n");
       out.write("              <div class=\"product-form\">\r\n");
       out.write("                <h3>Add Product</h3>\r\n");
-      out.write("                <form id=\"product-form\">\r\n");
+      out.write("                <form action=\"productAddServlet\" method=\"POST\" id=\"product-form\">\r\n");
       out.write("                  <label for=\"pid\">Product ID:</label>\r\n");
       out.write("                  <input type=\"text\" name=\"pid\" required>\r\n");
       out.write("                  \r\n");
@@ -101,12 +101,15 @@ public final class admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                  <label for=\"ptype\">Type:</label>\r\n");
       out.write("                  <input type=\"text\" name=\"ptype\" required>\r\n");
       out.write("                  \r\n");
+      out.write("                  <label for=\"pbrand\">Brand:</label>\r\n");
+      out.write("                  <input type=\"text\" name=\"pbrand\" required>\r\n");
+      out.write("                  \r\n");
       out.write("                  <button type=\"submit\">Add Product</button>\r\n");
       out.write("                </form>\r\n");
       out.write("              </div>\r\n");
       out.write("              <div class=\"product-form\">\r\n");
       out.write("                <h3>Delete Product</h3>\r\n");
-      out.write("                <form id=\"product-form\">\r\n");
+      out.write("                <form action=\"productAddServlet\" method=\"POST\" id=\"product-form\">\r\n");
       out.write("                  <label for=\"pid\">Product ID:</label>\r\n");
       out.write("                  <input type=\"text\" name=\"pid\" required> \r\n");
       out.write("                  \r\n");
@@ -115,7 +118,7 @@ public final class admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("              </div>\r\n");
       out.write("              <div class=\"product-form\">\r\n");
       out.write("                <h3>Edit Product</h3>\r\n");
-      out.write("                <form id=\"product-form\">\r\n");
+      out.write("                <form action=\"productAddServlet\" method=\"POST\" id=\"product-form\">\r\n");
       out.write("                 <label for=\"pid\">Product ID:</label>\r\n");
       out.write("                  <input type=\"text\" name=\"pid\" required>\r\n");
       out.write("                  \r\n");
@@ -133,6 +136,9 @@ public final class admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                  \r\n");
       out.write("                  <label for=\"ptype\">Type:</label>\r\n");
       out.write("                  <input type=\"text\" name=\"ptype\" required>\r\n");
+      out.write("                  \r\n");
+      out.write("                  <label for=\"pbrand\">Brand:</label>\r\n");
+      out.write("                  <input type=\"text\" name=\"pbrand\" required>\r\n");
       out.write("                  \r\n");
       out.write("                  <button type=\"submit\">Edit Product</button>\r\n");
       out.write("                </form>\r\n");

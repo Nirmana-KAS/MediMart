@@ -43,7 +43,7 @@
               </div>
               <div class="product-form">
                 <h3>Add Product</h3>
-                <form id="product-form">
+                <form action="productAddServlet" method="POST" id="product-form">
                   <label for="pid">Product ID:</label>
                   <input type="text" name="pid" required>
                   
@@ -62,12 +62,15 @@
                   <label for="ptype">Type:</label>
                   <input type="text" name="ptype" required>
                   
+                  <label for="pbrand">Brand:</label>
+                  <input type="text" name="pbrand" required>
+                  
                   <button type="submit">Add Product</button>
                 </form>
               </div>
               <div class="product-form">
                 <h3>Delete Product</h3>
-                <form id="product-form">
+                <form action="productAddServlet" method="POST" id="product-form">
                   <label for="pid">Product ID:</label>
                   <input type="text" name="pid" required> 
                   
@@ -76,7 +79,7 @@
               </div>
               <div class="product-form">
                 <h3>Edit Product</h3>
-                <form id="product-form">
+                <form action="productAddServlet" method="POST" id="product-form">
                  <label for="pid">Product ID:</label>
                   <input type="text" name="pid" required>
                   
@@ -94,6 +97,9 @@
                   
                   <label for="ptype">Type:</label>
                   <input type="text" name="ptype" required>
+                  
+                  <label for="pbrand">Brand:</label>
+                  <input type="text" name="pbrand" required>
                   
                   <button type="submit">Edit Product</button>
                 </form>
