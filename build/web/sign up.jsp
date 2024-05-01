@@ -16,11 +16,6 @@
     
         
         <body>
-        
-            <header class="header">
-                
-            </header>
-            
             <div class="background"></div>
             <div class="container">
             <div class="image01">

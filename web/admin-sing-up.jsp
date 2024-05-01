@@ -1,6 +1,6 @@
 <%-- 
-    Document   : sign up
-    Created on : Mar 30, 2024, 11:09:51 AM
+    Document   : admin-sing-up
+    Created on : May 1, 2024, 12:35:53 PM
     Author     : dines
 --%>
 
@@ -8,18 +8,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/sign-up.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Admin</title>
+        <link rel="stylesheet" href="css/admin-sing-up.css">
     </head>
-    
-        
-        <body>
+    <body>
             <div class="background"></div>
             <div class="container">
             <div class="image01">
-                <img src="images/login-and-sign up/5670.jpg"style="position:relative;width: 800px; height: 580px; z-index: -1;">
+                <img src="images/admin/signup.jpg"style="position:relative;width: 600px; height: 600px; z-index: -1;">
             </div>
                 <div class="content">
                     <h2 class="logo">MediMart</h2>
@@ -30,35 +27,35 @@
                 <div class="logreg-box">
                     <div class="form-box login">
                         <form action="loginServlet" method="POST" >
-                            <h2>Sign Up</h2>
+                            <h2>Admin Sign Up</h2>
                             
                             <div class="input-box">
                                 <span class="icon"><i class='bx bxs-user'></i></span>
-                                <input type="text" name="uname" required>
+                                <input type="text" name="aname" required>
                                 <label>Username</label>
                             </div>
     
                             <div class="input-box">
                                 <span class="icon"><i class='bx bxs-envelope' ></i></span>
-                                <input type="email" name="uemail" required>
+                                <input type="email" name="aemail" required>
                                 <label>Email</label>
                             </div>
     
                             <div class="input-box">
                                 <span class="icon"><i class='bx bxs-lock-alt'></i></span>
-                                <input type="password" name="upsw" required>
+                                <input type="password" name="apsw" required>
                                 <label>Password</label>
                             </div>
                             
                             <div class="input-box">
                                 <span class="icon"><i class='bx bxs-lock-alt'></i></span>
-                                <input type="password" name="urpsw"  required>
+                                <input type="password" name="arpsw"  required>
                                 <label>Repeat Password</label>
                             </div>
                             
                             <div class="input-box">
                                 <span class="icon"><i class='bx bxs-phone'></i></span>
-                                <input type="tel" name="ucontact" required>
+                                <input type="tel" name="acontact" required>
                                 <label>Contact Number</label>
                             </div>
     
@@ -75,5 +72,4 @@
                 </div>
             </div>
         </body>
-    
 </html>
