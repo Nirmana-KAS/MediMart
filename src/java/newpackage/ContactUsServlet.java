@@ -72,7 +72,49 @@ public class ContactUsServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        // Get parameters from request
+        String name = request.getParameter("name");
+        String email = request.getParameter("email");
+        String phone = request.getParameter("phone");
+        String message = request.getParameter("message");
+
+        try {
+            // Load JDBC driver
+            Class.forName("com.mysql.jdbc.Driver");
+
+            // Establish database connection
+            try (Connection conn = DriverManager.getConnection(url, user, dbPassword)) {
+                // Prepare SQL statement
+                String sql = "INSERT INTO message (cname, cemail, cphone, cmessage) VALUES (?, ?, ?, ?)";
+                try (PreparedStatement statement = conn.prepareStatement(sql)) {
+                    // Set parameters
+                    statement.setString(1, name);
+                    statement.setString(2, email);
+                    statement.setString(3, phone);
+                    statement.setString(4, message);
+
+                    // Execute update
+                    int rowsInserted = statement.executeUpdate();
+
+                    // Display result
+                    response.setContentType("text/html");
+                    PrintWriter out = response.getWriter();
+                    out.println("<html><body>");
+                    if (rowsInserted > 0) {
+                        out.println("<h1>Thank you for contacting us!</h1>");
+                    } else {
+                        out.println("<h1>Failed to submit your message. Please try again later.</h1>");
+                    }
+                    out.println("</body></html>");
+                }
+                } 
+                } catch (ClassNotFoundException | SQLException e) {
+        }
+    }
+                
+        String url = "jdbc:mysql://localhost:3306/medimart";
+        String user = "root";
+        String dbPassword = "";
     }
 
     /**
