@@ -28,7 +28,7 @@
                 <div class="logreg-box">
                     <div class="form-box login">
                         <form action="#">
-                            <h2>Login</h2>
+                            <h2>Sign In</h2>
     
                             <div class="input-box">
                                 <span class="icon"><i class='bx bxs-envelope' ></i></span>
@@ -50,7 +50,7 @@
                             <button type="submit" class="btn">Sign In</button>
     
                             <div class="login-register">
-                                <p>Don't have an account?<a href="sign up.jsp" class="register-link">Sign Up</a></p>
+                                <p>Don't have an account ?<a href="sign up.jsp" class="register-link"> Sign Up</a></p>
                             </div>
                         </form>
                     </div>
