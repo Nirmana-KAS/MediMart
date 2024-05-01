@@ -92,9 +92,10 @@ public class checkLoginInfoServlet extends HttpServlet {
             response.sendRedirect("login.jsp?error=invalidemail");
             return;
         }
-        try(Connection conn = DriverManager.getConnection(url, user, dbPassword)){
+        try(
+                Connection conn = DriverManager.getConnection(url, user, dbPassword)){
             Class.forName("com.mysql.jdbc.Driver");
-                        String sql = "SELECT upassword FROM users WHERE uemail=?";
+            String sql = "SELECT upassword FROM users WHERE uemail=?";
                         
             try (PreparedStatement statement = conn.prepareStatement(sql)) {
                 statement.setString(1, email);
