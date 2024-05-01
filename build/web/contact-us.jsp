@@ -37,7 +37,7 @@
                     </td>
                     <td class="form-column">
                         <div class="detail">
-                        <form action="ContactServlet" method="post">
+                        <form action="ContactUsServlet" method="post">
                             <h2>Get in Touch</h2>
                             <input type="text" name="name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Email Id" required>
