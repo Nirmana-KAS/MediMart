@@ -38,36 +38,48 @@
                                 </div>
                             </div>
                         </div>
-                    <!-- Topbar end -->
                     <!-- Logo area start -->
+                    <!-- Topbar end -->
                     <div class="logo-area" style="display: flex; align-items: center; align-content: space-between; width: 100%; justify-content: space-around;">
                         <div class="logo-area-left">
-                            <marquee direction="left" behavior="scroll" loop="0" scrollamount="5" style="width: 800px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
+                            <marquee direction="left" behavior="scroll" loop="0" scrollamount="10" style="width: 800px;">
+                                <img class="Spc-Logo" src="images/header-and-footer/SpcLogo.png" alt="Spc-Logot" style="margin-right: 100px; width: 100px;">
+                                <img class="Acare-Logo" src="images/header-and-footer/AcareLogo.png" alt="Acare-Logot" style="margin-right: 100px; width: 100px;">
+                                <img class="Beurer-Logo" src="images/header-and-footer/BeurerLogo.png" alt="Beurerb-Logo" style="margin-right: 100px; width: 100px;">
+                                <img class="Comfort-Logo" src="images/header-and-footer/ComfortLogo.png" alt="Comfort-Logo" style="margin-right: 100px; width: 100px;">
+                                <img class="CvsHealth-Logo" src="images/header-and-footer/CvsHealthLogo.png" alt="CvsHealth-Logo" style="margin-right: 100px; width: 100px;">
+                                <img class="Elevance-Logo" src="images/header-and-footer/ElevanceLogo.png" alt="Elevance-Logo" style="margin-right: 100px; width: 100px;">
+                                <img class="Flaem-Logo" src="images/header-and-footer/FlaemLogo.png" alt="Flaem-Logo" style="margin-right: 100px; width: 100px;">
+                                <img class="Pfizer-Logo" src="images/header-and-footer/PfizerLogo.png" alt="Pfizer-Logo" style="margin-right: 100px; width: 100px;">
+                                <img class="QuestDiagnostics-Logo" src="images/header-and-footer/QuestDiagnosticsLogo.png" alt="QuestDiagnostics-Logo" style="margin-right: 100px; width: 100px;">
+                                <img class="Rossmax-Logo" src="images/header-and-footer/RossmaxLogo.png" alt="Rossmax-Logo" style="margin-right: 100px; width: 100px;">
+                                <img class="Signa-Logo" src="images/header-and-footer/SignaLogo.png" alt="Signa-Logo" style="margin-right: 100px; width: 100px;">
+                                <img class="Slcpi-Logo" src="images/header-and-footer/SlcpiLogo.png" alt="Slcpi-Logo" style="margin-right: 100px; width: 100px;">
+                                <img class="Spirit-Logo" src="images/header-and-footer/SpiritLogo.png" alt="Spirit-Logo" style="margin-right: 100px; width: 100px;">
+                                <img class="Kawe-Logo" src="images/header-and-footer/KaweLogo.png" alt="Kawe-Logo" style="margin-right: 100px; width: 100px;">
                             </marquee>
                         </div>
                         <center>
-                            <p>
-                                <img class="MainLogo" src="images/header-and-footer/MediMartLogoF.png" alt="MainLogo">
-                            </p>
+                        <p>
+                            <img class="MainLogo" src="images/header-and-footer/MediMartLogoF.png" alt="MainLogo">
+                        </p>
                         </center>
                         <div class="logo-area-right">
-                            <marquee direction="right" behavior="scroll" loop="0" scrollamount="5" style="width: 800px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
-                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
+                            <marquee direction="right" behavior="scroll" loop="0" scrollamount="10" style="width: 800px;">
+                                <img class="Kawe-Logo" src="images/header-and-footer/KaweLogo.png" alt="Kawe-Logo" style="margin-left: 100px; width: 100px;">
+                                <img class="Spirit-Logo" src="images/header-and-footer/SpiritLogo.png" alt="Spirit-Logo" style="margin-left: 100px; width: 100px;">
+                                <img class="Slcpi-Logo" src="images/header-and-footer/SlcpiLogo.png" alt="Slcpi-Logo" style="margin-left: 100px; width: 100px;">
+                                <img class="Signa-Logo" src="images/header-and-footer/SignaLogo.png" alt="Signa-Logo" style="margin-left: 100px; width: 100px;">
+                                <img class="Rossmax-Logo" src="images/header-and-footer/RossmaxLogo.png" alt="Rossmax-Logo" style="margin-left: 100px; width: 100px;">
+                                <img class="QuestDiagnostics-Logo" src="images/header-and-footer/QuestDiagnosticsLogo.png" alt="QuestDiagnostics-Logo" style="margin-left: 100px; width: 100px;">
+                                <img class="Pfizer-Logo" src="images/header-and-footer/PfizerLogo.png" alt="Pfizer-Logo" style="margin-left: 100px; width: 100px;">
+                                <img class="Flaem-Logo" src="images/header-and-footer/FlaemLogo.png" alt="Flaem-Logo" style="margin-left: 100px; width: 100px;">
+                                <img class="Elevance-Logo" src="images/header-and-footer/ElevanceLogo.png" alt="Elevance-Logo" style="margin-left: 100px; width: 100px;">
+                                <img class="CvsHealth-Logo" src="images/header-and-footer/CvsHealthLogo.png" alt="CvsHealth-Logo" style="margin-left: 100px; width: 100px;">
+                                <img class="Comfort-Logo" src="images/header-and-footer/ComfortLogo.png" alt="Comfort-Logo" style="margin-left: 100px; width: 100px;">
+                                <img class="Beurer-Logo" src="images/header-and-footer/BeurerLogo.png" alt="Beurerb-Logo" style="margin-left: 100px; width: 100px;">
+                                <img class="Acare-Logo" src="images/header-and-footer/AcareLogo.png" alt="Acare-Logot" style="margin-left: 100px; width: 100px;">
+                                <img class="Spc-Logo" src="images/header-and-footer/SpcLogo.png" alt="Spc-Logot" style="margin-left: 100px; width: 100px;">  
                             </marquee>
                         </div>
                     </div>
