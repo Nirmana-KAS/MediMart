@@ -85,7 +85,7 @@ public class ContactUsServlet extends HttpServlet {
             // Establish database connection
             try (Connection conn = DriverManager.getConnection(url, user, dbPassword)) {
                 // Prepare SQL statement
-                String sql = "INSERT INTO message (cname, cemail, cphone, cmessage) VALUES (?, ?, ?, ?)";
+                String sql = "INSERT INTO msssages (cname, cemail, cphone, cmessage) VALUES (?, ?, ?, ?)";
                 try (PreparedStatement statement = conn.prepareStatement(sql)) {
                     // Set parameters
                     statement.setString(1, name);
