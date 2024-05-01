@@ -1,6 +1,6 @@
 <%-- 
-    Document   : login
-    Created on : Mar 30, 2024, 11:09:51 AM
+    Document   : admin-sing-in
+    Created on : May 1, 2024, 12:35:09 PM
     Author     : dines
 --%>
 
@@ -8,18 +8,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/login.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Admin</title>
+        <link rel="stylesheet" href="css/admin-sing-in.css">
     </head>
-    <body>
+        <body>
             
         <div class="background"></div>
 
             <div class="container">
             <div class="image01">
-                <img src="images/login-and-sign up/5675.png"style="position:relative;width: 800px; height: 550px; z-index: -1;">
+                <img src="images/admin/signin.jpg"style="position:relative;width: 550px; height: 550px; z-index: -1;">
             </div>
                 <div class="content">
                     <h2 class="logo">MediMart</h2>
@@ -28,7 +27,7 @@
                 <div class="logreg-box">
                     <div class="form-box login">
                         <form action="#">
-                            <h2>Sign In</h2>
+                            <h2>Admin Login</h2>
     
                             <div class="input-box">
                                 <span class="icon"><i class='bx bxs-envelope' ></i></span>
@@ -50,7 +49,7 @@
                             <button type="submit" class="btn">Sign In</button>
     
                             <div class="login-register">
-                                <p>Don't have an account ?<a href="sign up.jsp" class="register-link"> Sign Up</a></p>
+                                <p>Don't have an account?<a href="sign up.jsp" class="register-link">Sign Up</a></p>
                             </div>
                         </form>
                     </div>
