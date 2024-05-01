@@ -110,7 +110,11 @@ public class ContactUsServlet extends HttpServlet {
                 } 
                 } catch (ClassNotFoundException | SQLException e) {
         }
-            }
+    }
+                
+        String url = "jdbc:mysql://localhost:3306/medimart";
+        String user = "root";
+        String dbPassword = "";
     }
 
     /**
