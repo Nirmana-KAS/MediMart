@@ -7,6 +7,10 @@ package newpackage;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -72,7 +76,40 @@ public class productDeleteServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        String pid = request.getParameter("pid");
+
+        // Database connection details
+        String url = "jdbc:mysql://localhost:3306/medimart";
+        String user = "root";
+        String dbPassword = "";
+
+        try {
+            // Load MySQL JDBC driver
+            Class.forName("com.mysql.jdbc.Driver");
+
+            // Establish database connection
+            try (Connection conn = DriverManager.getConnection(url, user, dbPassword)) {
+                // Prepare SQL statement
+                String sql = "DELETE FROM products WHERE pid=?";
+                try (PreparedStatement statement = conn.prepareStatement(sql)) {
+                    // Set parameter
+                    statement.setString(1, pid);
+
+                    // Execute the query
+                    int rowsDeleted = statement.executeUpdate();
+
+                    // Display result
+                    response.setContentType("text/html");
+                    if (rowsDeleted > 0) {
+                        response.getWriter().println("<h1>Product Deleted Successfully</h1>");
+                    } else {
+                        response.getWriter().println("<h1>Failed to delete product. Product with ID " + pid + " not found.</h1>");
+                    }
+                }
+            }
+        } catch (ClassNotFoundException | SQLException e) {
+        }
+    }
     }
 
     /**
