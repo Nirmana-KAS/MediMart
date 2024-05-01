@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -18,13 +19,14 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author dines
  */
-@WebServlet(name = "productUpdateServlet", urlPatterns = {"/productUpdateServlet"})
-public class productUpdateServlet extends HttpServlet {
+@WebServlet(name = "checkLoginInfoServlet", urlPatterns = {"/checkLoginInfoServlet"})
+public class checkLoginInfoServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -43,10 +45,10 @@ public class productUpdateServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet productUpdateServlet</title>");            
+            out.println("<title>Servlet checkLoginInfoServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet productUpdateServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet checkLoginInfoServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -78,51 +80,63 @@ public class productUpdateServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String pid = request.getParameter("pid");
-        String pname = request.getParameter("pname");
-        String pprice = request.getParameter("pprice");
-        String pdescription = request.getParameter("pdescription");
-        String pquantity = request.getParameter("pquantity");
-        String ptype = request.getParameter("ptype");
-        String pbrand = request.getParameter("pbrand");
-
+        //rocessRequest(request, response);
+        String email = request.getParameter("lemail");
+        String psw = request.getParameter("lpsw");
+        
         String url = "jdbc:mysql://localhost:3306/medimart";
         String user = "root";
         String dbPassword = "";
-
-    try {
-        Class.forName("com.mysql.jdbc.Driver");
-        try (Connection conn = DriverManager.getConnection(url, user, dbPassword)) {
-            String sql = "UPDATE products SET pname=?, pprice=?, pdescription=?, pquantity=?, ptype=?, pbrand=? WHERE pid=?";
+        
+        if (!isValidEmail(email)) {
+            response.sendRedirect("login.jsp?error=invalidemail");
+            return;
+        }
+        try(Connection conn = DriverManager.getConnection(url, user, dbPassword)){
+            Class.forName("com.mysql.jdbc.Driver");
+                        String sql = "SELECT upassword FROM users WHERE uemail=?";
+                        
             try (PreparedStatement statement = conn.prepareStatement(sql)) {
-                statement.setString(1, pname);
-                statement.setString(2, pprice);
-                statement.setString(3, pdescription);
-                statement.setString(4, pquantity);
-                statement.setString(5, ptype);
-                statement.setString(6, pbrand);
-                statement.setString(7, pid);
+                statement.setString(1, email);
+                ResultSet resultSet = statement.executeQuery();
 
-                int rowsUpdated = statement.executeUpdate();
-                if (rowsUpdated > 0) {
-                    response.getWriter().println("<div style='position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: #e4e4e4; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 10px; text-align: center;'>");
-                    response.getWriter().println("<h1 style='color: #009999; font-family: Poppins;'>Product Updated Successfully <br></h1>");
-                    response.getWriter().println("</div>");
+                // Check if the email exists in the database
+                if (resultSet.next()) {
+                    String storedPassword = resultSet.getString("upassword");
+
+                    // Check if the provided password matches the stored password
+                    if (psw.equals(storedPassword)) {
+                        // Successful login
+                        HttpSession session = request.getSession();
+                        session.setAttribute("email", email);
+                        response.sendRedirect("index.jsp"); // Redirect to welcome page after successful login
+                        return;
+                    } else {
+                        // Invalid password
+                        response.sendRedirect("login.jsp?error=invalidpassword");
+                        return;
+                    }
                 } else {
-                    response.getWriter().println("<div style='position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: #e4e4e4; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 10px; text-align: center;'>");
-                    response.getWriter().println("<h1 style='color: #009999; font-family: Poppins;'>Product Update Unsuccessful <br></h1>");
-                    response.getWriter().println("</div>");
+                    // Email not found
+                    response.sendRedirect("login.jsp?error=emailnotfound");
+                    return;
                 }
             }
-        }   catch (SQLException ex) {
-                Logger.getLogger(productUpdateServlet.class.getName()).log(Level.SEVERE, null, ex);
-            }
-    } catch (ClassNotFoundException | IOException e) {
-        response.getWriter().println("<div style='position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: #e4e4e4; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 10px; text-align: center;'>");
-        response.getWriter().println("<h1 style='color: #f5190a; font-family: Poppins;'>An error occurred: " + e.getMessage() + " </h1>");
-        response.getWriter().println("</div>");
+        } catch (SQLException e) {
+            throw new ServletException(e);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(checkLoginInfoServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
+
+    // Method to validate email format
+    private boolean isValidEmail(String email) {
+        // Implement your email validation logic here
+        // For simplicity, let's assume any non-empty string is valid
+        return email != null && !email.isEmpty();
     }
+
+        
 
     /**
      * Returns a short description of the servlet.
@@ -133,5 +147,4 @@ public class productUpdateServlet extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }

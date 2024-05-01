@@ -27,18 +27,18 @@
                 
                 <div class="logreg-box">
                     <div class="form-box login">
-                        <form action="#">
+                        <form action="checkLoginInfoServlet" method="POST">
                             <h2>Sign In</h2>
     
                             <div class="input-box">
                                 <span class="icon"><i class='bx bxs-envelope' ></i></span>
-                                <input type="email" required>
+                                <input type="email" name="lemail" required>
                                 <label>Email</label>
                             </div>
     
                             <div class="input-box">
                                 <span class="icon"><i class='bx bxs-lock-alt'></i></span>
-                                <input type="password" required>
+                                <input type="password" name="lpsw" required>
                                 <label>Password</label>
                             </div>
     

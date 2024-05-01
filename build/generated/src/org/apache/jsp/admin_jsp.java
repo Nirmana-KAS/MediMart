@@ -109,7 +109,7 @@ public final class admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("              </div>\r\n");
       out.write("              <div class=\"product-form\">\r\n");
       out.write("                <h3>Delete Product</h3>\r\n");
-      out.write("                <form action=\"productAddServlet\" method=\"POST\" id=\"product-form\">\r\n");
+      out.write("                <form action=\"productDeleteServlet\" method=\"POST\" id=\"product-form\">\r\n");
       out.write("                  <label for=\"pid\">Product ID:</label>\r\n");
       out.write("                  <input type=\"text\" name=\"pid\" required> \r\n");
       out.write("                  \r\n");
@@ -118,7 +118,7 @@ public final class admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("              </div>\r\n");
       out.write("              <div class=\"product-form\">\r\n");
       out.write("                <h3>Edit Product</h3>\r\n");
-      out.write("                <form action=\"productAddServlet\" method=\"POST\" id=\"product-form\">\r\n");
+      out.write("                <form action=\"productUpdateServlet\" method=\"POST\" id=\"product-form\">\r\n");
       out.write("                 <label for=\"pid\">Product ID:</label>\r\n");
       out.write("                  <input type=\"text\" name=\"pid\" required>\r\n");
       out.write("                  \r\n");
