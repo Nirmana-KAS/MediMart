@@ -7,6 +7,12 @@ package newpackage;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -108,8 +114,10 @@ public class productUpdateServlet extends HttpServlet {
                     response.getWriter().println("</div>");
                 }
             }
-        }
-    } catch (ClassNotFoundException | SQLException | IOException e) {
+        }   catch (SQLException ex) {
+                Logger.getLogger(productUpdateServlet.class.getName()).log(Level.SEVERE, null, ex);
+            }
+    } catch (ClassNotFoundException | IOException e) {
         response.getWriter().println("<div style='position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: #e4e4e4; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 10px; text-align: center;'>");
         response.getWriter().println("<h1 style='color: #f5190a; font-family: Poppins;'>An error occurred: " + e.getMessage() + " </h1>");
         response.getWriter().println("</div>");
