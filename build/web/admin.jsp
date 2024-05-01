@@ -79,7 +79,7 @@
               </div>
               <div class="product-form">
                 <h3>Edit Product</h3>
-                <form action="productAddServlet" method="POST" id="product-form">
+                <form action="productUpdateServlet" method="POST" id="product-form">
                  <label for="pid">Product ID:</label>
                   <input type="text" name="pid" required>
                   
