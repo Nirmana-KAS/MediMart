@@ -39,12 +39,39 @@
                             </div>
                         </div>
                     <!-- Topbar end -->
-                    <!-- Main Logo of Website -->
-                    <center>
-                        <p>
-                            <img class="MainLogo" src="images/header-and-footer/MediMartLogoF.png" alt="MainLogo">
-                        </p>
-                    </center>
+                    <!-- Logo area start -->
+                    <div class="logo-area" style="display: flex; align-items: center; align-content: space-between; width: 100%; justify-content: space-around;">
+                        <div class="logo-area-left">
+                            <marquee direction="left" behavior="scroll" loop="0" scrollamount="5" style="width: 800px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-right: 100px;">
+                            </marquee>
+                        </div>
+                        <center>
+                            <p>
+                                <img class="MainLogo" src="images/header-and-footer/MediMartLogoF.png" alt="MainLogo">
+                            </p>
+                        </center>
+                        <div class="logo-area-right">
+                            <marquee direction="right" behavior="scroll" loop="0" scrollamount="5" style="width: 800px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
+                                <img class="shopping-cart" src="images/header-and-footer/ShoppingCartBlack.png" alt="shopping-cart" style="margin-left: 100px;">
+                            </marquee>
+                        </div>
+                    </div>
+                    <!-- Logo area end -->
                     <!-- Navbar start -->
                         <div class="topnav">
                             <!-- Centered area on Navbar -->
