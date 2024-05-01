@@ -77,6 +77,10 @@ public class ContactUsServlet extends HttpServlet {
         String email = request.getParameter("email");
         String phone = request.getParameter("phone");
         String message = request.getParameter("message");
+                
+        String url = "jdbc:mysql://localhost:3306/medimart";
+        String user = "root";
+        String dbPassword = "";
     }
 
     /**
