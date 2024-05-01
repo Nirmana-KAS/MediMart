@@ -72,7 +72,48 @@ public class productUpdateServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        String pid = request.getParameter("pid");
+        String pname = request.getParameter("pname");
+        String pprice = request.getParameter("pprice");
+        String pdescription = request.getParameter("pdescription");
+        String pquantity = request.getParameter("pquantity");
+        String ptype = request.getParameter("ptype");
+        String pbrand = request.getParameter("pbrand");
+
+        String url = "jdbc:mysql://localhost:3306/medimart";
+        String user = "root";
+        String dbPassword = "";
+
+    try {
+        Class.forName("com.mysql.jdbc.Driver");
+        try (Connection conn = DriverManager.getConnection(url, user, dbPassword)) {
+            String sql = "UPDATE products SET pname=?, pprice=?, pdescription=?, pquantity=?, ptype=?, pbrand=? WHERE pid=?";
+            try (PreparedStatement statement = conn.prepareStatement(sql)) {
+                statement.setString(1, pname);
+                statement.setString(2, pprice);
+                statement.setString(3, pdescription);
+                statement.setString(4, pquantity);
+                statement.setString(5, ptype);
+                statement.setString(6, pbrand);
+                statement.setString(7, pid);
+
+                int rowsUpdated = statement.executeUpdate();
+                if (rowsUpdated > 0) {
+                    response.getWriter().println("<div style='position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: #e4e4e4; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 10px; text-align: center;'>");
+                    response.getWriter().println("<h1 style='color: #009999; font-family: Poppins;'>Product Updated Successfully <br></h1>");
+                    response.getWriter().println("</div>");
+                } else {
+                    response.getWriter().println("<div style='position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: #e4e4e4; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 10px; text-align: center;'>");
+                    response.getWriter().println("<h1 style='color: #009999; font-family: Poppins;'>Product Update Unsuccessful <br></h1>");
+                    response.getWriter().println("</div>");
+                }
+            }
+        }
+    } catch (ClassNotFoundException | SQLException | IOException e) {
+        response.getWriter().println("<div style='position: fixed; top: 30%; left: 50%; transform: translate(-50%, -50%); background-color: #e4e4e4; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 10px; text-align: center;'>");
+        response.getWriter().println("<h1 style='color: #f5190a; font-family: Poppins;'>An error occurred: " + e.getMessage() + " </h1>");
+        response.getWriter().println("</div>");
+    }
     }
 
     /**
